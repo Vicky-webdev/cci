@@ -33,6 +33,11 @@ const nextConfig: NextConfig = {
   poweredByHeader: false,
   serverExternalPackages: ["@node-rs/argon2", "sharp"],
   images: { unoptimized: false },
+  // The storage driver resolves UPLOAD_DIR at runtime, so file tracing would otherwise copy the whole
+  // project (incl. ~1 GB of legacy assets) into the media/upload functions. None of it is read there.
+  outputFileTracingExcludes: {
+    "*": ["_public_html/**", "public/images/**", "public/docs/**", "storage/**", "docs/**", "tests/**", ".git/**"],
+  },
   async headers() {
     return [
       { source: "/:path*", headers: securityHeaders },

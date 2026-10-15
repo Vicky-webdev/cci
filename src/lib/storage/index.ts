@@ -2,11 +2,13 @@ import "server-only";
 import { createHash, randomBytes } from "node:crypto";
 import { mkdir, readFile, rm, stat, writeFile } from "node:fs/promises";
 import path from "node:path";
+import { del as blobDel, get as blobGet, head as blobHead, put as blobPut } from "@vercel/blob";
 
 /**
- * Media storage abstraction. Only the local-disk driver is implemented: uploads are
- * written under UPLOAD_DIR (which must be a persistent volume in production) and served
- * by the /uploads/[...path] route. A cloud driver can implement the same interface.
+ * Media storage abstraction. Uploads are served by the /uploads/[...path] route whichever
+ * driver stores them. The local-disk driver writes under UPLOAD_DIR (a persistent volume in
+ * production); the Vercel Blob driver is used automatically when BLOB_READ_WRITE_TOKEN is set
+ * (serverless hosting, where the local disk is read-only and not shared between instances).
  */
 export interface StorageDriver {
   put(relativePath: string, data: Buffer): Promise<void>;
@@ -43,7 +45,33 @@ export const localDriver: StorageDriver = {
   },
 };
 
-export const storage = localDriver;
+/** Vercel Blob driver. Blobs are private and keyed `uploads/<relativePath>`. */
+const blobKey = (rel: string) => {
+  safeUploadPath(rel); // same traversal rules as the local driver
+  return `uploads/${rel}`;
+};
+
+export const blobDriver: StorageDriver = {
+  async put(rel, data) {
+    await blobPut(blobKey(rel), data, { access: "private", addRandomSuffix: false, allowOverwrite: false });
+  },
+  async get(rel) {
+    const res = await blobGet(blobKey(rel), { access: "private" });
+    if (!res || res.statusCode !== 200) throw new Error("Not found");
+    return Buffer.from(await new Response(res.stream).arrayBuffer());
+  },
+  remove: (rel) => blobDel(blobKey(rel)),
+  async exists(rel) {
+    try {
+      await blobHead(blobKey(rel));
+      return true;
+    } catch {
+      return false;
+    }
+  },
+};
+
+export const storage: StorageDriver = process.env.BLOB_READ_WRITE_TOKEN ? blobDriver : localDriver;
 
 /** Allowed upload types, identified by file signature (magic bytes), not by name or client MIME. */
 const SIGNATURES: { mime: string; ext: string; test: (b: Buffer) => boolean }[] = [

@@ -24,7 +24,10 @@ Never commit real values; never paste them into documentation, tickets or chat.
 | `TEST_DATABASE_URL` | tests | — | Role with CREATEDB; integration tests create/drop their own database |
 | `E2E_ADMIN_DATABASE_URL` | tests | — | Same, for Playwright (`tests/e2e/prepare.ts`) |
 | `PW_CHROMIUM_PATH` | tests | — | Optional Chromium executable for Playwright |
-| `ADMIN_PASSWORD` | CLI only | — | Password for `npm run admin:create` (otherwise prompted) |
+| `ADMIN_PASSWORD` | CLI / first deploy | — | Password for `npm run admin:create` (otherwise prompted). Also read by `vercel-build` to create the first Super Admin — remove it from the host afterwards |
+| `ADMIN_EMAIL`, `ADMIN_NAME` | first deploy | — | Email/name of the first Super Admin created by `vercel-build` when the database has no users |
+| `DATABASE_URL_UNPOOLED` | no | — | Direct (non-pooled) connection used for migrations when `DATABASE_URL` points at a pooler (set automatically by Neon on Vercel) |
+| `BLOB_READ_WRITE_TOKEN` | serverless hosting | — | When set, CMS uploads are stored in Vercel Blob (private) instead of `UPLOAD_DIR` (set automatically when a Blob store is connected) |
 
 Without SMTP settings, enquiries are still stored (email status `SKIPPED`).
 Without reCAPTCHA keys outside production, the form works without the widget (development only).

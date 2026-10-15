@@ -53,6 +53,28 @@ server {
 
 With this proxy set `TRUST_PROXY=true` (it overwrites `X-Forwarded-For` with the real client IP).
 
+## Vercel (preview / staging)
+
+The repository can be deployed to Vercel as-is. `npm run vercel-build` (used automatically by Vercel)
+runs `scripts/deploy/bootstrap.ts` before `next build`:
+
+1. `prisma migrate deploy` (non-destructive), then the role seed;
+2. the legacy import **only if the database has no pages and no events** (CMS edits are never overwritten);
+3. the first Super Admin **only if there are no users** and `ADMIN_EMAIL` + `ADMIN_PASSWORD` are set.
+
+Setup:
+
+1. Import the GitHub repository as a Vercel project (framework: Next.js).
+2. Project → Storage → create/connect a **Neon** Postgres database (sets `DATABASE_URL` and
+   `DATABASE_URL_UNPOOLED`) and, for uploads, a **Blob** store (sets `BLOB_READ_WRITE_TOKEN`).
+3. Environment variables: `SITE_URL` (the deployment URL), `TRUST_PROXY=true`, `SITE_ENV` (leave unset
+   or `staging` for a noindex preview), `ADMIN_EMAIL`, `ADMIN_PASSWORD`; reCAPTCHA/SMTP when available.
+4. Deploy. Afterwards delete `ADMIN_PASSWORD` and change the password in the admin (Account).
+
+Limits on Vercel: request bodies are capped at 4.5 MB, so larger media uploads fail there (use the
+VPS option, or upload large PDFs/videos another way); legacy images and PDFs (~1.1 GB) are deployed as
+static files on every build.
+
 ## Updating
 
 ```bash

@@ -1,5 +1,15 @@
 # Changelog
 
+## Unreleased
+
+### Added
+- Vercel deployment support: `vercel-build` script with a non-destructive database bootstrap
+  (`scripts/deploy/bootstrap.ts`), Vercel Blob storage driver for CMS uploads (used when
+  `BLOB_READ_WRITE_TOKEN` is set), migrations via `DATABASE_URL_UNPOOLED` when present.
+
+### Fixed
+- Media/upload server functions no longer bundle the whole project (legacy assets excluded from file tracing).
+
 ## 1.0.0 — 2026-10-15 — Next.js migration
 
 ### Added

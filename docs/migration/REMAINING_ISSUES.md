@@ -31,7 +31,7 @@ staging environment.
 
 | # | Item | Notes |
 |---|---|---|
-| T1 | Object-storage upload driver (S3-compatible) | Needed only for multi-instance/serverless hosting (ADR-008) |
+| T1 | Object-storage upload driver | Vercel Blob driver added (used when `BLOB_READ_WRITE_TOKEN` is set); an S3-compatible driver is still needed for non-Vercel multi-instance hosting (ADR-008) |
 | T2 | Nonce-based CSP to drop `'unsafe-inline'` | Hardening |
 | T3 | MFA for Super Admins | Hardening |
 | T4 | Colour contrast of the legacy brand palette | axe (2026-10-15) reports text below WCAG AA contrast, e.g. home eyebrow 3.3:1, quote attribution 1.9:1, Kamala card organisation line 1.8:1, council fact labels 4.3:1. Palette kept for visual parity — designer decision |

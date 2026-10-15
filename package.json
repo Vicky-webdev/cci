@@ -2,13 +2,14 @@
   "name": "cci-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Crafts Council of India website \u2014 Next.js + PostgreSQL CMS",
+  "description": "Crafts Council of India website — Next.js + PostgreSQL CMS",
   "engines": {
     "node": ">=20.9"
   },
   "scripts": {
     "dev": "npm run assets:sync && next dev",
     "build": "npm run assets:sync && prisma generate && next build",
+    "vercel-build": "npm run assets:sync && prisma generate && tsx scripts/deploy/bootstrap.ts && next build",
     "start": "next start",
     "lint": "eslint",
     "typecheck": "tsc --noEmit",
@@ -32,6 +33,7 @@
     "@node-rs/argon2": "^2.2.2",
     "@prisma/adapter-pg": "^7.10.0",
     "@prisma/client": "^7.10.0",
+    "@vercel/blob": "^2.8.2",
     "cheerio": "^1.2.0",
     "dotenv": "^18.0.8",
     "next": "^16.4.1",
