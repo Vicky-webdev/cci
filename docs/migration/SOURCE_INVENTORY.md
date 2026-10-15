@@ -49,7 +49,7 @@ Regenerate with `node scripts/audit/build-asset-manifest.mjs`.
 | `press.html` / `press-details.html` | Press | Client-rendered from `PRESS`; year filters; detail shows media groups (images + PDFs) |
 | `books.html`, `newsletters.html`, `past-newsletters.html`, `happenings-in-handmade.html`, `past-happenings-in-handmade.html`, `reports.html` | Publications | Hard-coded "latest issue" + card grids (`nl-*` classes) linking to PDFs |
 | `crafts-map.html` | Indian Crafts Map | Inline SVG map (37 paths), tooltip on hover, sidebar with district table on click, map-image lightbox; data from `craft-data.json` and `state_images/*/images.json` |
-| `craft-processes.html` | Craft processes | 23 processes in an inline JS array; slide-in detail panel. **Not linked from any page** |
+| `craft-processes.html` | Craft processes | 16 processes in an inline JS array; slide-in detail panel. **Not linked from any page** |
 | `contact.html` | Contact | Enquiry form (reCAPTCHA v2) → `send_enquiry.php`; contact info; affiliated State Councils (visible section + a second hidden `display:none` section) |
 | `privacy-policy.html`, `disclaimer.html` | Legal | Static prose ("Terms of Use" in footer links to `disclaimer.html`) |
 | `nav.js` | Desktop + mobile navigation injected into `#main-nav` / `#mobileMenu` | |

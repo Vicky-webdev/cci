@@ -16,7 +16,6 @@ const schema = z.object({
   SMTP_USER: z.string().optional(),
   SMTP_PASSWORD: z.string().optional(),
   MAIL_FROM: z.string().default("Crafts Council Of India <noreply@craftscouncilofindia.in>"),
-  CONTACT_NOTIFY_TO: z.string().default("info@craftscouncilofindia.in"),
   TRUST_PROXY: z.enum(["true", "false"]).default("false"),
 });
 

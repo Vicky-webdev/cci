@@ -227,18 +227,24 @@ async function importCrafts() {
         // discovered() counted while parsing (one per source record)
         if (dryRun) {
           report.outcome("craftStates", "skipped");
+          report.outcome("craftLocations", "skipped", locations.length);
           continue;
         }
         const found = await tx.craftState.findUnique({ where: { code: s.code }, select: { id: true } });
         if (!found) {
           await tx.craftState.create({ data: { ...s, ...write } });
           report.outcome("craftStates", "created");
+          report.outcome("craftLocations", "created", locations.length);
         } else if (refresh) {
           await tx.craftLocation.deleteMany({ where: { stateId: found.id } });
           await tx.craftStateImage.deleteMany({ where: { stateId: found.id } });
           await tx.craftState.update({ where: { id: found.id }, data: { ...s, ...write } });
           report.outcome("craftStates", "updated");
-        } else report.outcome("craftStates", "matched");
+          report.outcome("craftLocations", "updated", locations.length);
+        } else {
+          report.outcome("craftStates", "matched");
+          report.outcome("craftLocations", "matched", locations.length);
+        }
       }
       report.discovered("craftLocations", states.reduce((n, s) => n + s.locations.length, 0));
       for (const p of processes) {
@@ -362,8 +368,11 @@ async function main() {
   const finishedAt = new Date();
   const outDir = path.resolve("docs/migration");
   const mode = refresh ? "refresh (overwrite)" : "create-missing";
-  fs.writeFileSync(path.join(outDir, "import-log.json"), JSON.stringify({ startedAt, finishedAt, mode, dryRun, only, ...report.toJSON() }, null, 2));
-  if (!only) fs.writeFileSync(path.join(outDir, "RECONCILIATION_REPORT.md"), report.toMarkdown({ startedAt, finishedAt, mode, dryRun }));
+  // Partial runs (--only, used by tests) never overwrite the committed report.
+  if (!only && !skipMedia) {
+    fs.writeFileSync(path.join(outDir, "import-log.json"), JSON.stringify({ startedAt, finishedAt, mode, dryRun, ...report.toJSON() }, null, 2));
+    fs.writeFileSync(path.join(outDir, "RECONCILIATION_REPORT.md"), report.toMarkdown({ startedAt, finishedAt, mode, dryRun }));
+  }
   console.table(Object.fromEntries(report.counts));
   const errors = report.issues.filter((i) => i.severity === "error").length;
   console.log(`Issues: ${report.issues.length} (${errors} errors). Report: docs/migration/RECONCILIATION_REPORT.md`);

@@ -4,9 +4,9 @@ Every legacy URL, its Next.js destination, and how the old URL is preserved.
 Decision (see `docs/architecture/DECISIONS.md` ADR-004): public routes move to clean,
 extension-less URLs; every legacy `.html` URL and every `?id=` detail URL issues a
 **308/301 permanent redirect** to its new canonical URL so existing links and search
-equity carry over. Redirects are implemented in `src/middleware.ts` (query-string
-detail URLs) and `next.config.ts` (static `.html` URLs) and are tested in
-`tests/e2e/redirects.spec.ts`.
+equity carry over. Redirects are implemented in `src/proxy.ts` (query-string
+detail URLs and old WordPress URLs; Next.js 16 renamed middleware to proxy) and `next.config.ts` (static `.html` URLs) and are tested in
+`tests/e2e/seo.spec.ts`.
 
 Status legend: **Migrated** = rendered by Next.js from CMS data; **Redirect** = legacy URL redirects.
 

@@ -22,10 +22,10 @@ Final imported totals are in [`RECONCILIATION_REPORT.md`](./RECONCILIATION_REPOR
 | Artisans | `index.html` | 7 unique (11 cards incl. loop duplicates) | name, craft, photo | `Artisan` |
 | Executive Committee | `about.html` | 15 EC members + 9 office bearers | name, role | `TeamMember` |
 | State Councils | `contact.html` (visible section) | 11 | name, abbreviation, logo, est., state, focus, description, address, phone, email | `StateCouncil` |
-| State Councils (hidden duplicate section) | `contact.html` (`display:none`) | 11 + network text + map image | as above, no contact | Not rendered (hidden in legacy); network text stored as an unpublished page section |
+| State Councils (duplicate section) | `contact.html` (`display:none` block) | 11 cards (hidden) + "A federated structure across India" text + network map | as above, no contact | Cards not rendered (invisible in legacy). The network text and map **are visible** in browsers (unbalanced markup pushes them out of the hidden block) and were migrated into the Contact page's councils section |
 | Crafts map | `craft-data.json` | 35 records → 34 states/UTs (duplicate "Chandigarh"/"CHANDIGARH" merged) | state, crafts[{craft, district, village}] | `CraftState`, `CraftLocation` |
 | State images | `images/state_images/*/images.json` | 34 manifests | map image, craft images | `CraftStateImage` |
-| Craft processes | `craft-processes.html` → `PROCESSES` | 23 | id, category, icon, color, title, subtitle, intro, materials[], steps[{title,text}], states[] | `CraftProcess` |
+| Craft processes | `craft-processes.html` → `PROCESSES` | 16 | id, category, icon, color, title, subtitle, intro, materials[], steps[{title,text}], states[] | `CraftProcess` |
 | Home hero | `index.html` | 4 slides + headline, description, 2 CTAs | | Page `home` section `heroSlider` |
 | Marquee | `index.html` | 3 items (HTML with links) | | Page `home` section `marquee` |
 | Quote band | `index.html` | 1 | | Page `home` section `quote` |

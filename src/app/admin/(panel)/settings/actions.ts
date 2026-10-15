@@ -7,6 +7,13 @@ import { requestMeta } from "@/lib/request";
 import { SETTINGS_SCHEMA, type SettingKey } from "@/lib/settings-schema";
 import type { Prisma } from "@/generated/prisma/client";
 
+/** Key-order-independent JSON (Postgres jsonb does not preserve object key order). */
+function canonical(v: unknown): string {
+  if (Array.isArray(v)) return `[${v.map(canonical).join(",")}]`;
+  if (v && typeof v === "object") return `{${Object.keys(v).sort().map((k) => `${JSON.stringify(k)}:${canonical((v as Record<string, unknown>)[k])}`).join(",")}}`;
+  return JSON.stringify(v);
+}
+
 export async function saveSettingsAction(payload: string): Promise<{ ok: boolean; message: string; fieldErrors?: Record<string, string> }> {
   try {
     const user = await requirePermission("settings.manage");
@@ -28,8 +35,8 @@ export async function saveSettingsAction(payload: string): Promise<{ ok: boolean
       fieldErrors["forms.contact.notifyTo"] = "Enter a valid email address";
     }
     if (Object.keys(fieldErrors).length) return { ok: false, message: "Please correct the highlighted fields.", fieldErrors };
-    const before = new Map((await db.siteSetting.findMany()).map((s) => [s.key, JSON.stringify(s.value)]));
-    const changed = Object.entries(clean).filter(([k, v]) => before.get(k) !== JSON.stringify(v));
+    const before = new Map((await db.siteSetting.findMany()).map((s) => [s.key, canonical(s.value)]));
+    const changed = Object.entries(clean).filter(([k, v]) => before.get(k) !== canonical(v));
     await db.$transaction(
       changed.map(([key, value]) =>
         db.siteSetting.upsert({

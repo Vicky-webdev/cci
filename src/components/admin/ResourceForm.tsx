@@ -5,6 +5,7 @@ import { useState, useTransition } from "react";
 import type { Fieldset } from "@/lib/admin/fields";
 import { deleteRecord, duplicateRecord, saveRecord, setRecordStatus } from "@/lib/admin/resource-actions";
 import { FieldInput } from "./FieldInput";
+import { slugifyId } from "@/lib/links";
 
 export interface FormCapabilities {
   canSave: boolean;
@@ -40,8 +41,16 @@ export function ResourceForm({
   const [dirty, setDirty] = useState(false);
   const [pending, start] = useTransition();
 
+  const [slugTouched, setSlugTouched] = useState(Boolean(initial.slug));
+  const hasSlug = fieldsets.some((fs) => fs.fields.some((f) => f.name === "slug" && f.type === "slug"));
   const set = (name: string, v: unknown) => {
-    setValues((prev) => ({ ...prev, [name]: v }));
+    setValues((prev) => {
+      const next = { ...prev, [name]: v };
+      // New records: derive the URL slug from the title until the slug is edited by hand.
+      if (name === "title" && hasSlug && !id && !slugTouched) next.slug = slugifyId(String(v ?? ""));
+      return next;
+    });
+    if (name === "slug") setSlugTouched(true);
     setDirty(true);
   };
 

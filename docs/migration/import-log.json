@@ -1,20 +1,8 @@
 {
-  "startedAt": "2026-10-15T02:15:32.661Z",
-  "finishedAt": "2026-10-15T02:15:40.576Z",
+  "startedAt": "2026-10-15T02:17:28.175Z",
+  "finishedAt": "2026-10-15T02:17:36.175Z",
   "mode": "create-missing",
   "dryRun": false,
-  "only": [
-    "settings",
-    "pages",
-    "events",
-    "news",
-    "press",
-    "publications",
-    "awards",
-    "people",
-    "crafts",
-    "media"
-  ],
   "counts": {
     "menuItems": {
       "discovered": 43,
@@ -135,7 +123,7 @@
     },
     "craftLocations": {
       "discovered": 1226,
-      "created": 0,
+      "created": 1226,
       "updated": 0,
       "matched": 0,
       "skipped": 0,
