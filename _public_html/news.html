@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News — Crafts Council of India</title>
+<link rel="stylesheet" href="cci.css">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* =========================================================
+   NEWS PAGE
+========================================================= */
+.event-overlay{
+  position:absolute;
+  inset:0;
+
+  background:linear-gradient(
+    to top,
+    rgba(0,0,0,.68) 0%,
+    rgba(0,0,0,.18) 60%,
+    transparent 100%
+  );
+}
+.event-image{
+  position:relative;
+}
+/* =========================================================
+   INSTAGRAM SKELETON
+========================================================= */
+
+.ig-skeleton{
+  background:linear-gradient(
+    90deg,
+    rgba(255,255,255,0.04) 25%,
+    rgba(255,255,255,0.09) 50%,
+    rgba(255,255,255,0.04) 75%
+  );
+
+  background-size:200% 100%;
+
+  animation:shimmer 1.6s infinite;
+}
+
+@keyframes shimmer{
+  0%{
+    background-position:200% 0;
+  }
+  100%{
+    background-position:-200% 0;
+  }
+}
+
+.ig-post img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+
+  transition:transform .3s ease;
+}
+
+.ig-post:hover img{
+  transform:scale(1.05);
+}
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:640px){
+
+  .event-image{
+    min-height:240px;
+  }
+
+  .event-title{
+    font-size:24px;
+    line-height:1.2;
+  }
+
+  .event-desc{
+    font-size:14px;
+    line-height:1.7;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav id="main-nav"></nav>
+
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<!-- HERO -->
+
+<div class="page-hero">
+
+  <div class="page-hero-content">
+
+    <h1 class="page-title">
+      News
+    </h1>
+
+    <p class="page-subtitle">
+      Stories, exhibitions, workshops, films, and craft initiatives from across India.
+    </p>
+
+  </div>
+
+</div>
+
+<!-- MAIN SECTION -->
+
+<div class="section">
+
+  <!-- GRID -->
+
+  <div class="events-grid" id="eventsGrid"></div>
+
+</div>
+
+<!-- MAIN SCRIPTS -->
+
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+ 
+<script>
+
+/* =========================================================
+   FILTER STATE
+========================================================= */
+
+let currentFilter = 'all';
+
+/* =========================================================
+   DATE PARSER
+========================================================= */
+
+function getEventDate(e){
+
+  if(!e.dates) return new Date(0);
+
+  const match = e.dates.match(/([A-Za-z]+)\s*(\d{1,2})/);
+
+  if(!match) return new Date(0);
+
+  const month = match[1];
+  const day = match[2];
+
+  const yearMatch = e.dates.match(/(\d{4})/);
+
+  const year =
+    yearMatch
+      ? yearMatch[1]
+      : new Date().getFullYear();
+
+  return new Date(`${month} ${day}, ${year}`);
+
+}
+
+/* =========================================================
+   STATUS
+========================================================= */
+
+function getStatus(e){
+
+  const today = new Date();
+
+  const eventDate = getEventDate(e);
+
+  today.setHours(0,0,0,0);
+
+  eventDate.setHours(0,0,0,0);
+
+  return eventDate > today
+    ? 'upcoming'
+    : 'past';
+
+}
+
+/* =========================================================
+   RENDER NEWS
+========================================================= */
+
+function renderNewsListing(filter = 'all') {
+
+  const grid = document.getElementById('eventsGrid');
+
+  if(!grid || !window.NEWS) return;
+
+  const filtered = NEWS
+
+    .filter(function(e){
+
+      if(filter === 'all') return true;
+
+      if(filter === 'upcoming'){
+        return getStatus(e) === 'upcoming';
+      }
+
+      return e.type === filter;
+
+    })
+
+    .sort(function(a,b){
+
+      const statusA = getStatus(a);
+
+      const statusB = getStatus(b);
+
+      if(statusA === 'upcoming' && statusB !== 'upcoming'){
+        return -1;
+      }
+
+      if(statusA !== 'upcoming' && statusB === 'upcoming'){
+        return 1;
+      }
+
+      return getEventDate(b) - getEventDate(a);
+
+    });
+
+  if(!filtered.length){
+
+    grid.innerHTML =
+      '<div style="padding:60px;text-align:center">'
+      + '<h3>No news found</h3>'
+      + '<p>Try another filter</p>'
+      + '</div>';
+
+    return;
+
+  }
+
+  grid.innerHTML = filtered.map(function(e){
+
+    return `
+      <div class="event-card card-hover">
+
+     <a href="news-detail.html?id=${e.id}" class="event-image"
+  style="
+    ${
+      e.image
+        ? `
+          background-image:url('${e.image}');
+          background-size:cover;
+          background-position:center;
+        `
+        : `
+          background:${e.heroGradient};
+          display:flex;
+          align-items:center;
+          justify-content:center;
+          font-size:40px;
+        `
+    }
+  ">
+
+  ${e.image ? '<div class="event-overlay"></div>' : ''}
+
+  ${!e.image ? (e.heroEmoji || '🎨') : ''}
+
+</a>
+
+        <div class="event-content">
+
+          <span class="event-tag">
+            ${
+              getStatus(e) === 'upcoming'
+                ? 'Upcoming'
+                : 'News & Highlights'
+            }
+          </span>
+
+          <h3 class="event-title">
+            ${e.title}
+          </h3>
+
+          <div class="event-meta">
+            <span>
+              📍 ${(e.city || '').split(',')[0]}
+            </span>
+          </div>
+
+          <p class="event-desc">
+            ${e.subtitle || ''}
+          </p>
+
+          <a href="news-detail.html?id=${e.id}" class="event-link">
+            Learn more →
+          </a>
+
+        </div>
+
+      </div>
+    `;
+
+  }).join('');
+
+}
+
+/* =========================================================
+   FILTERS
+========================================================= */
+
+function filterEvents(btn, cat){
+
+  currentFilter = cat;
+
+  document
+    .querySelectorAll('.filter-btn')
+    .forEach(function(b){
+
+      b.classList.remove('active');
+
+    });
+
+  btn.classList.add('active');
+
+  renderNewsListing(cat);
+
+}
+
+/* =========================================================
+   INIT
+========================================================= */
+
+function initNewsPage() {
+  renderNewsListing();
+}
+
+if (window.NEWS) {
+  initNewsPage();
+} else {
+  window.addEventListener('site-scripts-ready', initNewsPage, { once: true });
+  setTimeout(function () {
+    if (window.NEWS) {
+      initNewsPage();
+    }
+  }, 250);
+}
+
+</script>
+ 
+</body>
+</html>

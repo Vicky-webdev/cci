@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Past Events Archive - Crafts Council of India</title>
+
+<link rel="stylesheet" href="cci.css">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* Optional fallback styling if missing */
+.no-events {
+  padding: 60px;
+  text-align: center;
+}
+.event-image {
+  min-height: 240px;
+  position: relative;
+}
+
+.event-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
+
+.event-desc {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Change to 1 for a single line */
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 3em; /* Optional: keeps cards aligned by reserving space for 2 lines */
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<!-- HERO -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">Past Events Archive</h1>
+    <p class="page-subtitle">
+      A timeline of our exhibitions, workshops, and cultural initiatives over the years
+    </p>
+  </div>
+</div>
+
+<!-- CONTENT -->
+<div class="section">
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterEvents(this,'all')">All</button>
+    <button class="filter-btn" onclick="filterEvents(this,'workshop')">Workshops</button>
+    <button class="filter-btn" onclick="filterEvents(this,'exhibition')">Exhibitions</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="events-grid" id="eventsGrid"></div>
+
+  <!-- LOAD MORE -->
+  <div class="load-more">
+    <button class="btn-primary" onclick="loadMoreEvents()">Load More Events</button>
+  </div>
+
+</div>
+
+
+ 
+
+
+<!-- SCRIPTS -->
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+<div id="site-footer"></div>
+<script>
+  let visibleCount = 6;
+let currentFilter = 'all';
+
+// ============================
+// 📅 DATE PARSER (SAME AS EVENTS PAGE)
+// ============================
+function getEventDate(e) {
+  if (!e?.dates) return new Date(0);
+
+  const clean = e.dates
+    .replace(/–/g, '-')
+    .replace(/\s+/g, ' ')
+    .trim();
+
+  const match = clean.match(/[A-Za-z]+\s+\d{1,2},?\s+\d{4}/);
+
+  if (!match) return new Date(0);
+
+  return new Date(match[0]);
+}
+// ============================
+// 🎯 RENDER EVENTS (FIXED)
+// ============================
+
+ 
+
+
+function renderEvents(filter = 'all') {
+  const grid = document.getElementById('eventsGrid');
+
+  if (!grid || !window.PAST_EVENTS) {
+    grid.innerHTML = `<div class="no-events">⚠️ Past events not loaded</div>`;
+    return;
+  }
+
+  const filtered = PAST_EVENTS
+
+    .filter(e => {
+      if (filter === 'all') return true;
+      return (e.type || '').toLowerCase() === filter;
+    })
+
+    .sort((a, b) => getEventDate(b) - getEventDate(a));
+
+  if (!filtered.length) {
+    grid.innerHTML = `
+      <div class="no-events">
+        <h3>No past events found</h3>
+      </div>`;
+    return;
+  }
+
+  const visibleEvents = filtered.slice(0, visibleCount);
+
+ grid.innerHTML = visibleEvents.map(e => {
+    // Normalize gallery
+    if (!e.gallery && e.galleries) {
+        e.gallery = e.galleries.flatMap(g => g.images || []);
+    }
+
+    // Fallback for subtitle if scraper didn't find a short one
+    const displaySubtitle = e.subtitle || (e.description && e.description[0] ? e.description[0].substring(0, 120) + "..." : "");
+
+    return `
+      <div class="event-card card-hover">
+        <a href="event-detail.html?id=${e.id}" class="event-image-link">
+            <div class="event-image" style="
+            ${e.image 
+              ? `background-image:url('${e.image}');background-size:cover;background-position:center;`
+              : `background:${e.heroGradient || 'linear-gradient(160deg,#7A8B60,#4A5830)'};display:flex;align-items:center;justify-content:center;font-size:40px;`
+            }
+          ">
+            ${e.image ? '<div class="event-overlay"></div>' : ''}
+            ${!e.image ? (e.heroEmoji || '🎨') : ''}
+          </div>
+        </a>
+
+<div class="event-content">
+          <span class="event-tag">${e.tagLabel || 'Past Event'}</span>
+          <h3 class="event-title">${e.title || 'Untitled Event'}</h3>
+
+          <div class="event-meta">
+            <span>📅 ${e.dates || 'N/A'}</span>
+            <span>📍 ${(e.city || 'Chennai').split(',')[0]}</span>
+          </div>
+
+          <p class="event-desc">${displaySubtitle}</p>
+
+          <a href="event-detail.html?id=${e.id}" class="event-link">
+            Learn more →
+          </a>
+        </div>
+      </div>
+    `;
+}).join('');
+}
+// ============================
+// 🎛 FILTER
+// ============================
+function filterEvents(btn, category) {
+  currentFilter = category;
+  visibleCount = 6;
+
+  document.querySelectorAll('.filter-btn')
+    .forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+
+  renderEvents(category);
+}
+
+// ============================
+// ➕ LOAD MORE
+// ============================
+function loadMoreEvents() {
+  visibleCount += 6;
+  renderEvents(currentFilter);
+}
+
+
+
+// INIT
+window.addEventListener('site-scripts-ready', function () {
+  renderEvents();
+});
+</script>
+ 
+</body>
+</html>

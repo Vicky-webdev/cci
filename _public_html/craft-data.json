@@ -1,0 +1,6375 @@
+[
+  
+ 
+  {
+  "state": "Odisha",
+  "count": 147,
+  "crafts": [
+    {
+      "craft": "Applique Work",
+      "district": "Puri",
+      "village": "Pipli"
+    },
+    {
+      "craft": "Art Leather",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Bandha Weaving",
+      "district": "Bargarh",
+      "village": "Bargarh, Sonepur, Balangir"
+    },
+    {
+      "craft": "Bandha Weaving",
+      "district": "Cuttack",
+      "village": "Nuapatna, Tigiria"
+    },
+    {
+      "craft": "Bandha Weaving",
+      "district": "Sambalpur",
+      "village": "Sambalpur, Barpali"
+    },
+    {
+      "craft": "Artificial Bonsai",
+      "district": "Bhubaneswar",
+      "village": "Bhubaneswar"
+    },
+    {
+      "craft": "Artistic Footwear",
+      "district": "Cuttack",
+      "village": "Baran"
+    },
+    {
+      "craft": "Artistic Mat",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Batik Printing",
+      "district": "Balangir",
+      "village": "Deogaon"
+    },
+    {
+      "craft": "Betel Nut Craft",
+      "district": "Ganjam",
+      "village": "Berhampur, Belaguntha"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Balangir",
+      "village": "Toroba"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Balasore",
+      "village": "Remuna"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Dhenkanal",
+      "village": "Mikan, Indipur, Okherma, Karamal"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Gajapati",
+      "village": "Paralakhemundi"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Ganjam",
+      "village": "Jagmohan, Mamudia, Devbhumi, Mathura, Surya Nagar, Nuapentha, Patrapur, Dhabra, Belaguntha, Berhampur"
+    },
+    {
+      "craft": "Brass & Bell Metal Work",
+      "district": "Puri",
+      "village": "Balakati, Bainchua, Rajasunakhala, Brahmagiri, Itamati"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Dhenkanal",
+      "village": "Rai Narsinghpur"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Gajapati",
+      "village": "Paralakhemundi"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Koraput",
+      "village": "Baipariguda"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Nabarangpur",
+      "village": "Nuaguda"
+    },
+    {
+      "craft": "Clay Toys",
+      "district": "Koraput",
+      "village": "Koraput"
+    },
+    {
+      "craft": "Cloth Flower",
+      "district": "Puri",
+      "village": "Pipli"
+    },
+    {
+      "craft": "Coconut Shell Craft",
+      "district": "Ganjam",
+      "village": "Berhampur, Belaguntha"
+    },
+    {
+      "craft": "Coconut Fiber Craft",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Coir Craft",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Costume Jewellery",
+      "district": "Dhenkanal",
+      "village": "Karamal"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Cuttack",
+      "village": "Narsinghpur, Anugul, Baramba"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Dhenkanal",
+      "village": "Saptasaiya, Sadeibereni"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Mayurbhanj",
+      "village": "Sarisha Kotha"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Phulbani",
+      "village": "Phulbani"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Phulbani",
+      "village": "Podar Sahi"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Rayagada",
+      "village": "Daspala"
+    },
+    {
+      "craft": "Dhokra Casting",
+      "district": "Rayagada",
+      "village": "Jigidihi"
+    },
+    {
+      "craft": "Durry Carpet",
+      "district": "Sambalpur",
+      "village": "Barpali"
+    },
+    {
+      "craft": "Embroidery",
+      "district": "Puri",
+      "village": "Pipli"
+    },
+    {
+      "craft": "Gem Stone Processing",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Golden Grass Craft",
+      "district": "Kendrapara",
+      "village": "Jajang, Barua"
+    },
+    {
+      "craft": "Gopa Craft",
+      "district": "Puri",
+      "village": "Gop"
+    },
+    {
+      "craft": "Ganjifa Painting",
+      "district": "Gajapati",
+      "village": "Paralakhemundi"
+    },
+    {
+      "craft": "Ganjifa Painting",
+      "district": "Khurda",
+      "village": "Bhubaneswar"
+    },
+    {
+      "craft": "Ganjifa Painting",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Horn Work",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Jaikhadi Work",
+      "district": "Jagatsinghpur",
+      "village": "Jagatsinghpur"
+    },
+    {
+      "craft": "Jute Craft",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Keora Leaf Product",
+      "district": "Kendrapara",
+      "village": "Rajnagar"
+    },
+    {
+      "craft": "Kansya Metal Work",
+      "district": "Balasore",
+      "village": "Remuna"
+    },
+    {
+      "craft": "Kansya Metal Work",
+      "district": "Cuttack",
+      "village": "Bhatimunda"
+    },
+    {
+      "craft": "Kansya Metal Work",
+      "district": "Dhenkanal",
+      "village": "Mikan, Gopalpurpatna"
+    },
+    {
+      "craft": "Kansya Metal Work",
+      "district": "Gunupur",
+      "village": "Gunupur, Sahara"
+    },
+    {
+      "craft": "Kansya Metal Work",
+      "district": "Puri",
+      "village": "Balakati, Bainchua, Brahmagiri, Itamati, Rajasunakhala"
+    },
+    {
+      "craft": "Kotpad Saree",
+      "district": "Koraput",
+      "village": "Kotpad"
+    },
+    {
+      "craft": "Lac Craft",
+      "district": "Nabarangpur",
+      "village": "Nabarangpur"
+    },
+    {
+      "craft": "Leather Footwear",
+      "district": "Cuttack",
+      "village": "Baran"
+    },
+    {
+      "craft": "Natural Fibre Craft",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Paddy & Root Craft",
+      "district": "Balangir",
+      "village": "Kumudipadar, Titilagarh, Saraibahal"
+    },
+    {
+      "craft": "Paddy & Root Craft",
+      "district": "Kalahandi",
+      "village": "Dumermunda"
+    },
+    {
+      "craft": "Paddy & Root Craft",
+      "district": "Nabarangpur",
+      "village": "Jhaliaguda"
+    },
+    {
+      "craft": "Palm Leaf Decorative",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Palm Leaf Engraving",
+      "district": "Bhubaneswar",
+      "village": ""
+    },
+    {
+      "craft": "Palm Leaf Engraving",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Papier Mache Mask",
+      "district": "Ganjam",
+      "village": "Ganjam"
+    },
+    {
+      "craft": "Papier Mache Mask",
+      "district": "Khurda",
+      "village": "Bhubaneswar"
+    },
+    {
+      "craft": "Papier Mache Mask",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Pattachitra Painting",
+      "district": "Ganjam",
+      "village": ""
+    },
+    {
+      "craft": "Pattachitra Painting",
+      "district": "Khurda",
+      "village": "Bhubaneswar"
+    },
+    {
+      "craft": "Pattachitra Painting",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Pattachitra & Tassar Painting",
+      "district": "Ganjam",
+      "village": "Bomkai"
+    },
+    {
+      "craft": "Sabai Grass Craft",
+      "district": "Mayurbhanj",
+      "village": "Baripada"
+    },
+    {
+      "craft": "Sea Shell Craft",
+      "district": "Puri",
+      "village": ""
+    },
+    {
+      "craft": "Silver Filigree",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Silver Filigree",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Soft Toys",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Sholapith Craft",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Balasore",
+      "village": "Balasore"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Jajpur",
+      "village": "Sukhapada"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Khurda",
+      "village": "Khandagiri, Bhubaneswar"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Puri",
+      "village": "Puri"
+    },
+    {
+      "craft": "Straw Craft",
+      "district": "Dhenkanal",
+      "village": "Bhuban Block, Jiral"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Bargarh",
+      "village": "Barpali"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Bhubaneswar",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Cuttack",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Ganjam",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Koraput",
+      "village": "Santeiput"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Mayurbhanj",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Puri",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Sambalpur",
+      "village": "Dhoapara"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Sonepur",
+      "village": "Sonepur"
+    },
+    {
+      "craft": "Theatrical Dress",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Tribal Jewellery",
+      "district": "Dhenkanal",
+      "village": "Govardhanpur, Bhuban, Allakhurna, Indipur"
+    },
+    {
+      "craft": "Tribal Jewellery",
+      "district": "Nabarangpur",
+      "village": "Taragaon, Pilika"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Ganjam",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Puri",
+      "village": "Puri, Raghurajpur"
+    },
+    {
+      "craft": "Wooden Inlay",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Wooden Painted Toys",
+      "district": "Puri",
+      "village": "Raghurajpur"
+    },
+    {
+      "craft": "Woolen Carpet Weaving",
+      "district": "Sambalpur",
+      "village": "Sambalpur"
+    },
+    {
+      "craft": "Zari Work",
+      "district": "Cuttack",
+      "village": "Cuttack"
+    },
+    {
+      "craft": "Cloth Patchwork",
+      "district": "Puri",
+      "village": "Pipli"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Angul",
+      "village": "Chhalipada, Tubey"
+    },
+    {
+      "craft": "Brass, Bellmetal",
+      "district": "Angul",
+      "village": "Chhalipada, Tubey"
+    },
+    {
+      "craft": "Stone - Nilagiri",
+      "district": "Balasore",
+      "village": "Nilagiri, Belagadia, Sora Kantabania"
+    },
+    {
+      "craft": "Paddy craft",
+      "district": "Balasore",
+      "village": "Nilagiri, Belagadia, Sora Kantabania"
+    },
+    {
+      "craft": "Brass & Bell metal",
+      "district": "Bargarh",
+      "village": "Katapalli, Kultatikira, Sukuda Barapalli"
+    },
+    {
+      "craft": "Cane & Bamboo",
+      "district": "Bargarh",
+      "village": "Katapalli, Kultatikira, Sukuda Barapalli"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Bargarh",
+      "village": "Katapalli, Kultatikira, Sukuda Barapalli"
+    },
+    {
+      "craft": "Paddy craft",
+      "district": "Bhadrak",
+      "village": "Kerasahi, Bideipur, Raipur"
+    },
+    {
+      "craft": "Wood carving",
+      "district": "Bhadrak",
+      "village": "Kerasahi, Bideipur, Raipur"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Bolangir",
+      "village": "Puintala, Lakhapali, Kumari Bhali, Ranipur, Jharial"
+    },
+    {
+      "craft": "Paddy craft",
+      "district": "Bolangir",
+      "village": "Puintala, Lakhapali, Kumari Bhali, Ranipur, Jharial"
+    },
+    {
+      "craft": "Applique",
+      "district": "Bolangir",
+      "village": "Puintala, Lakhapali, Kumari Bhali, Ranipur, Jharial"
+    },
+    {
+      "craft": "Applique",
+      "district": "Boudha",
+      "village": "Buttupalli"
+    },
+    {
+      "craft": "Stone carving",
+      "district": "Cuttack",
+      "village": "Lalitgiri, Ichhapur, Cuttack, Brahmansailo, Kadampada, Talabasta, Ramnagar, Badabarsingh, Ranasinghpur, Jagannathpur, Tarato"
+    },
+    {
+      "craft": "Patta & Tassar painting",
+      "district": "Cuttack",
+      "village": "Lalitgiri, Ichhapur, Cuttack, Brahmansailo, Kadampada, Talabasta, Ramnagar, Badabarsingh, Ranasinghpur, Jagannathpur, Tarato"
+    },
+    {
+      "craft": "Golden grass",
+      "district": "Cuttack",
+      "village": "Lalitgiri, Ichhapur, Cuttack, Brahmansailo, Kadampada, Talabasta, Ramnagar, Badabarsingh, Ranasinghpur, Jagannathpur, Tarato"
+    },
+    {
+      "craft": "Bamboo",
+      "district": "Deogarh",
+      "village": "Bampada"
+    },
+    {
+      "craft": "Cane craft",
+      "district": "Gajapati",
+      "village": "Kainpur"
+    },
+    {
+      "craft": "Bell metal",
+      "district": "Ganjam",
+      "village": "Mamudiha"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Jagatsinghpur",
+      "village": "Lunukua, Jagatsinghpur"
+    },
+    {
+      "craft": "Golden grass",
+      "district": "Jagatsinghpur",
+      "village": "Lunukua, Jagatsinghpur"
+    },
+    {
+      "craft": "Golden grass",
+      "district": "Jajpur / Jharsuguda",
+      "village": "Gadamadhupur, Sukhuapoda, Baidarajpur"
+    },
+    {
+      "craft": "Brass & Bell metal",
+      "district": "Jajpur / Jharsuguda",
+      "village": "Gadamadhupur, Sukhuapoda, Baidarajpur"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Jajpur / Jharsuguda",
+      "village": "Gadamadhupur, Sukhuapoda, Baidarajpur"
+    },
+    {
+      "craft": "Wood carving",
+      "district": "Kalahandi",
+      "village": "Khairipadar, Rengalpalli, Narla"
+    },
+    {
+      "craft": "Bamboo",
+      "district": "Kalahandi",
+      "village": "Khairipadar, Rengalpalli, Narla"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Kandhamal",
+      "village": "Phiringia"
+    },
+    {
+      "craft": "Nalia craft",
+      "district": "Kendrapada",
+      "village": "Baliguda, Jajanga, Baro, Teragaon, Nantara, Pareswar"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Keonjhar",
+      "village": "Harichandanpur, Haldharpur, Famirpur, Kusumpur, Dhakota"
+    },
+    {
+      "craft": "Paper Machie",
+      "district": "Keonjhar",
+      "village": "Harichandanpur, Haldharpur, Famirpur, Kusumpur, Dhakota"
+    },
+    {
+      "craft": "Paddy craft",
+      "district": "Keonjhar",
+      "village": "Harichandanpur, Haldharpur, Famirpur, Kusumpur, Dhakota"
+    },
+    {
+      "craft": "Stone carving",
+      "district": "Keonjhar",
+      "village": "Harichandanpur, Haldharpur, Famirpur, Kusumpur, Dhakota"
+    },
+    {
+      "craft": "Patta & Palm-leaf engraving",
+      "district": "Khordha",
+      "village": "Khamang Sasan, Kakarudrapur, Kenduli, Bhakarsahi, Rathijema, Bainchua, Narangarh, Bhagalpur, Hadapada, Sishupal, Lingipur, Dhauli, Banapur, Nuagaon"
+    },
+    {
+      "craft": "Applique",
+      "district": "Khordha",
+      "village": "Khamang Sasan, Kakarudrapur, Kenduli, Bhakarsahi, Rathijema, Bainchua, Narangarh, Bhagalpur, Hadapada, Sishupal, Lingipur, Dhauli, Banapur, Nuagaon"
+    },
+    {
+      "craft": "Brass & Bellmetal",
+      "district": "Khordha",
+      "village": "Khamang Sasan, Kakarudrapur, Kenduli, Bhakarsahi, Rathijema, Bainchua, Narangarh, Bhagalpur, Hadapada, Sishupal, Lingipur, Dhauli, Banapur, Nuagaon"
+    },
+    {
+      "craft": "Cane & bamboo",
+      "district": "Khordha",
+      "village": "Khamang Sasan, Kakarudrapur, Kenduli, Bhakarsahi, Rathijema, Bainchua, Narangarh, Bhagalpur, Hadapada, Sishupal, Lingipur, Dhauli, Banapur, Nuagaon"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Khordha",
+      "village": "Khamang Sasan, Kakarudrapur, Kenduli, Bhakarsahi, Rathijema, Bainchua, Narangarh, Bhagalpur, Hadapada, Sishupal, Lingipur, Dhauli, Banapur, Nuagaon"
+    },
+    {
+      "craft": "Cane & Bamboo",
+      "district": "Koraput",
+      "village": "Kuusumi, Goudaguda, Kumar Limba, Bapaniguda, Bastamba, Girla"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Koraput",
+      "village": "Kuusumi, Goudaguda, Kumar Limba, Bapaniguda, Bastamba, Girla"
+    },
+    {
+      "craft": "Tribal Jewelry",
+      "district": "Koraput",
+      "village": "Kuusumi, Goudaguda, Kumar Limba, Bapaniguda, Bastamba, Girla"
+    },
+    {
+      "craft": "Iron craft",
+      "district": "Koraput",
+      "village": "Kuusumi, Goudaguda, Kumar Limba, Bapaniguda, Bastamba, Girla"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Malkangiri",
+      "village": "Kumhargudi"
+    },
+    {
+      "craft": "Dhokra casting",
+      "district": "Malkangiri",
+      "village": "Kumhargudi"
+    },
+    {
+      "craft": "Bamboo craft",
+      "district": "Malkangiri",
+      "village": "Kumhargudi"
+    },
+    {
+      "craft": "Stone carving",
+      "district": "Mayurbhanj",
+      "village": "Jesna, Kuliana, Khunta, Guhaldih"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Nabarangpur",
+      "village": "Tandaguda, Khatiguda, Pilka, Chandahandi, Ratakhandipada, Dhurupada, Dabugaon, Limbhata"
+    },
+    {
+      "craft": "Wood craft",
+      "district": "Nabarangpur",
+      "village": "Tandaguda, Khatiguda, Pilka, Chandahandi, Ratakhandipada, Dhurupada, Dabugaon, Limbhata"
+    },
+    {
+      "craft": "Brass & Bellametal",
+      "district": "Nayagarh",
+      "village": "Kantilo, Khalisahi, Khandapada, Adakata"
+    },
+    {
+      "craft": "Wood carving",
+      "district": "Nayagarh",
+      "village": "Kantilo, Khalisahi, Khandapada, Adakata"
+    },
+    {
+      "craft": "Dhokra casting",
+      "district": "Nayagarh",
+      "village": "Kantilo, Khalisahi, Khandapada, Adakata"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Nuapada",
+      "village": "Nandasil"
+    },
+    {
+      "craft": "Sea Shell",
+      "district": "Puri",
+      "village": "Pipili, Puri, Konark, Raghurajpur, Dandasahi, Malida, Satasankha, Sakhigopal"
+    },
+    {
+      "craft": "Dhokra casting & Tribal Jewelry",
+      "district": "Rayagada",
+      "village": "Jhhigidi, Khatiguda, Puttasingi, Chatikana, Sorispadar, Amalabhat, Kumudannbali"
+    },
+    {
+      "craft": "Soura painting",
+      "district": "Rayagada",
+      "village": "Jhhigidi, Khatiguda, Puttasingi, Chatikana, Sorispadar, Amalabhat, Kumudannbali"
+    },
+    {
+      "craft": "Dongaria Kondh Shawl",
+      "district": "Rayagada",
+      "village": "Jhhigidi, Khatiguda, Puttasingi, Chatikana, Sorispadar, Amalabhat, Kumudannbali"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Rayagada",
+      "village": "Jhhigidi, Khatiguda, Puttasingi, Chatikana, Sorispadar, Amalabhat, Kumudannbali"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Sambalpur",
+      "village": "Sahajbahal"
+    },
+    {
+      "craft": "Dhokra casting",
+      "district": "Sambalpur",
+      "village": "Sahajbahal"
+    },
+    {
+      "craft": "Golden grass",
+      "district": "Sambalpur",
+      "village": "Sahajbahal"
+    },
+    {
+      "craft": "Cane & Bamboo",
+      "district": "Subarnapur",
+      "village": "Kuin Bahal, Silati, Ulunda"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Subarnapur",
+      "village": "Kuin Bahal, Silati, Ulunda"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Sundergarh",
+      "village": "Sanapatrapalli, Kundra, Suanbahal, Khuntgaon"
+    },
+    {
+      "craft": "Bamboo",
+      "district": "Sundergarh",
+      "village": "Sanapatrapalli, Kundra, Suanbahal, Khuntgaon"
+    }
+  ]
+},
+
+
+{
+  "state": "Uttar Pradesh",
+  "count": 86,
+  "crafts": [
+    {
+      "craft": "Carpets & Dhurries",
+      "district": "Agra",
+      "village": "Agra, Katra Neel"
+    },
+    {
+      "craft": "Glass Work",
+      "district": "Agra",
+      "village": "Agra"
+    },
+    {
+      "craft": "Knotted Carpets",
+      "district": "Agra",
+      "village": "Fatehpur Sikri"
+    },
+    {
+      "craft": "Marble Carving",
+      "district": "Agra",
+      "village": "Agra"
+    },
+    {
+      "craft": "Pachchikari Stone Inlay",
+      "district": "Agra",
+      "village": "Tajganj, Gokulpura"
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Agra",
+      "village": "Agra"
+    },
+    {
+      "craft": "Soft Stone Carving",
+      "district": "Agra",
+      "village": ""
+    },
+    {
+      "craft": "Zardozi Embroidery",
+      "district": "Agra",
+      "village": "Tajganj, Loha Mandi, Mewati"
+    },
+    {
+      "craft": "Applique",
+      "district": "Aligarh",
+      "village": "Aligarh"
+    },
+    {
+      "craft": "Carpets & Dhurries",
+      "district": "Aligarh",
+      "village": "Aligarh"
+    },
+    {
+      "craft": "Glass Work",
+      "district": "Aligarh",
+      "village": "Purdil Nagar"
+    },
+    {
+      "craft": "Cane Furniture",
+      "district": "Prayagraj",
+      "village": "Kydganj"
+    },
+    {
+      "craft": "Date Palm Craft",
+      "district": "Prayagraj",
+      "village": "Prayagraj"
+    },
+    {
+      "craft": "Moonj Basketry",
+      "district": "Prayagraj",
+      "village": "Naini, East Mahewa"
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Prayagraj",
+      "village": "Kydganj"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Prayagraj",
+      "village": "Prayagraj"
+    },
+    {
+      "craft": "Black Pottery",
+      "district": "Azamgarh",
+      "village": "Nizamabad"
+    },
+    {
+      "craft": "Shazar Stone Jewellery",
+      "district": "Banda",
+      "village": "Banda"
+    },
+    {
+      "craft": "Bone Carving",
+      "district": "Barabanki",
+      "village": "Barabanki"
+    },
+    {
+      "craft": "Chikankari Embroidery",
+      "district": "Barabanki",
+      "village": "Barabanki"
+    },
+    {
+      "craft": "Basketry",
+      "district": "Bareilly",
+      "village": "Bareilly"
+    },
+    {
+      "craft": "Cane Furniture",
+      "district": "Bareilly",
+      "village": "Bithri Chainpur, Ramnagar, Alampur, Zafrabad, Bhojipura"
+    },
+    {
+      "craft": "Zardozi Embroidery",
+      "district": "Bareilly",
+      "village": "Inayatganj, Jakheera, Meera Ki Peth"
+    },
+    {
+      "craft": "Moonj Basketry",
+      "district": "Bahraich",
+      "village": "Bishnupur"
+    },
+    {
+      "craft": "Tharu Applique",
+      "district": "Bahraich",
+      "village": "Bishnupur Balagaon"
+    },
+    {
+      "craft": "Ebony Wood Carving",
+      "district": "Bijnor",
+      "village": "Nagina"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Bijnor",
+      "village": ""
+    },
+    {
+      "craft": "Tarkashi Metal Inlay",
+      "district": "Bijnor",
+      "village": "Nagina"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Bulandshahr",
+      "village": ""
+    },
+    {
+      "craft": "Khurja Pottery",
+      "district": "Bulandshahr",
+      "village": "Khurja"
+    },
+    {
+      "craft": "Wood & Lac Turnery",
+      "district": "Chitrakoot",
+      "village": "Chitrakoot"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Deoria",
+      "village": "Mundera, Banwari"
+    },
+    {
+      "craft": "Glass Work",
+      "district": "Etah",
+      "village": "Jalesar"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Farrukhabad",
+      "village": "Farrukhabad"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Farrukhabad",
+      "village": ""
+    },
+    {
+      "craft": "Glass Work",
+      "district": "Firozabad",
+      "village": "Firozabad"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Ghaziabad",
+      "village": "Pilkhuwa"
+    },
+    {
+      "craft": "Bone Carving",
+      "district": "Ghaziabad",
+      "village": "Loni"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Ghaziabad",
+      "village": ""
+    },
+    {
+      "craft": "Tarkashi Metal Inlay",
+      "district": "Ghaziabad",
+      "village": "Pilkhuwa"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Ghaziabad",
+      "village": "Pilkhuwa"
+    },
+    {
+      "craft": "Moonj Basketry",
+      "district": "Gorakhpur",
+      "village": "Aurangabad, Astrapur"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Gorakhpur",
+      "village": "Gorakhpur"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Jhansi",
+      "village": ""
+    },
+    {
+      "craft": "Handloom",
+      "district": "Lalitpur",
+      "village": ""
+    },
+    {
+      "craft": "Applique",
+      "district": "Lucknow",
+      "village": "Lucknow"
+    },
+    {
+      "craft": "Basketry",
+      "district": "Lucknow",
+      "village": "Lucknow"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Lucknow",
+      "village": "Masaganj, Aminabad, Raja Bazaar, Baag Bazaar, Nishad Ganj"
+    },
+    {
+      "craft": "Bone Carving",
+      "district": "Lucknow",
+      "village": "Lucknow"
+    },
+    {
+      "craft": "Chikankari Embroidery",
+      "district": "Lucknow",
+      "village": "Chowk, Daliganj"
+    },
+    {
+      "craft": "Clay Toys",
+      "district": "Lucknow",
+      "village": "Takaitganj"
+    },
+    {
+      "craft": "Date Palm Craft",
+      "district": "Lucknow",
+      "village": "Chinhat"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Lucknow",
+      "village": ""
+    },
+    {
+      "craft": "Kamdani Embroidery",
+      "district": "Lucknow",
+      "village": "Rustam Nagar"
+    },
+    {
+      "craft": "Pottery",
+      "district": "Lucknow",
+      "village": "Chinhat"
+    },
+    {
+      "craft": "Calligraphy",
+      "district": "Lucknow",
+      "village": "Jamailganj"
+    },
+    {
+      "craft": "Sheet Metal Work",
+      "district": "Lucknow",
+      "village": "Ahiya Ganj"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Lucknow",
+      "village": "Lucknow, Chinhat"
+    },
+    {
+      "craft": "Zardozi Embroidery",
+      "district": "Lucknow",
+      "village": "Chaupatiyan, Wazir Bagh, Rustam Nagar, Shah Ganj, Husainabad"
+    },
+    {
+      "craft": "Tarkashi Metal Inlay",
+      "district": "Mainpuri",
+      "village": "Mainpuri"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Mathura",
+      "village": ""
+    },
+    {
+      "craft": "Marble Carving",
+      "district": "Mathura",
+      "village": "Mathura, Vrindavan"
+    },
+    {
+      "craft": "Soft Stone Carving",
+      "district": "Mathura",
+      "village": ""
+    },
+    {
+      "craft": "Handloom",
+      "district": "Meerut",
+      "village": ""
+    },
+    {
+      "craft": "Carpets & Dhurries",
+      "district": "Mirzapur",
+      "village": "Mirzapur"
+    },
+    {
+      "craft": "Bone Carving",
+      "district": "Moradabad",
+      "village": "Moradabad, Sarai Tarin"
+    },
+    {
+      "craft": "Brassware",
+      "district": "Moradabad",
+      "village": "Moradabad"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Muzaffarnagar",
+      "village": ""
+    },
+    {
+      "craft": "Bamboo Flutes",
+      "district": "Pilibhit",
+      "village": "Pilibhit"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Raebareli",
+      "village": ""
+    },
+    {
+      "craft": "Applique",
+      "district": "Rampur",
+      "village": "Rampur"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Rampur",
+      "village": ""
+    },
+    {
+      "craft": "Tarkashi Metal Inlay",
+      "district": "Saharanpur",
+      "village": "Saharanpur"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Saharanpur",
+      "village": "Purani Mandi, Sheopuri Mandi, Kamboh Ka Pul"
+    },
+    {
+      "craft": "Bone Carving",
+      "district": "Sambhal",
+      "village": "Sambhal"
+    },
+    {
+      "craft": "Carpets & Dhurries",
+      "district": "Sant Ravidas Nagar",
+      "village": "Bhadohi, Gyanpur, Gopiganj, Khamaria"
+    },
+    {
+      "craft": "Knotted Carpets",
+      "district": "Shahjahanpur",
+      "village": "Shahjahanpur"
+    },
+    {
+      "craft": "Tharu Applique",
+      "district": "Shravasti",
+      "village": "Shravasti"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Varanasi",
+      "village": "Varanasi"
+    },
+    {
+      "craft": "Glass Work",
+      "district": "Varanasi",
+      "village": "Varanasi"
+    },
+    {
+      "craft": "Meenakari Enamel Work",
+      "district": "Varanasi",
+      "village": "Varanasi"
+    },
+    {
+      "craft": "Repousse Work",
+      "district": "Varanasi",
+      "village": "Kashipura, Lallapura, Ramghat"
+    },
+    {
+      "craft": "Soft Stone Carving",
+      "district": "Varanasi",
+      "village": "Ramnagar, Chunar, Hamirpur"
+    },
+    {
+      "craft": "Wood & Lac Turnery",
+      "district": "Varanasi",
+      "village": "Kashmiriganj"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Varanasi",
+      "village": "Kashmiriganj, Sunderpur, Laksa, Rajghat, Sonarpura"
+    },
+    {
+      "craft": "Zardozi Embroidery",
+      "district": "Varanasi",
+      "village": "Chittanpura, Koila Bazaar, Shivala, Lallapura, Jaitpura"
+    }
+  ]
+},
+
+
+{
+  "state": "Jammu & Kashmir",
+  "count": 84,
+  "crafts": [
+    {
+      "craft": "Crewel Work",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Gabba Rugs",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Anantnag",
+      "village": ""
+    },
+    {
+      "craft": "Wicker Work",
+      "district": "Anantnag",
+      "village": "Anantnag Town, Doru, Dialgam, Qaimoh"
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Budgam",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Budgam",
+      "village": ""
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Budgam",
+      "village": ""
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Budgam",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Budgam",
+      "village": ""
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Budgam",
+      "village": "Shankar Pora"
+    },
+    {
+      "craft": "Wicker Work",
+      "district": "Budgam",
+      "village": "Charar-e-Sharif"
+    },
+    {
+      "craft": "Copper Ware",
+      "district": "Baramulla",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Baramulla",
+      "village": ""
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Baramulla",
+      "village": "Delina, Wagoora"
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Baramulla",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Baramulla",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Doda",
+      "village": ""
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Jammu",
+      "village": "Kanachak"
+    },
+    {
+      "craft": "Basohli Painting",
+      "district": "Jammu",
+      "village": "Jammu, Poonch, Kathua, Rajouri, Doda, Bani, Udhampur"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Jammu",
+      "village": ""
+    },
+    {
+      "craft": "Chain Stitch Embroidery",
+      "district": "Jammu",
+      "village": ""
+    },
+    {
+      "craft": "Ari Work",
+      "district": "Kathua",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Kathua",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Kathua",
+      "village": ""
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Kathua",
+      "village": "Mirth, Bemali"
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Kupwara",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Kupwara",
+      "village": ""
+    },
+    {
+      "craft": "Namda Rugs",
+      "district": "Kupwara",
+      "village": "Kupwara"
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Kupwara",
+      "village": ""
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Kupwara",
+      "village": "Shah Mohalla"
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Kupwara",
+      "village": ""
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Kupwara",
+      "village": "Trehgam, Tangdhar"
+    },
+    {
+      "craft": "Basketry",
+      "district": "Ladakh",
+      "village": "Kargil, Bodh Kharbu, Lamayuru, Saspol, Chushot"
+    },
+    {
+      "craft": "Challi Woolen Textiles",
+      "district": "Ladakh",
+      "village": ""
+    },
+    {
+      "craft": "Ritual Cloth Installations",
+      "district": "Ladakh",
+      "village": "Leh"
+    },
+    {
+      "craft": "Sheet Metal Work",
+      "district": "Ladakh",
+      "village": ""
+    },
+    {
+      "craft": "Challi Woolen Textiles",
+      "district": "Leh",
+      "village": "Changtang Valley"
+    },
+    {
+      "craft": "Chikri Wood Work",
+      "district": "Leh",
+      "village": ""
+    },
+    {
+      "craft": "Hand Spinning",
+      "district": "Leh",
+      "village": "Changtang Valley, Leh Town"
+    },
+    {
+      "craft": "Khabdan Carpets",
+      "district": "Leh",
+      "village": "Leh Town"
+    },
+    {
+      "craft": "Leather Craft",
+      "district": "Leh",
+      "village": ""
+    },
+    {
+      "craft": "Metal Casting",
+      "district": "Leh",
+      "village": ""
+    },
+    {
+      "craft": "Metal Work",
+      "district": "Leh",
+      "village": "Chilling"
+    },
+    {
+      "craft": "Paabu Leather Boots",
+      "district": "Leh",
+      "village": "Nubra Valley, Choglamsar, Changtang Valley"
+    },
+    {
+      "craft": "Painted Wood",
+      "district": "Leh",
+      "village": ""
+    },
+    {
+      "craft": "Thangka Painting",
+      "district": "Leh",
+      "village": "Leh Town, Choglamsar"
+    },
+    {
+      "craft": "Tie & Dye Textile",
+      "district": "Leh",
+      "village": "Sabu, Nubra Valley"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Leh",
+      "village": "Wanla, Choglamsar"
+    },
+    {
+      "craft": "Zari Embroidered Footwear",
+      "district": "Leh",
+      "village": ""
+    },
+    {
+      "craft": "Ari Work",
+      "district": "Poonch",
+      "village": ""
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Poonch",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Poonch",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Poonch",
+      "village": ""
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Pulwama",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Pulwama",
+      "village": ""
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Pulwama",
+      "village": "Gangoo, Sutsu"
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Pulwama",
+      "village": ""
+    },
+    {
+      "craft": "Ari Work",
+      "district": "Rajouri",
+      "village": ""
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Rajouri",
+      "village": ""
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Rajouri",
+      "village": "Thanna Mandi"
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Rajouri",
+      "village": ""
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Rajouri",
+      "village": ""
+    },
+    {
+      "craft": "Ari Work",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Copper Ware",
+      "district": "Srinagar",
+      "village": "Nowhatta Bazaar, Zaina Kadal, Fateh Kadal, Rainawari, Jama Masjid"
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Gabba Rugs",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Srinagar",
+      "village": "Umar Colony, Nowhatta Bazaar, Rainawari, Fateh Kadal"
+    },
+    {
+      "craft": "Namda Rugs",
+      "district": "Srinagar",
+      "village": "Zahid Pora, Umar Colony, Jamalatta, Gojwara, Rang Masjid"
+    },
+    {
+      "craft": "Papier Mache",
+      "district": "Srinagar",
+      "village": "Safa Kadal, Lal Chowk, Doni Pora"
+    },
+    {
+      "craft": "Pinjrakari & Khatumband Wood Work",
+      "district": "Srinagar",
+      "village": "Chattabal"
+    },
+    {
+      "craft": "Rezkar Wood Work",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Sozni Embroidery",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Tilla Work",
+      "district": "Srinagar",
+      "village": ""
+    },
+    {
+      "craft": "Tsug Dul Woolen Rugs",
+      "district": "Srinagar",
+      "village": "Kharnaling"
+    },
+    {
+      "craft": "Walnut Wood Carving",
+      "district": "Srinagar",
+      "village": "Fateh Kadal, Channa Mohalla, Urdu Bazaar"
+    },
+    {
+      "craft": "Wicker Work",
+      "district": "Srinagar",
+      "village": "Hazratbal, Harwan, Shalabugh, Sowra"
+    },
+    {
+      "craft": "Ari Work",
+      "district": "Udhampur",
+      "village": ""
+    },
+    {
+      "craft": "Crewel Work",
+      "district": "Udhampur",
+      "village": ""
+    },
+    {
+      "craft": "Kaleen Carpets",
+      "district": "Udhampur",
+      "village": ""
+    },
+    {
+      "craft": "Kashidakari Embroidery",
+      "district": "Udhampur",
+      "village": ""
+    }
+  ]
+},
+
+{
+  "state": "Rajasthan",
+  "count": 78,
+  "crafts": [
+    {
+      "craft": "Bandhej & Leheriya Tie-Dye",
+      "district": "Ajmer",
+      "village": "Ajmer"
+    },
+    {
+      "craft": "Leather Work",
+      "district": "Ajmer",
+      "village": "Ajmer"
+    },
+    {
+      "craft": "Marble Carving",
+      "district": "Ajmer",
+      "village": "Kishangarh"
+    },
+    {
+      "craft": "Miniature Painting",
+      "district": "Ajmer",
+      "village": "Kishangarh"
+    },
+    {
+      "craft": "Phad Painting",
+      "district": "Ajmer",
+      "village": "Shahpura"
+    },
+    {
+      "craft": "Bandhej & Leheriya Tie-Dye",
+      "district": "Alwar",
+      "village": "Alwar"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Alwar",
+      "village": "Alwar"
+    },
+    {
+      "craft": "Bandhej Tie-Dye",
+      "district": "Barmer",
+      "village": "Barmer"
+    },
+    {
+      "craft": "Camel Trappings",
+      "district": "Barmer",
+      "village": ""
+    },
+    {
+      "craft": "Leather Work",
+      "district": "Beawar",
+      "village": "Tilonia"
+    },
+    {
+      "craft": "Bandhej Tie-Dye",
+      "district": "Bikaner",
+      "village": "Chadwon Ka Mohalla"
+    },
+    {
+      "craft": "Bhitti Chitra Wall Painting",
+      "district": "Bikaner",
+      "village": "Matheran Gali, Bhujia Bazaar"
+    },
+    {
+      "craft": "Camel Trappings",
+      "district": "Bikaner",
+      "village": ""
+    },
+    {
+      "craft": "Gangaur Idol Making",
+      "district": "Bikaner",
+      "village": "Bhujia Bazaar"
+    },
+    {
+      "craft": "Meenakari & Kundan Jewellery",
+      "district": "Bikaner",
+      "village": "Sunaron Ki Guwar"
+    },
+    {
+      "craft": "Meghwal Embroidery",
+      "district": "Bikaner",
+      "village": "Kolayat, Bajju"
+    },
+    {
+      "craft": "Miniature Painting",
+      "district": "Bikaner",
+      "village": "Swamiyon Ka Mohalla"
+    },
+    {
+      "craft": "Mojari Footwear",
+      "district": "Bikaner",
+      "village": ""
+    },
+    {
+      "craft": "Sandalwood Carving",
+      "district": "Bikaner",
+      "village": "Churu"
+    },
+    {
+      "craft": "Usta Kaam Gesso Painting",
+      "district": "Bikaner",
+      "village": "Uston Ka Mohalla"
+    },
+    {
+      "craft": "Kawad Mobile Shrines",
+      "district": "Chittorgarh",
+      "village": "Bassi"
+    },
+    {
+      "craft": "Koftgiri Weaponry",
+      "district": "Chittorgarh",
+      "village": "Gangrar"
+    },
+    {
+      "craft": "Thewa Gold Leaf Work",
+      "district": "Pratapgarh",
+      "village": "Pratapgarh"
+    },
+    {
+      "craft": "Silver Ware",
+      "district": "Churu",
+      "village": "Churu"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Dausa",
+      "village": "Sikandra, Manpur, Dausa"
+    },
+    {
+      "craft": "Bahi Clothbound Books",
+      "district": "Jaipur",
+      "village": "Chaura Rasta"
+    },
+    {
+      "craft": "Bandhej & Leheriya Tie-Dye",
+      "district": "Jaipur",
+      "village": "Jaipur, Sikar"
+    },
+    {
+      "craft": "Block Making",
+      "district": "Jaipur",
+      "village": "Jaipur"
+    },
+    {
+      "craft": "Bagru & Sanganeri Block Printing",
+      "district": "Jaipur",
+      "village": "Bagru, Sanganer"
+    },
+    {
+      "craft": "Blue Pottery",
+      "district": "Jaipur",
+      "village": "Jaipur"
+    },
+    {
+      "craft": "Belt Products",
+      "district": "Jaipur",
+      "village": "Baans Ki Puliya"
+    },
+    {
+      "craft": "Gota Work",
+      "district": "Jaipur",
+      "village": "Naila, Khandela, Jauhari Bazaar"
+    },
+    {
+      "craft": "Handmade Paper",
+      "district": "Jaipur",
+      "village": "Sanganer"
+    },
+    {
+      "craft": "Jewellery Lac Work",
+      "district": "Jaipur",
+      "village": "Jaipur"
+    },
+    {
+      "craft": "Kathputli Puppets",
+      "district": "Jaipur",
+      "village": "Hawa Mahal Bazaar, Kathputli Colony"
+    },
+    {
+      "craft": "Kundan Jadai Gem Setting",
+      "district": "Jaipur",
+      "village": "Jauhari Bazaar"
+    },
+    {
+      "craft": "Meenakari Enamel Work",
+      "district": "Jaipur",
+      "village": "Jauhari Bazaar"
+    },
+    {
+      "craft": "Mojari Footwear",
+      "district": "Jaipur",
+      "village": ""
+    },
+    {
+      "craft": "Razai Quilt Making",
+      "district": "Jaipur",
+      "village": "Topkhana Ka Rasta, Chandpole Bazaar"
+    },
+    {
+      "craft": "Sanjhi Paper Stencils",
+      "district": "Alwar",
+      "village": "Alwar"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Jaipur",
+      "village": "Jaipur"
+    },
+    {
+      "craft": "Tarkashi Metal Inlay",
+      "district": "Jaipur",
+      "village": "Jaipur"
+    },
+    {
+      "craft": "Bandhej Tie-Dye",
+      "district": "Jaisalmer",
+      "village": "Akhai Pol"
+    },
+    {
+      "craft": "Camel Trappings",
+      "district": "Jaisalmer",
+      "village": "Jaisalmer"
+    },
+    {
+      "craft": "Mojari Footwear",
+      "district": "Jaisalmer",
+      "village": "Baiya, Myajlar, Ridawa"
+    },
+    {
+      "craft": "Pattu Weaving",
+      "district": "Jaisalmer",
+      "village": "Pokaran"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Jaisalmer",
+      "village": "RIICO Handicraft Area"
+    },
+    {
+      "craft": "Jewellery Lac Work",
+      "district": "Jhunjhunu",
+      "village": "Udaipurwati"
+    },
+    {
+      "craft": "Mojari Footwear",
+      "district": "Jhunjhunu",
+      "village": "Mandawa"
+    },
+    {
+      "craft": "Bandhej Tie-Dye",
+      "district": "Jodhpur",
+      "village": "Sundhiyon Ka Mohalla"
+    },
+    {
+      "craft": "Bone Work",
+      "district": "Jodhpur",
+      "village": "Jodhpur"
+    },
+    {
+      "craft": "Dabu Mud Resist Printing",
+      "district": "Jodhpur",
+      "village": "Pipad, Salawas"
+    },
+    {
+      "craft": "Mojari Footwear",
+      "district": "Jodhpur",
+      "village": "Jingar Mohalla, Sojati Gate, Girdikot Bazaar"
+    },
+    {
+      "craft": "Musical Instruments",
+      "district": "Jodhpur",
+      "village": "Thaliyon Ka Bas"
+    },
+    {
+      "craft": "Paatra Kaam Utensil Work",
+      "district": "Jodhpur",
+      "village": "Pipad"
+    },
+    {
+      "craft": "Panja Dhurrie Weaving",
+      "district": "Jodhpur",
+      "village": "Salawas"
+    },
+    {
+      "craft": "Pattu Weaving",
+      "district": "Jodhpur",
+      "village": "Phalodi"
+    },
+    {
+      "craft": "Mother of Pearl Work",
+      "district": "Jodhpur",
+      "village": "Jodhpur"
+    },
+    {
+      "craft": "Wood Work",
+      "district": "Jodhpur",
+      "village": "Shilpgram, Pal Village"
+    },
+    {
+      "craft": "Wrought Iron Work",
+      "district": "Jodhpur",
+      "village": "Pal Village"
+    },
+    {
+      "craft": "Wood & Lac Turnery",
+      "district": "Kota",
+      "village": ""
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Nagaur",
+      "village": "Nagaur, Mundwa"
+    },
+    {
+      "craft": "Dabu Mud Resist Printing",
+      "district": "Pali",
+      "village": "Pali"
+    },
+    {
+      "craft": "Paatra Kaam Utensil Work",
+      "district": "Pali",
+      "village": "Pali, Jetaran, Bagri"
+    },
+    {
+      "craft": "Silver Ware",
+      "district": "Pali",
+      "village": "Pali, Rani"
+    },
+    {
+      "craft": "Pokaran Terracotta",
+      "district": "Jaisalmer",
+      "village": "Pokaran"
+    },
+    {
+      "craft": "Molela Terracotta",
+      "district": "Rajsamand",
+      "village": "Molela"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Sawai Madhopur",
+      "village": "Sawai Madhopur"
+    },
+    {
+      "craft": "Bandhej & Leheriya Tie-Dye",
+      "district": "Sawai Madhopur",
+      "village": "Sawai Madhopur"
+    },
+    {
+      "craft": "Bahi Clothbound Books",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Dabu Printing",
+      "district": "Chittorgarh",
+      "village": "Akola"
+    },
+    {
+      "craft": "Damascening",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Kawad Mobile Shrines",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Leheriya Tie-Dye",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Meenakari Enamel Work",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Metal Engraving",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    },
+    {
+      "craft": "Pichhwai Painting",
+      "district": "Udaipur",
+      "village": "Nathdwara"
+    },
+    {
+      "craft": "Silver Jewellery",
+      "district": "Udaipur",
+      "village": "Udaipur"
+    }
+  ]
+},
+
+ {
+  "state": "Tamil Nadu",
+  "count": 73,
+  "crafts": [
+    {
+      "craft": "Tanjore Glass Painting",
+      "district": "Chennai",
+      "village": "Chennai"
+    },
+    {
+      "craft": "Kolu Dolls",
+      "district": "Chennai",
+      "village": "Chennai"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Chennai",
+      "village": "Chennai"
+    },
+    {
+      "craft": "Pullankuzhal Musical Instrument",
+      "district": "Coimbatore",
+      "village": ""
+    },
+    {
+      "craft": "Bhavani Jamakkalam",
+      "district": "Erode",
+      "village": "Pallipalayam, Bhavani"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Erode",
+      "village": "Erode"
+    },
+    {
+      "craft": "Pullankuzhal Musical Instrument",
+      "district": "Erode",
+      "village": "Erode"
+    },
+    {
+      "craft": "Rayon Jamakkalam",
+      "district": "Erode",
+      "village": "Bhavani"
+    },
+    {
+      "craft": "Kanchipuram Silk Weaving",
+      "district": "Kanchipuram",
+      "village": ""
+    },
+    {
+      "craft": "Kavasam Metalwork",
+      "district": "Kanchipuram",
+      "village": "Mamallapuram"
+    },
+    {
+      "craft": "Sea Shell Craft",
+      "district": "Kanchipuram",
+      "village": "Mamallapuram"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Kanchipuram",
+      "village": "Mamallapuram"
+    },
+    {
+      "craft": "Karunkal Stone Carving",
+      "district": "Kanchipuram",
+      "village": "Mamallapuram"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Kanchipuram",
+      "village": "Mamallapuram, Chengalpattu"
+    },
+    {
+      "craft": "Korai Grass Mats",
+      "district": "Kanniyakumari",
+      "village": "Kanniyakumari"
+    },
+    {
+      "craft": "Palmyra Leaf Craft",
+      "district": "Kanniyakumari",
+      "village": "Kanniyakumari"
+    },
+    {
+      "craft": "Stucco Work",
+      "district": "Kanniyakumari",
+      "village": "Suchindram, Kakampudur"
+    },
+    {
+      "craft": "Crochet Textile",
+      "district": "Kanniyakumari",
+      "village": "Mulagumoodu, Azhagiamandapam, Kootalumoodu"
+    },
+    {
+      "craft": "Kavasam Metalwork",
+      "district": "Kanniyakumari",
+      "village": "Nagercoil"
+    },
+    {
+      "craft": "Sea Shell Craft",
+      "district": "Kanniyakumari",
+      "village": "Kanniyakumari"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Kanniyakumari",
+      "village": "Mylaudy, Suchindram"
+    },
+    {
+      "craft": "Karunkal Stone Carving",
+      "district": "Kanniyakumari",
+      "village": "Mylaudy"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Kanniyakumari",
+      "village": "Nagercoil"
+    },
+    {
+      "craft": "Textile Applique",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Pithalai Metalware",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Sungudi Textile",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Muthangi Theatre Craft",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Kavasam Metalwork",
+      "district": "Madurai",
+      "village": "Madurai"
+    },
+    {
+      "craft": "Soft Stone Carving",
+      "district": "Namakkal",
+      "village": "Thandagoundanpalayam"
+    },
+    {
+      "craft": "Kalchatti Stone Craft",
+      "district": "Namakkal",
+      "village": "Namakkal"
+    },
+    {
+      "craft": "Toda Embroidery",
+      "district": "Nilgiris",
+      "village": "Udhagamandalam, Kotagiri"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Perambalur",
+      "village": "Arumbavur"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Pudukottai",
+      "village": "Pudukottai, Virachilai"
+    },
+    {
+      "craft": "Palmyra Leaf Craft",
+      "district": "Ramanathapuram",
+      "village": "Ramanathapuram, Chittarkottai, Devipattinam, Rameswaram, Kilakarai, Thiruppullani"
+    },
+    {
+      "craft": "Olai Fibre Craft",
+      "district": "Ramanathapuram",
+      "village": "Thiruppullani, Sekkarkudi"
+    },
+    {
+      "craft": "Bhavani Jamakkalam",
+      "district": "Salem",
+      "village": "Kumarapalayam"
+    },
+    {
+      "craft": "Kambli Weaving",
+      "district": "Salem",
+      "village": "Salem"
+    },
+    {
+      "craft": "Thombai Jewellery",
+      "district": "Salem",
+      "village": "Salem"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Salem",
+      "village": "Thammampatti"
+    },
+    {
+      "craft": "Cut Glass Work",
+      "district": "Thanjavur",
+      "village": "Kumbakonam"
+    },
+    {
+      "craft": "Kalamkari",
+      "district": "Thanjavur",
+      "village": "Tiruppanandal"
+    },
+    {
+      "craft": "Bell Metalware",
+      "district": "Thanjavur",
+      "village": "Nachiyar Koil"
+    },
+    {
+      "craft": "Kuthuvilakku Metalware",
+      "district": "Thanjavur",
+      "village": "Nachiyar Koil"
+    },
+    {
+      "craft": "Pithalai Thattu Metalware",
+      "district": "Thanjavur",
+      "village": "Thanjavur"
+    },
+    {
+      "craft": "Nagaswaram Instrument",
+      "district": "Thanjavur",
+      "village": "Narasingampettai"
+    },
+    {
+      "craft": "Veena Instrument",
+      "district": "Thanjavur",
+      "village": ""
+    },
+    {
+      "craft": "Pallagai Padam Painting",
+      "district": "Thanjavur",
+      "village": "Thanjavur"
+    },
+    {
+      "craft": "Sholapith Work",
+      "district": "Thanjavur",
+      "village": "Kumbakonam"
+    },
+    {
+      "craft": "Tanjore Glass Painting",
+      "district": "Thanjavur",
+      "village": "Thanjavur"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Thanjavur",
+      "village": "Papanasam"
+    },
+    {
+      "craft": "Root Wood Carving",
+      "district": "Thanjavur",
+      "village": "Kumbakonam"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Thanjavur",
+      "village": "Swamimalai"
+    },
+    {
+      "craft": "Kavasam Metalwork",
+      "district": "Thanjavur",
+      "village": "Swamimalai"
+    },
+    {
+      "craft": "Olai Fibre Craft",
+      "district": "Tiruvannamalai",
+      "village": "Tiruvannamalai"
+    },
+    {
+      "craft": "Textile Applique",
+      "district": "Tiruchirappalli",
+      "village": "Lalgudi"
+    },
+    {
+      "craft": "Korai Grass Mats",
+      "district": "Tirunelveli",
+      "village": "Kayathar"
+    },
+    {
+      "craft": "Olai Fibre Craft",
+      "district": "Tiruvallur",
+      "village": "Pulicat"
+    },
+    {
+      "craft": "Karunkal Stone Carving",
+      "district": "Tiruvannamalai",
+      "village": "Modaiyur"
+    },
+    {
+      "craft": "Thombai Craft",
+      "district": "Tiruvannamalai",
+      "village": "Tiruvannamalai"
+    },
+    {
+      "craft": "Palmyra Leaf Craft",
+      "district": "Thoothukudi",
+      "village": "Manapad"
+    },
+    {
+      "craft": "Olai Fibre Craft",
+      "district": "Vellore",
+      "village": "Vellore"
+    },
+    {
+      "craft": "Crochet & Bead Work",
+      "district": "Viluppuram",
+      "village": "Kottakarai"
+    },
+    {
+      "craft": "Handmade Paper Craft",
+      "district": "Viluppuram",
+      "village": "Auroville"
+    },
+    {
+      "craft": "Leather Work",
+      "district": "Viluppuram",
+      "village": "Auroville, Kottakarai"
+    },
+    {
+      "craft": "Pottery",
+      "district": "Viluppuram",
+      "village": "Auroville"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Viluppuram",
+      "village": "Kuyilapalayam"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Virudhunagar",
+      "village": "Virudhunagar"
+    }
+  ]
+},
+
+{
+  "state": "Gujarat",
+  "count": 112,
+  "crafts": [
+    {
+      "craft": "Ajrakh Block Printing",
+      "district": "Kutch",
+      "village": "Dhamadka, Ajrakhpur"
+    },
+    {
+      "craft": "Kutch Bandhani",
+      "district": "Kutch",
+      "village": "Bhuj, Mandvi"
+    },
+    {
+      "craft": "Kala Cotton Weaving",
+      "district": "Kutch",
+      "village": "Kutch"
+    },
+    {
+      "craft": "Rogan Art",
+      "district": "Kutch",
+      "village": "Nirona"
+    },
+    {
+      "craft": "Copper Bell Craft",
+      "district": "Kutch",
+      "village": "Zura"
+    },
+    {
+      "craft": "Khavda Pottery",
+      "district": "Kutch",
+      "village": "Khavda"
+    },
+    {
+      "craft": "Lippan Mud Mirror Work",
+      "district": "Kutch",
+      "village": "Banni, Ludiya"
+    },
+    {
+      "craft": "Kutch Carpet Weaving",
+      "district": "Kutch",
+      "village": "Bhuj"
+    },
+    {
+      "craft": "Soof Embroidery",
+      "district": "Kutch",
+      "village": "Kutch"
+    },
+    {
+      "craft": "Leather Craft",
+      "district": "Kutch",
+      "village": "Dhordo, Hodko"
+    },
+    {
+      "craft": "Patan Patola",
+      "district": "Patan",
+      "village": "Patan"
+    },
+    {
+      "craft": "Mashru Weaving",
+      "district": "Patan",
+      "village": "Patan"
+    },
+    {
+      "craft": "Tangaliya Weaving",
+      "district": "Surendranagar",
+      "village": "Adhoi"
+    },
+    {
+      "craft": "Tangaliya Shawls",
+      "district": "Surendranagar",
+      "village": "Surendranagar"
+    },
+    {
+      "craft": "Khadi Weaving",
+      "district": "Surendranagar",
+      "village": "Surendranagar"
+    },
+    {
+      "craft": "Beadwork",
+      "district": "Surendranagar",
+      "village": "Surendranagar"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Surendranagar",
+      "village": "Dhrangadhra"
+    },
+    {
+      "craft": "Rajkot Patola",
+      "district": "Rajkot",
+      "village": "Rajkot"
+    },
+    {
+      "craft": "Metal Embossed Artwork",
+      "district": "Rajkot",
+      "village": "Rajkot"
+    },
+    {
+      "craft": "Silver Craft",
+      "district": "Rajkot",
+      "village": "Rajkot"
+    },
+    {
+      "craft": "Jamnagar Bandhani",
+      "district": "Jamnagar",
+      "village": "Jamnagar"
+    },
+    {
+      "craft": "Brass Metalware",
+      "district": "Jamnagar",
+      "village": "Jamnagar"
+    },
+    {
+      "craft": "Rabari Embroidery",
+      "district": "Devbhumi Dwarka",
+      "village": "Dwarka"
+    },
+    {
+      "craft": "Shell Craft",
+      "district": "Devbhumi Dwarka",
+      "village": "Dwarka"
+    },
+    {
+      "craft": "Handloom Dhabda",
+      "district": "Porbandar",
+      "village": "Porbandar"
+    },
+    {
+      "craft": "Stone Craft",
+      "district": "Porbandar",
+      "village": "Porbandar"
+    },
+    {
+      "craft": "Bandhani",
+      "district": "Junagadh",
+      "village": "Junagadh"
+    },
+    {
+      "craft": "Zari Embroidery",
+      "district": "Junagadh",
+      "village": "Junagadh"
+    },
+    {
+      "craft": "Coconut Craft",
+      "district": "Gir Somnath",
+      "village": "Gir Somnath"
+    },
+    {
+      "craft": "Shell Handicrafts",
+      "district": "Gir Somnath",
+      "village": "Gir Somnath"
+    },
+    {
+      "craft": "Bandhani",
+      "district": "Amreli",
+      "village": "Amreli"
+    },
+    {
+      "craft": "Mirror Work",
+      "district": "Amreli",
+      "village": "Amreli"
+    },
+    {
+      "craft": "Wooden Toys",
+      "district": "Bhavnagar",
+      "village": "Mahuva"
+    },
+    {
+      "craft": "Ship Craft",
+      "district": "Bhavnagar",
+      "village": "Alang"
+    },
+    {
+      "craft": "Single Ikat Patola",
+      "district": "Botad",
+      "village": "Botad"
+    },
+    {
+      "craft": "Mata ni Pachedi",
+      "district": "Ahmedabad",
+      "village": "Ahmedabad"
+    },
+    {
+      "craft": "Block Printing",
+      "district": "Ahmedabad",
+      "village": "Ahmedabad"
+    },
+    {
+      "craft": "Pethapur Block Making",
+      "district": "Gandhinagar",
+      "village": "Pethapur"
+    },
+    {
+      "craft": "Khambhat Agate Craft",
+      "district": "Anand",
+      "village": "Khambhat"
+    },
+    {
+      "craft": "Pithora Painting",
+      "district": "Chhota Udepur",
+      "village": "Chhota Udepur"
+    },
+    {
+      "craft": "Kasota Weaving",
+      "district": "Chhota Udepur",
+      "village": "Chhota Udepur"
+    },
+    {
+      "craft": "Sankheda Furniture",
+      "district": "Chhota Udepur",
+      "village": "Sankheda"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Panchmahal",
+      "village": "Panchmahal"
+    },
+    {
+      "craft": "Bead Work",
+      "district": "Dahod",
+      "village": "Dahod"
+    },
+    {
+      "craft": "Embroidery",
+      "district": "Mahisagar",
+      "village": "Mahisagar"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Sabarkantha",
+      "village": "Idar"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Aravalli",
+      "village": "Aravalli"
+    },
+    {
+      "craft": "Soof Embroidery",
+      "district": "Banaskantha",
+      "village": "Banaskantha"
+    },
+    {
+      "craft": "Brass Utensils",
+      "district": "Mehsana",
+      "village": "Mehsana"
+    },
+    {
+      "craft": "Zari Making",
+      "district": "Surat",
+      "village": "Surat"
+    },
+    {
+      "craft": "Warli Painting",
+      "district": "Tapi",
+      "village": "Tapi"
+    },
+    {
+      "craft": "Parsi Gara Embroidery",
+      "district": "Navsari",
+      "village": "Navsari"
+    },
+    {
+      "craft": "Warli Art",
+      "district": "Valsad",
+      "village": "Valsad"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Dang",
+      "village": "Dang"
+    },
+    {
+      "craft": "Bamboo Craft",
+      "district": "Narmada",
+      "village": "Narmada"
+    }
+  ]
+},
+
+
+{
+  "state": "Karnataka",
+  "count": 68,
+  "crafts": [
+    {
+      "craft": "Handloom",
+      "district": "Bagalkot",
+      "village": ""
+    },
+    {
+      "craft": "Handloom",
+      "district": "Bengaluru",
+      "village": ""
+    },
+    {
+      "craft": "Kasuti Embroidery",
+      "district": "Bengaluru",
+      "village": "Bengaluru"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Bengaluru",
+      "village": "Okalipura, Magadi Road"
+    },
+    {
+      "craft": "Mysore Painting",
+      "district": "Bengaluru",
+      "village": "Bengaluru"
+    },
+    {
+      "craft": "Ganjifa Card Painting",
+      "district": "Bengaluru",
+      "village": "Bengaluru"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Bengaluru Rural",
+      "village": "Devanahalli"
+    },
+    {
+      "craft": "Channapatna Lac Toys",
+      "district": "Ramanagara",
+      "village": "Channapatna"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Bengaluru",
+      "village": "Ulsoor, Kengeri"
+    },
+    {
+      "craft": "Hand Block Printing & Batik",
+      "district": "Bengaluru",
+      "village": "Bengaluru"
+    },
+    {
+      "craft": "Toys & Dolls",
+      "district": "Bengaluru",
+      "village": "Bengaluru"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Belagavi",
+      "village": ""
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Belagavi",
+      "village": "Belagavi"
+    },
+    {
+      "craft": "Lambani Embroidery",
+      "district": "Ballari",
+      "village": "Sandur, Honalli Tanda"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Ballari",
+      "village": "Sandur, Honalli Tanda"
+    },
+    {
+      "craft": "Kasuti Embroidery",
+      "district": "Ballari",
+      "village": "Ballari"
+    },
+    {
+      "craft": "Bidri Craft",
+      "district": "Bidar",
+      "village": "Bidar"
+    },
+    {
+      "craft": "Sandalwood Carving",
+      "district": "Bidar",
+      "village": "Bidar"
+    },
+    {
+      "craft": "Lambani Embroidery",
+      "district": "Vijayapura",
+      "village": "Vijayapura"
+    },
+    {
+      "craft": "Sheet Metal Embossing",
+      "district": "Vijayapura",
+      "village": "Muddebihal"
+    },
+    {
+      "craft": "Sheet Metal Embossing",
+      "district": "Chitradurga",
+      "village": "Nayakanahatti"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "Chitradurga",
+      "village": "Chitradurga"
+    },
+    {
+      "craft": "Sisal Fibre Craft",
+      "district": "Chitradurga",
+      "village": "Hiriyur, Challakere"
+    },
+    {
+      "craft": "Areca Palm Leaf Craft",
+      "district": "Dakshina Kannada",
+      "village": "Mangaluru"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Dakshina Kannada",
+      "village": ""
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Dakshina Kannada",
+      "village": "Mangaluru, Karkala"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Dakshina Kannada",
+      "village": "Puttur"
+    },
+    {
+      "craft": "Bhoota Figure Wood Carving",
+      "district": "Dakshina Kannada",
+      "village": "Mangaluru"
+    },
+    {
+      "craft": "Yakshagana Costume Making",
+      "district": "Dakshina Kannada",
+      "village": "Surathkal"
+    },
+    {
+      "craft": "Art Metalware",
+      "district": "Dakshina Kannada",
+      "village": "Udupi, Kundapura"
+    },
+    {
+      "craft": "Artistic Leather Chappals",
+      "district": "Dakshina Kannada",
+      "village": "Udupi"
+    },
+    {
+      "craft": "Silver Jewellery",
+      "district": "Dakshina Kannada",
+      "village": "Udupi"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Dharwad",
+      "village": ""
+    },
+    {
+      "craft": "Kasuti Embroidery",
+      "district": "Dharwad",
+      "village": "Hubballi, Narendra, Kalghatgi"
+    },
+    {
+      "craft": "Navalgund Dhurrie",
+      "district": "Dharwad",
+      "village": "Navalgund"
+    },
+    {
+      "craft": "Soapstone Carving",
+      "district": "Dharwad",
+      "village": "Belagatti, Bhobala"
+    },
+    {
+      "craft": "Tibetan Carpet Weaving",
+      "district": "Dharwad",
+      "village": "Mundgod"
+    },
+    {
+      "craft": "Lightwood Painted Toys",
+      "district": "Dharwad",
+      "village": "Kalghatgi"
+    },
+    {
+      "craft": "Hand Block Printing & Batik",
+      "district": "Dharwad",
+      "village": "Hubballi"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Gadag",
+      "village": ""
+    },
+    {
+      "craft": "Kasuti Embroidery",
+      "district": "Gadag",
+      "village": "Gadag"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Kalaburagi",
+      "village": ""
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Kalaburagi",
+      "village": "Kalaburagi"
+    },
+    {
+      "craft": "Surpur Painting",
+      "district": "Kalaburagi",
+      "village": "Surpur"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Hassan",
+      "village": ""
+    },
+    {
+      "craft": "Soapstone Carving",
+      "district": "Hassan",
+      "village": "Shravanabelagola"
+    },
+    {
+      "craft": "Hand Block Printing & Batik",
+      "district": "Hassan",
+      "village": "Hassan"
+    },
+    {
+      "craft": "Mysore Painting",
+      "district": "Hassan",
+      "village": "Hassan"
+    },
+    {
+      "craft": "Terracotta",
+      "district": "Kodagu",
+      "village": "Mayamudi, Madikeri"
+    },
+    {
+      "craft": "Tibetan Carpet Weaving",
+      "district": "Kodagu",
+      "village": "Kushalnagar"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "Kodagu",
+      "village": "Kushalnagar, Madikeri"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Kolar",
+      "village": "Shivarapatna"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Kolar",
+      "village": "Shivarapatna"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Koppal",
+      "village": ""
+    },
+    {
+      "craft": "Banana Fibre Craft",
+      "district": "Koppal",
+      "village": "Anegundi"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Mandya",
+      "village": ""
+    },
+    {
+      "craft": "Metalware",
+      "district": "Mandya",
+      "village": "Nagamangala"
+    },
+    {
+      "craft": "Sheet Metal Embossing",
+      "district": "Mandya",
+      "village": "Nagamangala"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Mandya",
+      "village": "Nagamangala"
+    },
+    {
+      "craft": "Ganjifa Card Painting",
+      "district": "Mandya",
+      "village": "Srirangapatna"
+    },
+    {
+      "craft": "Hand Block Printing & Batik",
+      "district": "Mandya",
+      "village": "Mandya"
+    },
+    {
+      "craft": "Metalware",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Sheet Metal Embossing",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Panchaloha Metalware",
+      "district": "Mysuru",
+      "village": "Mandi Mohalla"
+    },
+    {
+      "craft": "Mysore Painting",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Ganjifa Card Painting",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Sandalwood Carving",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Soapstone Carving",
+      "district": "Mysuru",
+      "village": "Mysuru, H.D. Kote"
+    },
+    {
+      "craft": "Tibetan Carpet Weaving",
+      "district": "Mysuru",
+      "village": "Bylakuppe, Hunsur"
+    },
+    {
+      "craft": "Rosewood Carving",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Rosewood Inlay",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Wood Inlay Craft",
+      "district": "Mysuru",
+      "village": "Mysuru"
+    },
+    {
+      "craft": "Lambani Embroidery",
+      "district": "Raichur",
+      "village": "Bettadur Tanda"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Raichur",
+      "village": "Potnal"
+    },
+    {
+      "craft": "Sandalwood Carving",
+      "district": "Shivamogga",
+      "village": "Sagar, Soraba"
+    },
+    {
+      "craft": "Terracotta & Pottery",
+      "district": "Shivamogga",
+      "village": "Bhadravati"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "Shivamogga",
+      "village": "Shivamogga"
+    },
+    {
+      "craft": "Hase Chittara",
+      "district": "Shivamogga",
+      "village": "Kugwe, Hasavanthe, Galipura, Sagar"
+    },
+    {
+      "craft": "Pith Crafts",
+      "district": "Shivamogga",
+      "village": "Sagar, Soraba, Thalaguppa, Banavasi"
+    },
+    {
+      "craft": "Sisal Fibre Craft",
+      "district": "Chamarajanagar",
+      "village": "Chamarajanagar"
+    }
+  ]
+},
+
+
+ 
+  {
+    "state": "Kerala",
+    "count": 53,
+    "crafts": [
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Alappuzha",
+        "village": "Alappuzha"
+      },
+      {
+        "craft": "Natural Fibre Crafts",
+        "district": "Alappuzha",
+        "village": "Cherthala"
+      },
+      {
+        "craft": "Boat Making",
+        "district": "Alappuzha",
+        "village": "Alappuzha, Thathampally"
+      },
+      {
+        "craft": "Coir Work",
+        "district": "Alappuzha",
+        "village": "Cherthala"
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Alappuzha",
+        "village": "Chengannur"
+      },
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Ernakulam",
+        "village": "Cherai"
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Ernakulam",
+        "village": "Paravur"
+      },
+      {
+        "craft": "Bell Metal Utensils",
+        "district": "Ernakulam",
+        "village": "Manjapra"
+      },
+      {
+        "craft": "Cane & Bamboo Craft",
+        "district": "Ernakulam",
+        "village": "Angamaly"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Ernakulam",
+        "village": ""
+      },
+      {
+        "craft": "Wood Inlay",
+        "district": "Ernakulam",
+        "village": "Maradu"
+      },
+      {
+        "craft": "Bell Metal Utensils",
+        "district": "Kannur",
+        "village": "Payyanur"
+      },
+      {
+        "craft": "Bronze Metal Casting",
+        "district": "Kannur",
+        "village": "Payyanur, Korom, Thayineri, Padoli, Kunhimangalam"
+      },
+      {
+        "craft": "Nettur Petti",
+        "district": "Kannur",
+        "village": "Nettur"
+      },
+      {
+        "craft": "Kathakali & Theyyam Costume Making",
+        "district": "Kannur",
+        "village": "Payyanur"
+      },
+      {
+        "craft": "Bell Metal Utensils",
+        "district": "Kasaragod",
+        "village": "Kasaragod"
+      },
+      {
+        "craft": "Metal Coating Work",
+        "district": "Kasaragod",
+        "village": "Kasaragod"
+      },
+      {
+        "craft": "Cane & Bamboo Craft",
+        "district": "Kasaragod",
+        "village": "Nileshwaram"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Kasaragod",
+        "village": ""
+      },
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Kottayam",
+        "village": "Vaikom, Irumpuzhikara"
+      },
+      {
+        "craft": "Wood Inlay",
+        "district": "Kottayam",
+        "village": "Thalayolaparambu"
+      },
+      {
+        "craft": "Wood Stringing",
+        "district": "Kozhikode",
+        "village": "Koyilandy"
+      },
+      {
+        "craft": "Ship Building",
+        "district": "Kozhikode",
+        "village": "Beypore"
+      },
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Kozhikode",
+        "village": "Koyilandy, Kozhikode"
+      },
+      {
+        "craft": "Cane & Bamboo Craft",
+        "district": "Malappuram",
+        "village": "Malappuram"
+      },
+      {
+        "craft": "Screwpine Craft",
+        "district": "Malappuram",
+        "village": "Malappuram"
+      },
+      {
+        "craft": "Bronze Metal Casting",
+        "district": "Palakkad",
+        "village": "Mannapra, Kannambra, Nenmara, Alathur, Angadipuram"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Palakkad",
+        "village": ""
+      },
+      {
+        "craft": "Korai Mat Weaving",
+        "district": "Palakkad",
+        "village": "Chittur, Malampuzha"
+      },
+      {
+        "craft": "Ramacham Root Products",
+        "district": "Palakkad",
+        "village": ""
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Palakkad",
+        "village": "Ottapalam"
+      },
+      {
+        "craft": "Aranmula Kannadi",
+        "district": "Pathanamthitta",
+        "village": "Aranmula"
+      },
+      {
+        "craft": "Bell Metal Utensils",
+        "district": "Thiruvananthapuram",
+        "village": "Thiruvananthapuram"
+      },
+      {
+        "craft": "Bronze Metal Casting",
+        "district": "Thiruvananthapuram",
+        "village": "Thiruvananthapuram"
+      },
+      {
+        "craft": "Cane & Bamboo Craft",
+        "district": "Thiruvananthapuram",
+        "village": "Nedumangad, Aryanad"
+      },
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Thiruvananthapuram",
+        "village": "Attingal, Neyyattinkara"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Thiruvananthapuram",
+        "village": ""
+      },
+      {
+        "craft": "Natural Fibre Crafts",
+        "district": "Thiruvananthapuram",
+        "village": "Perumkadavila, Parassala"
+      },
+      {
+        "craft": "Palmyra Basketry",
+        "district": "Thiruvananthapuram",
+        "village": "Parassala, Sreekaryam"
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Thiruvananthapuram",
+        "village": "Thiruvananthapuram"
+      },
+      {
+        "craft": "Nettur Petti",
+        "district": "Thiruvananthapuram",
+        "village": "Chackai"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Thiruvananthapuram",
+        "village": "Kulathoor, Karamana, Kunnumpuram, Vazhuthacaud, Vallakkadavu"
+      },
+      {
+        "craft": "Ramacham Root Products",
+        "district": "Thiruvananthapuram",
+        "village": ""
+      },
+      {
+        "craft": "Horn Carving",
+        "district": "Thiruvananthapuram",
+        "village": "Anayara"
+      },
+      {
+        "craft": "Bell Metal Utensils",
+        "district": "Thrissur",
+        "village": "Nadavaramba, Irinjalakuda, Kunnamkulam, Kadavallur"
+      },
+      {
+        "craft": "Bronze Metal Casting",
+        "district": "Thrissur",
+        "village": "Irinjalakuda, Vadakkanchery, Nadavaramba, Kunnamkulam, Kadavallur"
+      },
+      {
+        "craft": "Cane & Bamboo Craft",
+        "district": "Thrissur",
+        "village": "Kodaly"
+      },
+      {
+        "craft": "Horn Carving",
+        "district": "Thrissur",
+        "village": "Avittathur"
+      },
+      {
+        "craft": "Korai Mat Weaving",
+        "district": "Thrissur",
+        "village": "Kilimangalam"
+      },
+      {
+        "craft": "Pooram Crafts",
+        "district": "Thrissur",
+        "village": "Kunnamkulam"
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Thrissur",
+        "village": "Kurukanpara"
+      },
+      {
+        "craft": "Screwpine Craft",
+        "district": "Thrissur",
+        "village": "Lokamaleswaram, Kodungallur, Kottapuram"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Thrissur",
+        "village": "Cherpu"
+      }
+    ]
+  },
+  {
+    "state": "Maharashtra",
+    "count": 42,
+    "crafts": [
+      {
+        "craft": "Ambadi Sisal Craft",
+        "district": "Ahmednagar",
+        "village": "Ahmednagar"
+      },
+      {
+        "craft": "Brass Musical Instruments",
+        "district": "Ahmednagar",
+        "village": "Ahmednagar"
+      },
+      {
+        "craft": "Bidri Ware",
+        "district": "Aurangabad",
+        "village": "Aurangabad"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Aurangabad",
+        "village": "Aurangabad"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Bhandara",
+        "village": ""
+      },
+      {
+        "craft": "Warli Painting",
+        "district": "Palghar",
+        "village": "Ganjad"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Dhule",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Gadchiroli",
+        "village": ""
+      },
+      {
+        "craft": "Dhurrie Weaving",
+        "district": "Jalgaon",
+        "village": "Saygaon"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Jalgaon",
+        "village": ""
+      },
+      {
+        "craft": "Metal Die Casting",
+        "district": "Jalgaon",
+        "village": "Parola"
+      },
+      {
+        "craft": "Silver Ware",
+        "district": "Kolhapur",
+        "village": "Hupari"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Kolhapur",
+        "village": ""
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Kolhapur",
+        "village": "Kolhapur"
+      },
+      {
+        "craft": "Dhurrie Weaving",
+        "district": "Latur",
+        "village": "Latur"
+      },
+      {
+        "craft": "Silver Ware",
+        "district": "Mumbai",
+        "village": "Mumbai"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Raigad",
+        "village": "Karjat, Kashele"
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Mumbai",
+        "village": "Airoli"
+      },
+      {
+        "craft": "Jewellery Stringing",
+        "district": "Mumbai",
+        "village": "Zaveri Bazaar, Dharavi"
+      },
+      {
+        "craft": "Flower Stringing",
+        "district": "Mumbai",
+        "village": "Mumbai"
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Mumbai",
+        "village": "Dharavi"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Nagpur",
+        "village": ""
+      },
+      {
+        "craft": "Dhurrie Weaving",
+        "district": "Nanded",
+        "village": "Nanded"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Nashik",
+        "village": ""
+      },
+      {
+        "craft": "Silver Ware",
+        "district": "Nashik",
+        "village": "Nashik"
+      },
+      {
+        "craft": "Copper & Brass Ware",
+        "district": "Nashik",
+        "village": "Tambat Lane"
+      },
+      {
+        "craft": "Metal Embossing",
+        "district": "Nashik",
+        "village": "Nashik"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Pune",
+        "village": "Pune"
+      },
+      {
+        "craft": "Silver Ware",
+        "district": "Pune",
+        "village": "Pune"
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Pune",
+        "village": "Pune"
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Sangli",
+        "village": "Kurundwad"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Sangli",
+        "village": ""
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Sangli",
+        "village": "Miraj, Jath, Kavathe Mahankal"
+      },
+      {
+        "craft": "Sitar Making",
+        "district": "Sangli",
+        "village": "Miraj"
+      },
+      {
+        "craft": "Kolhapuri Chappal",
+        "district": "Satara",
+        "village": "Satara"
+      },
+      {
+        "craft": "Dhurrie Weaving",
+        "district": "Solapur",
+        "village": "Solapur"
+      },
+      {
+        "craft": "Ganjifa Card Painting",
+        "district": "Sindhudurg",
+        "village": "Sawantwadi"
+      },
+      {
+        "craft": "Wooden Toys",
+        "district": "Sindhudurg",
+        "village": "Sawantwadi"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Thane",
+        "village": "Thane"
+      },
+      {
+        "craft": "Warli Painting",
+        "district": "Thane",
+        "village": "Thane"
+      },
+      {
+        "craft": "Dhurrie Weaving",
+        "district": "Osmanabad",
+        "village": "Osmanabad"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Wardha",
+        "village": ""
+      }
+    ]
+  },
+
+
+  {
+    "state": "Telangana",
+    "count": 92,
+    "crafts": [
+      {
+        "craft": "Aari, Zari & Zardozi",
+        "district": "Hyderabad",
+        "village": "Yakutpura, Falaknuma"
+      },
+      {
+        "craft": "Alampur Sheets & Towels",
+        "district": "Jogulamba Gadwal",
+        "village": "Alampur"
+      },
+      {
+        "craft": "Applique Work",
+        "district": "Sangareddy",
+        "village": "R.C. Puram"
+      },
+      {
+        "craft": "Applique Work",
+        "district": "Yadadri Bhuvanagiri",
+        "village": "Koyyalagudem, Jalapur"
+      },
+      {
+        "craft": "Armoor Silk Sarees",
+        "district": "Nizamabad",
+        "village": "Armoor"
+      },
+      {
+        "craft": "Artistic Leather Work",
+        "district": "Warangal",
+        "village": "Kila Warangal"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Adilabad",
+        "village": "Narnoor, Utnoor, Dubbaguda, Jandaguda, Khadki, Sungapur"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Khammam",
+        "village": "Anjanapuram, Khammam"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Adilabad",
+        "village": "Adilabad"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Hyderabad",
+        "village": "Sanjeeva Reddy Nagar"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Mahabubabad",
+        "village": "Garla, Dornakal"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Nizamabad",
+        "village": "Nizamabad"
+      },
+      {
+        "craft": "Banjara Embroidery",
+        "district": "Rangareddy",
+        "village": "Yellam Thanda"
+      },
+      {
+        "craft": "Bharoon Embroidery",
+        "district": "Adilabad",
+        "village": "Shantapur"
+      },
+      {
+        "craft": "Bharoon Embroidery",
+        "district": "Kamareddy",
+        "village": "Gandhari"
+      },
+      {
+        "craft": "Bidri Craft",
+        "district": "Hyderabad",
+        "village": "Dabeerpura"
+      },
+      {
+        "craft": "Black Metal Statues",
+        "district": "Hyderabad",
+        "village": "Lad Bazaar"
+      },
+      {
+        "craft": "Bobbin Lace",
+        "district": "Hanmakonda",
+        "village": "Rampur, Dharmasagar, Malakapalli, Hanmakonda, Kazipet, Naskal, Rajavaram, Palagutta"
+      },
+      {
+        "craft": "Bobbin Lace",
+        "district": "Jangaon",
+        "village": "Station Ghanpur, Raghunathpalli, Kanchanapalli"
+      },
+      {
+        "craft": "Bobbin Lace",
+        "district": "Warangal",
+        "village": "Kistagudem"
+      },
+      {
+        "craft": "Brass Casting",
+        "district": "Warangal",
+        "village": "Warangal"
+      },
+      {
+        "craft": "Brass Shaping",
+        "district": "Jangaon",
+        "village": "Yellamla"
+      },
+      {
+        "craft": "Brass Shaping",
+        "district": "Mahabubabad",
+        "village": "Gurthur"
+      },
+      {
+        "craft": "Brass Shaping",
+        "district": "Warangal",
+        "village": "Raiparthy"
+      },
+      {
+        "craft": "Brass Sheet Metal",
+        "district": "Mahabubabad",
+        "village": "Kantaipalem, Thorrur, Gurthur"
+      },
+      {
+        "craft": "Brass Sheet Metal",
+        "district": "Jangaon",
+        "village": "Pembarthi, Yellamla"
+      },
+      {
+        "craft": "Brass Sheet Metal",
+        "district": "Khammam",
+        "village": "M.V. Pallem"
+      },
+      {
+        "craft": "Brass Sheet Metal",
+        "district": "Nalgonda",
+        "village": "Chandur, Kormapalli"
+      },
+      {
+        "craft": "Brass Sheet Metal",
+        "district": "Warangal",
+        "village": "Rangasaipet"
+      },
+      {
+        "craft": "Cherial Scrolls & Masks",
+        "district": "Siddipet",
+        "village": "Cherial"
+      },
+      {
+        "craft": "Cross Stitch",
+        "district": "Hanmakonda",
+        "village": "Madikonda, Palagutta"
+      },
+      {
+        "craft": "Cross Stitch",
+        "district": "Jangaon",
+        "village": "Station Ghanpur"
+      },
+      {
+        "craft": "Dhokra Casting",
+        "district": "Adilabad",
+        "village": "Bellsari Rampur, Chitalbori"
+      },
+      {
+        "craft": "Dhokra Casting",
+        "district": "Komaram Bheem Asifabad",
+        "village": "Jamgaon, Ushagaon, Keslaguda"
+      },
+      {
+        "craft": "Cotton Durries",
+        "district": "Warangal",
+        "village": "Warangal"
+      },
+      {
+        "craft": "Gadwal Sarees",
+        "district": "Jogulamba Gadwal",
+        "village": "Gadwal"
+      },
+      {
+        "craft": "Golla Bhama Sarees",
+        "district": "Siddipet",
+        "village": "Chinna Kodur"
+      },
+      {
+        "craft": "Gond Painting",
+        "district": "Komaram Bheem Asifabad",
+        "village": "Rasimetta"
+      },
+      {
+        "craft": "Hand Embroidery",
+        "district": "Yadadri Bhuvanagiri",
+        "village": "Jalapur"
+      },
+      {
+        "craft": "Hand Embroidery",
+        "district": "Medak",
+        "village": "Medak, Ramayampet"
+      },
+      {
+        "craft": "Hand Embroidery",
+        "district": "Sangareddy",
+        "village": "Sangareddy"
+      },
+      {
+        "craft": "Hand Embroidery",
+        "district": "Vikarabad",
+        "village": "Vikarabad"
+      },
+      {
+        "craft": "Himroo Weaving",
+        "district": "Hyderabad",
+        "village": "Dargah"
+      },
+      {
+        "craft": "Pochampally Ikat",
+        "district": "Nalgonda",
+        "village": "Puttapaka"
+      },
+      {
+        "craft": "Pochampally Ikat",
+        "district": "Suryapet",
+        "village": "Pochampally"
+      },
+      {
+        "craft": "Pochampally Ikat",
+        "district": "Jangaon",
+        "village": "Jangaon, Bachannapet"
+      },
+      {
+        "craft": "Pochampally Ikat",
+        "district": "Yadadri Bhuvanagiri",
+        "village": "Koyyalagudem"
+      },
+      {
+        "craft": "Kothakota Sarees",
+        "district": "Wanaparthy",
+        "village": "Kothakota"
+      },
+      {
+        "craft": "Lac Bangles",
+        "district": "Hyderabad",
+        "village": "Lad Bazaar"
+      },
+      {
+        "craft": "Miniature Painting",
+        "district": "Hyderabad",
+        "village": "Dabeerpura"
+      },
+      {
+        "craft": "Narayanpet Sarees",
+        "district": "Narayanpet",
+        "village": "Narayanpet"
+      },
+      {
+        "craft": "Nirmal Toys & Furniture",
+        "district": "Nirmal",
+        "village": "Nirmal"
+      },
+      {
+        "craft": "Palm Leaf Craft",
+        "district": "Bhadradri Kothagudem",
+        "village": "Palvancha"
+      },
+      {
+        "craft": "Pearl Jewellery",
+        "district": "Hyderabad",
+        "village": "Hyderabad"
+      },
+      {
+        "craft": "Peepal Leaf Painting",
+        "district": "Jangaon",
+        "village": "Station Ghanpur"
+      },
+      {
+        "craft": "Pitambari Sarees",
+        "district": "Nalgonda",
+        "village": "Puttapaka"
+      },
+      {
+        "craft": "Pitambari Sarees",
+        "district": "Warangal",
+        "village": "Rangasaipet"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Adilabad",
+        "village": "Adilabad"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Hyderabad",
+        "village": "Asif Nagar"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Nizamabad",
+        "village": "Chandur"
+      },
+      {
+        "craft": "Punja Durries",
+        "district": "Warangal",
+        "village": "Kareemabad"
+      },
+      {
+        "craft": "Sheep Wool Blankets",
+        "district": "Medak",
+        "village": "Laxminagar"
+      },
+      {
+        "craft": "Sheep Wool Blankets",
+        "district": "Rajanna Sircilla",
+        "village": "Vemulawada, Dubbaka"
+      },
+      {
+        "craft": "Silver Filigree",
+        "district": "Karimnagar",
+        "village": "Karimnagar"
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Karimnagar",
+        "village": "Ramadugu"
+      },
+      {
+        "craft": "Tatting Lace",
+        "district": "Hanmakonda",
+        "village": "Peddapindiyal, Karunapuram"
+      },
+      {
+        "craft": "Telia Rumals",
+        "district": "Nalgonda",
+        "village": "Puttapaka"
+      },
+      {
+        "craft": "Terracotta",
+        "district": "Mahbubnagar",
+        "village": "Mahbubnagar"
+      },
+      {
+        "craft": "Terracotta",
+        "district": "Narayanpet",
+        "village": "Narayanpet"
+      },
+      {
+        "craft": "Tribal Jewellery",
+        "district": "Mahbubnagar",
+        "village": "Mahbubnagar"
+      },
+      {
+        "craft": "Tribal Jewellery",
+        "district": "Nizamabad",
+        "village": "Asula Thanda, Dichpally"
+      },
+      {
+        "craft": "Tussar Silk",
+        "district": "Jayashankar Bhupalpally",
+        "village": "Mahadevpur"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Hanmakonda",
+        "village": "Hanmakonda"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Nizamabad",
+        "village": "Nizamabad"
+      },
+      {
+        "craft": "Wooden Lacquerware Toys",
+        "district": "Sangareddy",
+        "village": "Bonthapally, Gummadidala"
+      }
+    ]
+  },
+
+  {
+  "state": "Andhra Pradesh",
+  "count": 52,
+  "crafts": [
+    {
+      "craft": "Banjara Embroidery",
+      "district": "Anantapur",
+      "village": "Rayadurg"
+    },
+    {
+      "craft": "Leather Puppetry (Tholu Bommalata)",
+      "district": "Anantapur",
+      "village": "Nimmalakunta"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Annamayya",
+      "village": "Madanapalle"
+    },
+    {
+      "craft": "Kalamkari",
+      "district": "Annamayya",
+      "village": "Madanapalle"
+    },
+    {
+      "craft": "Etikoppaka Toys",
+      "district": "Anakapalli",
+      "village": "Etikoppaka"
+    },
+    {
+      "craft": "Wood Lacquerware",
+      "district": "Anakapalli",
+      "village": "Etikoppaka"
+    },
+    {
+      "craft": "Brass Ware",
+      "district": "Bapatla",
+      "village": "Bapatla"
+    },
+    {
+      "craft": "Cotton Durries",
+      "district": "Chittoor",
+      "village": "Puttur"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Chittoor",
+      "village": "Tirupati"
+    },
+    {
+      "craft": "Kalamkari",
+      "district": "Chittoor",
+      "village": "Srikalahasti"
+    },
+    {
+      "craft": "Leather Puppetry (Tholu Bommalata)",
+      "district": "Dr. B.R. Ambedkar Konaseema",
+      "village": "Rajole"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "East Godavari",
+      "village": "Rajamahendravaram"
+    },
+    {
+      "craft": "Brass Ware",
+      "district": "Eluru",
+      "village": "Eluru"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Guntur",
+      "village": "Mangalagiri"
+    },
+    {
+      "craft": "Mangalagiri Handloom",
+      "district": "Guntur",
+      "village": "Mangalagiri"
+    },
+    {
+      "craft": "Kondapalli Toys",
+      "district": "NTR",
+      "village": "Kondapalli"
+    },
+    {
+      "craft": "Wood Lacquerware",
+      "district": "NTR",
+      "village": "Kondapalli"
+    },
+    {
+      "craft": "Kuchipudi Dance Costumes",
+      "district": "Krishna",
+      "village": "Kuchipudi"
+    },
+    {
+      "craft": "Pedana Kalamkari",
+      "district": "Krishna",
+      "village": "Pedana"
+    },
+    {
+      "craft": "Machilipatnam Kalamkari",
+      "district": "Krishna",
+      "village": "Machilipatnam"
+    },
+    {
+      "craft": "Silver Filigree",
+      "district": "Kurnool",
+      "village": "Kurnool"
+    },
+    {
+      "craft": "Handloom",
+      "district": "Kurnool",
+      "village": "Adoni"
+    },
+    {
+      "craft": "Leather Puppetry (Tholu Bommalata)",
+      "district": "Kurnool",
+      "village": "Nandyal"
+    },
+    {
+      "craft": "Uppada Jamdani",
+      "district": "Kakinada",
+      "village": "Uppada"
+    },
+    {
+      "craft": "Coconut Shell Craft",
+      "district": "Kakinada",
+      "village": "Kakinada"
+    },
+    {
+      "craft": "Budithi Bell & Brass Craft",
+      "district": "Srikakulam",
+      "village": "Budithi"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Srikakulam",
+      "village": "Srikurmam"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "Parvathipuram Manyam",
+      "village": "Salur"
+    },
+    {
+      "craft": "Jute Craft",
+      "district": "Prakasam",
+      "village": "Ongole"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "Prakasam",
+      "village": "Chimakurthy"
+    },
+    {
+      "craft": "Brass Ware",
+      "district": "Prakasam",
+      "village": "Addanki"
+    },
+    {
+      "craft": "Handloom",
+      "district": "SPSR Nellore",
+      "village": "Venkatagiri"
+    },
+    {
+      "craft": "Venkatagiri Sarees",
+      "district": "SPSR Nellore",
+      "village": "Venkatagiri"
+    },
+    {
+      "craft": "Leather Puppetry (Tholu Bommalata)",
+      "district": "Sri Sathya Sai",
+      "village": "Dharmavaram"
+    },
+    {
+      "craft": "Dharmavaram Silk Sarees",
+      "district": "Sri Sathya Sai",
+      "village": "Dharmavaram"
+    },
+    {
+      "craft": "Lepakshi Handicrafts",
+      "district": "Sri Sathya Sai",
+      "village": "Hindupur"
+    },
+    {
+      "craft": "Bobbili Veena",
+      "district": "Vizianagaram",
+      "village": "Bobbili"
+    },
+    {
+      "craft": "Brass Ware",
+      "district": "Vizianagaram",
+      "village": "Bobbili"
+    },
+    {
+      "craft": "Cane & Bamboo Craft",
+      "district": "Visakhapatnam",
+      "village": "Araku Valley"
+    },
+    {
+      "craft": "Dhokra Metal Casting",
+      "district": "Visakhapatnam",
+      "village": "Araku Valley"
+    },
+    {
+      "craft": "Tribal Jewellery",
+      "district": "Visakhapatnam",
+      "village": "Paderu"
+    },
+    {
+      "craft": "Wood Carving",
+      "district": "Visakhapatnam",
+      "village": "Visakhapatnam"
+    },
+    {
+      "craft": "Natural Fibre Craft",
+      "district": "West Godavari",
+      "village": "Bhimavaram"
+    },
+    {
+      "craft": "Coconut Shell Craft",
+      "district": "West Godavari",
+      "village": "Narasapuram"
+    },
+    {
+      "craft": "Lace Making",
+      "district": "West Godavari",
+      "village": "Narsapur"
+    },
+    {
+      "craft": "Crochet Lace",
+      "district": "West Godavari",
+      "village": "Palakollu"
+    },
+    {
+      "craft": "Handloom",
+      "district": "YSR Kadapa",
+      "village": "Proddatur"
+    },
+    {
+      "craft": "Stone Carving",
+      "district": "YSR Kadapa",
+      "village": "Ontimitta"
+    },
+    {
+      "craft": "Kalamkari",
+      "district": "YSR Kadapa",
+      "village": "Lakkireddipalli"
+    },
+    {
+      "craft": "Temple Jewellery",
+      "district": "Tirupati",
+      "village": "Tirupati"
+    },
+    {
+      "craft": "Bronze Casting",
+      "district": "Tirupati",
+      "village": "Tiruchanur"
+    },
+    
+    {
+      "craft": "Palm Leaf Craft",
+      "district": "Nandyal",
+      "village": "Srisailam"
+    },
+    {
+  "craft": "Nirmal Painting",
+  "district": "Nirmal",
+  "village": "Nirmal"
+},
+{
+  "craft": "Krishnashila Stone Carving",
+  "district": "Palnadu",
+  "village": "Durgi"
+},
+{
+  "craft": "Krishnashila Stone Carving",
+  "district": "Nandyal",
+  "village": "Allagadda"
+},
+{
+  "craft": "Krishnashila Stone Carving",
+  "district": "Karimnagar",
+  "village": "Ramadugu"
+},
+{
+  "craft": "Veena Making",
+  "district": "Eluru",
+  "village": "Nuzvid"
+},
+{
+  "craft": "Wood Block Making",
+  "district": "Krishna",
+  "village": "Machilipatnam, Pedana"
+},
+{
+  "craft": "Musallah Rugs",
+  "district": "Warangal",
+  "village": "Kothawada"
+},
+{
+  "craft": "Ithadi Nakshi Kala",
+  "district": "Warangal",
+  "village": "Pembarthi, Rangasaipet"
+},
+{
+  "craft": "Grass & Fibre Craft",
+  "district": "SPSR Nellore",
+  "village": "Mattempadu, Venkateshwarapuram"
+},
+{
+  "craft": "Crochet Lace",
+  "district": "Hanmakonda",
+  "village": "Kazipet"
+},
+{
+  "craft": "Knotted Carpet",
+  "district": "Eluru",
+  "village": "Eluru"
+}
+  ]
+},
+  
+
+  {
+    "state": "Madhya",
+    "count": 34,
+    "crafts": [
+      {
+        "craft": "Handloom",
+        "district": "Balaghat",
+        "village": ""
+      },
+      {
+        "craft": "Dhokra lost wax metal casting",
+        "district": "Betul",
+        "village": "Chunhazuri, Phongaria r Barkhed, Tigaria"
+      },
+      {
+        "craft": "Jute craft",
+        "district": "Bhopal",
+        "village": "Bhopal"
+      },
+      {
+        "craft": "Wood and lac turnery",
+        "district": "Bhopal",
+        "village": "Budnighat"
+      },
+      {
+        "craft": "Zardosi - goldembroidery",
+        "district": "Bhopal",
+        "village": "Bhopal city: Suda ma Nagar"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Chhatarpur",
+        "village": "Bagh"
+      },
+      {
+        "craft": "Block printing of Bagh",
+        "district": "Dhar",
+        "village": "Bagfii"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Dhar",
+        "village": ""
+      },
+      {
+        "craft": "Gond Chitrakari -tribal painting",
+        "district": "Dindori",
+        "village": ""
+      },
+      {
+        "craft": "Wood carving",
+        "district": "Dindori",
+        "village": "Dindola, Patangarh"
+      },
+      {
+        "craft": "Stone carving",
+        "district": "Gwalior",
+        "village": "Gwalior"
+      },
+      {
+        "craft": "Zardosi -goldembroidery",
+        "district": "Gwalior",
+        "village": "Gwalior"
+      },
+      {
+        "craft": "Bandhani-tieresist dyeing",
+        "district": "Indore",
+        "village": "Indore, Gautampur"
+      },
+      {
+        "craft": "Block printing of Bagh",
+        "district": "Indore",
+        "village": "Indore"
+      },
+      {
+        "craft": "Leather toys",
+        "district": "Indore",
+        "village": "Indore City: Khandwa Road"
+      },
+      {
+        "craft": "Zardosi -goldembroidery",
+        "district": "Indore",
+        "village": "Indore"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Jabalpur",
+        "village": ""
+      },
+      {
+        "craft": "Stone carving",
+        "district": "Jabalpur",
+        "village": "Jabalpur, Bhedaghat"
+      },
+      {
+        "craft": "Pithora painting",
+        "district": "Jabalpur",
+        "village": "Alirajpur"
+      },
+      {
+        "craft": "Terracotta and pottery",
+        "district": "Jabalpur",
+        "village": "Alirajpur"
+      },
+      {
+        "craft": "Wood carving",
+        "district": "Jabalpur",
+        "village": "Jobat"
+      },
+      {
+        "craft": "Gond Chitrakari -tribal painting",
+        "district": "Mandla",
+        "village": "Patangarh Village"
+      },
+      {
+        "craft": "Terracotta and pottery",
+        "district": "Mandla",
+        "village": "Maharajpur, Mandla"
+      },
+      {
+        "craft": "Wood carving",
+        "district": "Mandla",
+        "village": "Mandla"
+      },
+      {
+        "craft": "Stonecarving",
+        "district": "Morena",
+        "village": "Jora tehsil: Dhamkan"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Nimach",
+        "village": ""
+      },
+      {
+        "craft": "Ha ndloom",
+        "district": "Nimar",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Rajgarh",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Se oni",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Tikamgarb",
+        "village": ""
+      },
+      {
+        "craft": "Bohra Caps",
+        "district": "Ujjain",
+        "village": "Ujjain"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Ujjain",
+        "village": ""
+      },
+      {
+        "craft": "Papier Mache",
+        "district": "Ujjain",
+        "village": "Ujjain"
+      },
+      {
+        "craft": "Wood carving",
+        "district": "Ujjain",
+        "village": "Ujjain, Kangi Mohalla"
+      }
+    ]
+  },
+
+
+
+  {
+    "state": "Punjab",
+    "count": 32,
+    "crafts": [
+      {
+        "craft": "Carved & Turned Wood Work",
+        "district": "Amritsar",
+        "village": "Amritsar"
+      },
+      {
+        "craft": "Galeecha Knotted Carpets",
+        "district": "Amritsar",
+        "village": "Konke, Tapiyala, Chugawan, Lopoke, Raja Sansi, Kot Khalsa"
+      },
+      {
+        "craft": "Khunda Bamboo Staves",
+        "district": "Gurdaspur",
+        "village": "Batala"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Amritsar",
+        "village": "Tarn Taran"
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Amritsar",
+        "village": ""
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Gurdaspur",
+        "village": "Batala"
+      },
+      {
+        "craft": "Carved & Turned Wood Work",
+        "district": "Gurdaspur",
+        "village": "Batala"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Bathinda",
+        "village": ""
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Bathinda",
+        "village": ""
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Bathinda",
+        "village": "Sirki Bazaar, Court Road, Ram Bagh Road"
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Faridkot",
+        "village": "Faridkot, Kotkapura"
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Ferozepur",
+        "village": ""
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Ferozepur",
+        "village": "Khai Road, Ralia Hata, Machi Bazaar, Ghantaghar Chowk, Indira Market, Abohar"
+      },
+      {
+        "craft": "Carved & Turned Wood Work",
+        "district": "Hoshiarpur",
+        "village": "Hoshiarpur"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Hoshiarpur",
+        "village": "Hoshiarpur"
+      },
+      {
+        "craft": "Wood & Lac Turnery",
+        "district": "Hoshiarpur",
+        "village": "Hoshiarpur"
+      },
+      {
+        "craft": "Wood Inlay",
+        "district": "Hoshiarpur",
+        "village": "Dabbi Bazaar, Boothgarh, Adamwal, Piplanwala"
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Jalandhar",
+        "village": ""
+      },
+      {
+        "craft": "Wood & Lac Turnery",
+        "district": "Jalandhar",
+        "village": "Jalandhar"
+      },
+      {
+        "craft": "Wood Inlay",
+        "district": "Jalandhar",
+        "village": "Madaran, Adampur"
+      },
+      {
+        "craft": "Carved & Turned Wood Work",
+        "district": "Jalandhar",
+        "village": "Jalandhar"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Jalandhar",
+        "village": "Nakodar, Mehatpur, Noor Mahal"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Ludhiana",
+        "village": ""
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Moga",
+        "village": ""
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Moga",
+        "village": ""
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Sri Muktsar Sahib",
+        "village": "Muktsar, Malout"
+      },
+      {
+        "craft": "Nala Drawstrings",
+        "district": "Patiala",
+        "village": "Qila Chowk"
+      },
+      {
+        "craft": "Phulkari & Bagh Embroidery",
+        "district": "Patiala",
+        "village": "Patiala, Tipari"
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Patiala",
+        "village": "Patiala"
+      },
+      {
+        "craft": "Panja Dhurrie",
+        "district": "Rupnagar",
+        "village": "Losari, Jhandia Khurd, Anandpur Sahib"
+      },
+      {
+        "craft": "Tilla Jutti Traditional Footwear",
+        "district": "Sangrur",
+        "village": "Malerkotla"
+      },
+      {
+        "craft": "Carved & Turned Wood Work",
+        "district": "Gurdaspur",
+        "village": "Qadian"
+      }
+    ]
+  },
+  {
+    "state": "Bihar",
+    "count": 32,
+    "crafts": [
+      {
+        "craft": "Handloom Silk Tussar Weaving",
+        "district": "Bhagalpur",
+        "village": ""
+      },
+      {
+        "craft": "Sujani Embroidery",
+        "district": "Darbhanga",
+        "village": ""
+      },
+      {
+        "craft": "Khatwa Applique Work",
+        "district": "Darbhanga",
+        "village": ""
+      },
+      {
+        "craft": "Lac Bangles",
+        "district": "Darbhanga",
+        "village": "Paridasari"
+      },
+      {
+        "craft": "Sikki Grass Work",
+        "district": "Darbhanga",
+        "village": ""
+      },
+      {
+        "craft": "Wooden Toys",
+        "district": "Darbhanga",
+        "village": ""
+      },
+      {
+        "craft": "Stone Carving",
+        "district": "Gaya",
+        "village": "Patharkatti, Khukri"
+      },
+      {
+        "craft": "Handloom Silk Tussar Weaving",
+        "district": "Katihar",
+        "village": ""
+      },
+      {
+        "craft": "Jute Craft",
+        "district": "Katihar",
+        "village": ""
+      },
+      {
+        "craft": "Sujani Embroidery",
+        "district": "Madhubani",
+        "village": ""
+      },
+      {
+        "craft": "Khatwa Applique Work",
+        "district": "Madhubani",
+        "village": ""
+      },
+      {
+        "craft": "Lac Bangles",
+        "district": "Madhubani",
+        "village": "Muzaffarpur"
+      },
+      {
+        "craft": "Papier Mache",
+        "district": "Madhubani",
+        "village": "Kati, Rahiyam, Rajnagar"
+      },
+      {
+        "craft": "Sikki Grass Work",
+        "district": "Madhubani",
+        "village": ""
+      },
+      {
+        "craft": "Terracotta",
+        "district": "Madhubani",
+        "village": "Moula Ganj"
+      },
+      {
+        "craft": "Handloom Silk Tussar Weaving",
+        "district": "Munger",
+        "village": ""
+      },
+      {
+        "craft": "Tribal Jewellery",
+        "district": "Munger",
+        "village": ""
+      },
+      {
+        "craft": "Sujani Embroidery",
+        "district": "Muzaffarpur",
+        "village": "Busra"
+      },
+      {
+        "craft": "Khatwa Applique Work",
+        "district": "Muzaffarpur",
+        "village": ""
+      },
+      {
+        "craft": "Sikki Grass Work",
+        "district": "Muzaffarpur",
+        "village": "Muzaffarpur"
+      },
+      {
+        "craft": "Wooden Toys",
+        "district": "Muzaffarpur",
+        "village": ""
+      },
+      {
+        "craft": "Khatwa Applique Work",
+        "district": "Patna",
+        "village": "Patna"
+      },
+      {
+        "craft": "Wooden Toys",
+        "district": "Patna",
+        "village": ""
+      },
+      {
+        "craft": "Sujani Embroidery",
+        "district": "Patna",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Silk Tussar Weaving",
+        "district": "Purnea",
+        "village": ""
+      },
+      {
+        "craft": "Jute Craft",
+        "district": "Purnea",
+        "village": ""
+      }
+    ]
+  },
+
+
+  
+  {
+    "state": "Himachal Pradesh",
+    "count": 31,
+    "crafts": [
+      {
+        "craft": "Handloom Textiles",
+        "district": "Bilaspur",
+        "village": "Mohal"
+      },
+      {
+        "craft": "Basketry",
+        "district": "Chamba",
+        "village": ""
+      },
+      {
+        "craft": "Chamba Painting",
+        "district": "Chamba",
+        "village": "Chamba"
+      },
+      {
+        "craft": "Chamba Rumal",
+        "district": "Chamba",
+        "village": "Chamba"
+      },
+      {
+        "craft": "Leather Embroidery",
+        "district": "Chamba",
+        "village": "Chamba"
+      },
+      {
+        "craft": "Lost Wax Metal Casting",
+        "district": "Chamba",
+        "village": "Chamba"
+      },
+      {
+        "craft": "Silver Jewellery",
+        "district": "Chamba",
+        "village": "Maila, Sultanpur, Chamba"
+      },
+      {
+        "craft": "Sheet Metal Work",
+        "district": "Chamba",
+        "village": "Charpat Mohalla, Hatnala Mohalla, Kashmiri Mohalla"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kullu",
+        "village": "Panarsa"
+      },
+      {
+        "craft": "Basketry",
+        "district": "Kangra",
+        "village": "Palampur"
+      },
+      {
+        "craft": "Applique Work",
+        "district": "Kangra",
+        "village": "Dharamshala"
+      },
+      {
+        "craft": "Metalwork",
+        "district": "Kangra",
+        "village": "Dharamshala"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kangra",
+        "village": "Palampur"
+      },
+      {
+        "craft": "Sheet Metal Work",
+        "district": "Kangra",
+        "village": "Palampur, Baijnath"
+      },
+      {
+        "craft": "Thangka Painting",
+        "district": "Kangra",
+        "village": "Dharamshala"
+      },
+      {
+        "craft": "Wood Work",
+        "district": "Kangra",
+        "village": "Dharamshala"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kinnaur",
+        "village": "Nagwain"
+      },
+      {
+        "craft": "Sheet Metal Work",
+        "district": "Kinnaur",
+        "village": "Pooh, Spillow, Karo"
+      },
+      {
+        "craft": "Thangka Painting",
+        "district": "Kinnaur",
+        "village": ""
+      },
+      {
+        "craft": "Basketry",
+        "district": "Kullu",
+        "village": ""
+      },
+      {
+        "craft": "Knitted Socks",
+        "district": "Kullu",
+        "village": ""
+      },
+      {
+        "craft": "Grass Footwear",
+        "district": "Kullu",
+        "village": "Banjar, Chad"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kullu",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kullu",
+        "village": "Bashing"
+      },
+      {
+        "craft": "Sheet Metal Work",
+        "district": "Kullu",
+        "village": "Banjar, Sarwari Bazaar"
+      },
+      {
+        "craft": "Thangka Painting",
+        "district": "Lahaul and Spiti",
+        "village": ""
+      },
+      {
+        "craft": "Knitted Socks",
+        "district": "Lahaul and Spiti",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Mandi",
+        "village": "Dobhi"
+      },
+      {
+        "craft": "Doll Making",
+        "district": "Shimla",
+        "village": "Shimla"
+      },
+      {
+        "craft": "Silver Jewellery",
+        "district": "Shimla",
+        "village": "Rohru, Sunari"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Shimla",
+        "village": ""
+      }
+    ]
+  },
+  {
+    "state": "West Bengal",
+    "count": 29,
+    "crafts": [
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Bankura",
+        "village": "Bikna"
+      },
+      {
+        "craft": "Krishnanagar Dolls",
+        "district": "Bankura",
+        "village": "Bankura, Rampur, Susunia"
+      },
+      {
+        "craft": "Kantha Embroidery",
+        "district": "Bankura",
+        "village": ""
+      },
+      {
+        "craft": "Patachitra",
+        "district": "Bankura",
+        "village": "Panchmura"
+      },
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Purba Bardhaman",
+        "village": "Dariapur"
+      },
+      {
+        "craft": "Kantha Embroidery",
+        "district": "Birbhum",
+        "village": "Shantiniketan, Surul"
+      },
+      {
+        "craft": "Patachitra",
+        "district": "Birbhum",
+        "village": "Shantiniketan, Bolpur, Surul"
+      },
+      {
+        "craft": "Sherpai Measuring Bowls",
+        "district": "Birbhum",
+        "village": "Lokepur, Siuri"
+      },
+      {
+        "craft": "Sheetalpati",
+        "district": "Cooch Behar",
+        "village": "Ghughumari"
+      },
+      {
+        "craft": "Gambhira Masks",
+        "district": "Dakshin Dinajpur",
+        "village": "Mahishbathan"
+      },
+      {
+        "craft": "Beaten Silver Engraving",
+        "district": "Darjeeling",
+        "village": "Kalimpong"
+      },
+      {
+        "craft": "Carpet Weaving",
+        "district": "Darjeeling",
+        "village": "Tibetan Refugee Centre"
+      },
+      {
+        "craft": "Leather Craft",
+        "district": "Darjeeling",
+        "village": "Kalimpong"
+      },
+      {
+        "craft": "Thangka Painting",
+        "district": "Darjeeling",
+        "village": "Kalimpong, Darjeeling"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Darjeeling",
+        "village": "Darjeeling"
+      },
+      {
+        "craft": "Clay Modelling",
+        "district": "Kolkata",
+        "village": ""
+      },
+      {
+        "craft": "Filigree & Silverware",
+        "district": "Kolkata",
+        "village": "Bhabanipur, Kansaripara"
+      },
+      {
+        "craft": "Terracotta Dolls & Toys",
+        "district": "Paschim Medinipur",
+        "village": "Paschim Sai, Khoroi"
+      },
+      {
+        "craft": "Masland Grass Mats",
+        "district": "Paschim Medinipur",
+        "village": "Sabang, Chandkuri"
+      },
+      {
+        "craft": "Patachitra",
+        "district": "Paschim Medinipur",
+        "village": "Pingla, Naya"
+      },
+      {
+        "craft": "Dhalai Kansa",
+        "district": "Murshidabad",
+        "village": "Jiaganj, Khagra"
+      },
+      {
+        "craft": "Shola Pith Craft",
+        "district": "Murshidabad",
+        "village": "Baharampur"
+      },
+      {
+        "craft": "Krishnanagar Dolls",
+        "district": "Nadia",
+        "village": "Ghurni"
+      },
+      {
+        "craft": "Wooden Toys",
+        "district": "Nadia",
+        "village": "Natungram"
+      },
+      {
+        "craft": "Chhau Mask",
+        "district": "Purulia",
+        "village": "Charida"
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Darjeeling",
+        "village": "Siliguri"
+      },
+      {
+        "craft": "Terracotta",
+        "district": "Darjeeling",
+        "village": "Matigara"
+      },
+      {
+        "craft": "Kantha Embroidery",
+        "district": "South 24 Parganas",
+        "village": ""
+      },
+      {
+        "craft": "Terracotta",
+        "district": "Uttar Dinajpur",
+        "village": "Kunor"
+      }
+    ]
+  },
+
+ 
+  {
+    "state": "Uttarakhand",
+    "count": 27,
+    "crafts": [
+      {
+        "craft": "Aipan Ritual Floor Painting",
+        "district": "Almora",
+        "village": ""
+      },
+      {
+        "craft": "Copper Ware (Tamta)",
+        "district": "Almora",
+        "village": "Dharmi Mohalla"
+      },
+      {
+        "craft": "Likhai Wood Carving",
+        "district": "Almora",
+        "village": "Birkhan, Kul, Chopra, Peora, Seoni, Satoli Diyari, Dwarahat, Jageshwar"
+      },
+      {
+        "craft": "Nettle Fibre Craft",
+        "district": "Almora",
+        "village": ""
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Almora",
+        "village": ""
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Bageshwar",
+        "village": ""
+      },
+      {
+        "craft": "Tibetan Carpets",
+        "district": "Bageshwar",
+        "village": "Timla Bagar"
+      },
+      {
+        "craft": "Copper Ware (Tamta)",
+        "district": "Bageshwar",
+        "village": "Segare, Choganchina, Binser, Uderkhani, Jashi Gaon, Gair, Banga, Nuplia, Bhatkhola Khark, Bilana, Dawaldhar, Gingori Khola"
+      },
+      {
+        "craft": "Likhai Wood Carving",
+        "district": "Bageshwar",
+        "village": "Bageshwar"
+      },
+      {
+        "craft": "Copper Ware (Tamta)",
+        "district": "Chamoli",
+        "village": "Nagrasu, Badrinath"
+      },
+      {
+        "craft": "Lantana Furniture",
+        "district": "Chamoli",
+        "village": "Chamoli"
+      },
+      {
+        "craft": "Nettle Fibre Craft",
+        "district": "Chamoli",
+        "village": ""
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Chamoli",
+        "village": ""
+      },
+      {
+        "craft": "Tibetan Carpets",
+        "district": "Chamoli",
+        "village": "Joshimath"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Dehradun",
+        "village": ""
+      },
+      {
+        "craft": "Lantana Furniture",
+        "district": "Dehradun",
+        "village": "Dehradun"
+      },
+      {
+        "craft": "Rambaans Natural Fibre Craft",
+        "district": "Dehradun",
+        "village": "Dehradun"
+      },
+      {
+        "craft": "Tibetan Carpets",
+        "district": "Dehradun",
+        "village": "Manduwala"
+      },
+      {
+        "craft": "Aipan Ritual Floor Painting",
+        "district": "Nainital",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Nainital",
+        "village": ""
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Tehri Garhwal",
+        "village": ""
+      },
+      {
+        "craft": "Handloom",
+        "district": "Pauri Garhwal",
+        "village": ""
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Pauri Garhwal",
+        "village": ""
+      },
+      {
+        "craft": "Likhai Wood Carving",
+        "district": "Pithoragarh",
+        "village": "Munsyari"
+      },
+      {
+        "craft": "Ringaal Basketry",
+        "district": "Pithoragarh",
+        "village": "Bhainskot"
+      },
+      {
+        "craft": "Tibetan Carpets",
+        "district": "Pithoragarh",
+        "village": "Munsyari"
+      },
+      {
+        "craft": "Tibetan Carpets",
+        "district": "Rudraprayag",
+        "village": ""
+      }
+    ]
+  },
+  {
+    "state": "Assam",
+    "count": 24,
+    "crafts": [
+      {
+        "craft": "Handloom Textiles",
+        "district": "Barpeta",
+        "village": ""
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Barpeta",
+        "village": "Barpeta"
+      },
+      {
+        "craft": "Brassware",
+        "district": "Barpeta",
+        "village": "Banlakuchi"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Cachar",
+        "village": "Silchar"
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Cachar",
+        "village": "Silchar"
+      },
+      {
+        "craft": "Sheetalpati Grass Mats",
+        "district": "Cachar",
+        "village": "Katakhal"
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Darrang",
+        "village": "Mangaldoi"
+      },
+      {
+        "craft": "Coiled Cane Work",
+        "district": "Darrang",
+        "village": "Mangaldoi"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Dhemaji",
+        "village": ""
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Dibrugarh",
+        "village": "Dibrugarh"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Golaghat",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Jorhat",
+        "village": ""
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Kamrup",
+        "village": "Guwahati"
+      },
+      {
+        "craft": "Brassware",
+        "district": "Kamrup",
+        "village": "Hajo"
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Kamrup",
+        "village": "Guwahati"
+      },
+      {
+        "craft": "Eri Silk Spinning",
+        "district": "Kamrup",
+        "village": "Rampur, Guwahati"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Kamrup",
+        "village": ""
+      },
+      {
+        "craft": "Coiled Cane Craft",
+        "district": "Karimganj",
+        "village": "Telekhalerpar, Shitapara"
+      },
+      {
+        "craft": "Flattened Bamboo Mats",
+        "district": "Karimganj",
+        "village": "Badarpur Ghat"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Golaghat",
+        "village": "Kaziranga"
+      },
+      {
+        "craft": "Eri Silk Spinning",
+        "district": "Kokrajhar",
+        "village": "Salakati, Bonorgaon, Tenhali"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Nalbari",
+        "village": "Nalbari"
+      },
+      {
+        "craft": "Bamboo Nesting Baskets",
+        "district": "Nalbari",
+        "village": "Nalbari"
+      },
+      {
+        "craft": "Cane Furniture",
+        "district": "Sonitpur",
+        "village": "Tezpur"
+      }
+    ]
+  },
+
+
+ 
+  {
+    "state": "Arunachal Pradesh",
+    "count": 23,
+    "crafts": [
+      {
+        "craft": "Handloom Textiles",
+        "district": "Changlang",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "East Kameng",
+        "village": ""
+      },
+      {
+        "craft": "Pottery",
+        "district": "East Siang",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "East Siang",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Lohit",
+        "village": ""
+      },
+      {
+        "craft": "Apatani Bamboo Products",
+        "district": "Lower Subansiri",
+        "village": "Ziro"
+      },
+      {
+        "craft": "Coiled Cane Hats",
+        "district": "Lower Subansiri",
+        "village": "Ziro"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Lower Subansiri",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Lower Subansiri",
+        "village": ""
+      },
+      {
+        "craft": "Bead Jewellery",
+        "district": "Papum Pare",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Papum Pare",
+        "village": ""
+      },
+      {
+        "craft": "Carpet Weaving",
+        "district": "Tawang",
+        "village": ""
+      },
+      {
+        "craft": "Bead Jewellery",
+        "district": "Tirap",
+        "village": "Khonsa, Kheti, Wakka"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Tirap",
+        "village": "Khonsa, Kheti, Wakka"
+      },
+      {
+        "craft": "Carpet Weaving",
+        "district": "Dibang Valley",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Dibang Valley",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "Upper Siang",
+        "village": ""
+      },
+      {
+        "craft": "Cane & Bamboo Bridges",
+        "district": "West Kameng",
+        "village": "Dirang, Bomdila"
+      },
+      {
+        "craft": "Carpet Weaving",
+        "district": "West Kameng",
+        "village": ""
+      },
+      {
+        "craft": "Flattened Bamboo Containers",
+        "district": "West Kameng",
+        "village": "Bomdila"
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "West Kameng",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Textiles",
+        "district": "West Siang",
+        "village": ""
+      },
+      {
+        "craft": "Coiled Cane Hats",
+        "district": "West Siang",
+        "village": "Along"
+      }
+    ]
+  },
+  {
+    "state": "Chhattisgarh",
+    "count": 20,
+    "crafts": [
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Bastar",
+        "village": "Kondagaon, Belvapadar"
+      },
+      {
+        "craft": "Iron Craft",
+        "district": "Bastar",
+        "village": "Khir Chhepda, Kondagaon"
+      },
+      {
+        "craft": "Durrie Weaving",
+        "district": "Bastar",
+        "village": "Tokapal, Nagarnar, Jagdalpur"
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Bastar",
+        "village": "Narayanpur, Kumharpara, Kondagaon, Nagarnar, Kakar"
+      },
+      {
+        "craft": "Bronze Ware",
+        "district": "Bilaspur",
+        "village": "Magarpara, Sarkanda"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Bilaspur",
+        "village": ""
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Dantewada",
+        "village": "Kukanar"
+      },
+      {
+        "craft": "Bronze Ware",
+        "district": "Janjgir-Champa",
+        "village": "Champa, Sakti"
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Kanker",
+        "village": "Kanker, Dhaneshwari"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Mahasamund",
+        "village": ""
+      },
+      {
+        "craft": "Bamboo Basketry",
+        "district": "Raigarh",
+        "village": "Kosumnara, Pusaur, Netnagar, Tamnar, Santpura, Kharsiya"
+      },
+      {
+        "craft": "Brass Vessels",
+        "district": "Raigarh",
+        "village": "Pusaur"
+      },
+      {
+        "craft": "Bronze Ware",
+        "district": "Raigarh",
+        "village": "Pusaur, Kaserpara"
+      },
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Raigarh",
+        "village": "Ektal, Jashpur"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Raigarh",
+        "village": ""
+      },
+      {
+        "craft": "Bronze Ware",
+        "district": "Raipur",
+        "village": "Rajim, Nawapara"
+      },
+      {
+        "craft": "Bamboo Basketry",
+        "district": "Surguja",
+        "village": "Kuchki, Kanthiprakashpur"
+      },
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Surguja",
+        "village": "Pahad Chidwa"
+      },
+      {
+        "craft": "Handloom",
+        "district": "Surguja",
+        "village": ""
+      },
+      {
+        "craft": "Painted Clay Relief",
+        "district": "Surguja",
+        "village": "Puhputra, Sirkotanga"
+      }
+    ]
+  },
+  {
+    "state": "Goa",
+    "count": 16,
+    "crafts": [
+      {
+        "craft": "Coconut Based Crafts",
+        "district": "Goa",
+        "village": "Villages Across Goa"
+      },
+      {
+        "craft": "Boat Making",
+        "district": "North Goa",
+        "village": "Malki"
+      },
+      {
+        "craft": "Crochet & Lace Work",
+        "district": "North Goa",
+        "village": "Panaji, Mapusa, Assagao, Mulgao"
+      },
+      {
+        "craft": "Copper Ware",
+        "district": "North Goa",
+        "village": "Mapusa, Sanquelim"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "North Goa",
+        "village": "Bicholim"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "North Goa",
+        "village": "Porvorim, Pernem, Bicholim, Mangueshi"
+      },
+      {
+        "craft": "Candle Making",
+        "district": "North Goa",
+        "village": "Divar Island, Calangute"
+      },
+      {
+        "craft": "Brass Ware",
+        "district": "North Goa",
+        "village": "Mapusa, Sanquelim, Bicholim"
+      },
+      {
+        "craft": "Seashell Craft",
+        "district": "North Goa",
+        "village": "Panaji, Porvorim, Mandrem, Mangueshi"
+      },
+      {
+        "craft": "Terracotta",
+        "district": "North Goa",
+        "village": "Bicholim, Calangute"
+      },
+      {
+        "craft": "Boat Making",
+        "district": "South Goa",
+        "village": "Colva, Palolem"
+      },
+      {
+        "craft": "Crochet & Lace Work",
+        "district": "South Goa",
+        "village": "Sanguem"
+      },
+      {
+        "craft": "Fibre Craft",
+        "district": "South Goa",
+        "village": "Quepem"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "South Goa",
+        "village": "Canacona, Sanguem, Cuncolim"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "South Goa",
+        "village": "Margao, Cuncolim"
+      },
+      {
+        "craft": "Seashell Craft",
+        "district": "South Goa",
+        "village": "Margao"
+      }
+    ]
+  },
+  {
+    "state": "Haryana",
+    "count": 14,
+    "crafts": [
+      {
+        "craft": "Palm Leaf Work",
+        "district": "Faridabad",
+        "village": "Palwal"
+      },
+      {
+        "craft": "Sarkanda Craft",
+        "district": "Faridabad",
+        "village": "Faridabad"
+      },
+      {
+        "craft": "Sarkanda Craft",
+        "district": "Gurugram",
+        "village": "Farukhnagar"
+      },
+      {
+        "craft": "Jutti Leather Footwear",
+        "district": "Hisar",
+        "village": "Hisar"
+      },
+      {
+        "craft": "Jutti Leather Footwear",
+        "district": "Jhajjar",
+        "village": "Jhajjar"
+      },
+      {
+        "craft": "Surahi Pottery",
+        "district": "Jhajjar",
+        "village": "Chawani Mohalla, Bahadurgarh"
+      },
+      {
+        "craft": "Brassware",
+        "district": "Jind",
+        "village": "Jind"
+      },
+      {
+        "craft": "Sarkanda Craft",
+        "district": "Mahendragarh",
+        "village": "Dongra Ahir, Gujarwas, Khatripur"
+      },
+      {
+        "craft": "Palm Leaf Work",
+        "district": "Panipat",
+        "village": ""
+      },
+      {
+        "craft": "Brassware",
+        "district": "Rewari",
+        "village": "Thathera Mohalla"
+      },
+      {
+        "craft": "Jutti Leather Footwear",
+        "district": "Rewari",
+        "village": "Jatia Mohalla, Rampura, Odhi, Holni"
+      },
+      {
+        "craft": "Sarkanda Craft",
+        "district": "Rewari",
+        "village": "Mayan, Kurd, Chandpur, Khori, Garhi Bolni"
+      },
+      {
+        "craft": "Palm Leaf Work",
+        "district": "Sonipat",
+        "village": ""
+      },
+      {
+        "craft": "Brassware",
+        "district": "Yamunanagar",
+        "village": "Jagadhari"
+      }
+    ]
+  },
+
+
+  {
+    "state": "Manipur",
+    "count": 12,
+    "crafts": [
+      {
+        "craft": "Kauna Reed Mats",
+        "district": "Bishnupur",
+        "village": "Tera Khongsangbi"
+      },
+      {
+        "craft": "Traditional Bamboo Products",
+        "district": "Bishnupur",
+        "village": "Moirang"
+      },
+      {
+        "craft": "Traditional Bamboo Products",
+        "district": "Chandel",
+        "village": "Palel, Sugnu"
+      },
+      {
+        "craft": "Kauna Reed Mats",
+        "district": "Imphal East",
+        "village": "Kongba Nandeibam Leikai"
+      },
+      {
+        "craft": "Thongjao Pottery",
+        "district": "Imphal East",
+        "village": "Thongjao"
+      },
+      {
+        "craft": "Bell Metal Work (Senjeng)",
+        "district": "Imphal West",
+        "village": "Heirangoithong, Aheibam Leikai"
+      },
+      {
+        "craft": "Kauna Reed Mats",
+        "district": "Imphal West",
+        "village": "Kwakeithel Kangjeng Leikai"
+      },
+      {
+        "craft": "Traditional Bamboo Products",
+        "district": "Imphal West",
+        "village": "Imphal, Patsoi"
+      },
+      {
+        "craft": "Kauna Reed Mats",
+        "district": "Thoubal",
+        "village": "Khangabok Mayai Leikai"
+      },
+      {
+        "craft": "Thongjao Pottery",
+        "district": "Thoubal",
+        "village": "Thongjao"
+      },
+      {
+        "craft": "Traditional Bamboo Products",
+        "district": "Thoubal",
+        "village": "Kakching"
+      },
+      {
+        "craft": "Kauna Reed Mats",
+        "district": "Imphal West",
+        "village": "Imphal"
+      }
+    ]
+  },
+  {
+    "state": "Jharkhand",
+    "count": 11,
+    "crafts": [
+      {
+        "craft": "Kasi Grass Craft",
+        "district": "Deoghar",
+        "village": "Jasidih, Sikaripara, Nunihat, Jadupatia"
+      },
+      {
+        "craft": "Black & Red Pottery",
+        "district": "Dumka",
+        "village": ""
+      },
+      {
+        "craft": "Chhau Masks",
+        "district": "Seraikela Kharsawan",
+        "village": "Charida"
+      },
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Dumka",
+        "village": "Sikaripara"
+      },
+      {
+        "craft": "Jadupatua Painting",
+        "district": "Dumka",
+        "village": "Jadupatua"
+      },
+      {
+        "craft": "Khovar & Sohrai Painting",
+        "district": "Hazaribagh",
+        "village": "Hazaribagh"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "Ranchi",
+        "village": "Ranchi, Soso, Chelagi, Khunti, Bamahani"
+      },
+      {
+        "craft": "Dhokra Metal Casting",
+        "district": "Khunti",
+        "village": "Bajartoli"
+      },
+      {
+        "craft": "Musical Instruments",
+        "district": "Ranchi",
+        "village": "Ranchi"
+      },
+      {
+        "craft": "Tribal Jewellery",
+        "district": "Ranchi",
+        "village": "Chelagi"
+      },
+      {
+        "craft": "Jute Craft",
+        "district": "Ranchi",
+        "village": ""
+      }
+    ]
+  },
+  {
+    "state": "Nagaland",
+    "count": 10,
+    "crafts": [
+      {
+        "craft": "Loin Loom Weaving",
+        "district": "Dimapur",
+        "village": "Dimapur"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Dimapur",
+        "village": "Dimapur"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Dimapur",
+        "village": ""
+      },
+      {
+        "craft": "Loin Loom Weaving",
+        "district": "Kohima",
+        "village": "Kohima, Peren, Ntu Village, Samgiram"
+      },
+      {
+        "craft": "Kophi Cane Baskets",
+        "district": "Kohima",
+        "village": "Khonoma"
+      },
+      {
+        "craft": "Wood Carving",
+        "district": "Kohima",
+        "village": "Kohima"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Mokokchung",
+        "village": "Khensa"
+      },
+      {
+        "craft": "Musical Instruments",
+        "district": "Mokokchung",
+        "village": ""
+      },
+      {
+        "craft": "Blacksmithy",
+        "district": "Phek",
+        "village": ""
+      },
+      {
+        "craft": "Cane & Bamboo Morung Houses",
+        "district": "Zunheboto",
+        "village": "Yaong, Yachem"
+      }
+    ]
+  },
+  {
+    "state": "Meghalaya",
+    "count": 9,
+    "crafts": [
+      {
+        "craft": "Bamboo Rain Shields (Knup)",
+        "district": "East Khasi Hills",
+        "village": "Cherrapunji"
+      },
+      {
+        "craft": "Bamboo Carrying Baskets",
+        "district": "East Khasi Hills",
+        "village": "Shillong"
+      },
+      {
+        "craft": "Bamboo Carrying Baskets",
+        "district": "West Garo Hills",
+        "village": "Tura"
+      },
+      {
+        "craft": "Garo Bamboo Houses (Nokachik)",
+        "district": "West Garo Hills",
+        "village": "Rongram Region, Sadolpara, Sasatgre"
+      },
+      {
+        "craft": "Handloom Weaving",
+        "district": "West Garo Hills",
+        "village": "Rongram Region, Sadolpara, Sasatgre"
+      },
+      {
+        "craft": "Handloom Weaving",
+        "district": "East Khasi Hills",
+        "village": "Shillong"
+      },
+      {
+        "craft": "Handloom Weaving",
+        "district": "West Khasi Hills",
+        "village": ""
+      },
+      {
+        "craft": "Handloom Weaving",
+        "district": "West Garo Hills",
+        "village": "Tura"
+      },
+      {
+        "craft": "Bamboo Craft",
+        "district": "East Khasi Hills",
+        "village": "Shillong"
+      }
+    ]
+  },
+  {
+    "state": "Delhi",
+    "count": 8,
+    "crafts": [
+      {
+        "craft": "Carved Wooden Furniture",
+        "district": "New Delhi",
+        "village": "Kirti Nagar, Panchkuian Road, Jail Road"
+      },
+      {
+        "craft": "Chik Making",
+        "district": "New Delhi",
+        "village": "Khichripur, Govindpuri"
+      },
+      {
+        "craft": "Naqqashi Engraving",
+        "district": "Central Delhi",
+        "village": "Gali Dhobiyan Bazaar, Delhi Gate"
+      },
+      {
+        "craft": "Papier Mache & Paper Craft",
+        "district": "South Delhi",
+        "village": "Mehrauli, Kumbhar Mohalla"
+      },
+      {
+        "craft": "Sandalwood Carving",
+        "district": "Central Delhi",
+        "village": "Sitaram Gali, Sheesh Mahal Bazaar"
+      },
+      {
+        "craft": "Terracotta",
+        "district": "West Delhi",
+        "village": "Uttam Nagar, Prajapati Colony"
+      },
+      {
+        "craft": "Wood Inlay",
+        "district": "New Delhi",
+        "village": "New Delhi"
+      },
+      {
+        "craft": "Zardozi Embroidery",
+        "district": "New Delhi",
+        "village": "New Delhi"
+      }
+    ]
+  },
+  {
+    "state": "Mizoram",
+    "count": 6,
+    "crafts": [
+      {
+        "craft": "Bamboo Basketry",
+        "district": "Aizawl",
+        "village": "Aizawl"
+      },
+      {
+        "craft": "Cane Stools",
+        "district": "Aizawl",
+        "village": "Aizawl"
+      },
+      {
+        "craft": "Mizo Puan Handloom Weaving",
+        "district": "Serchhip",
+        "village": "Thenzawl"
+      },
+      {
+        "craft": "Mizo Puan Handloom Weaving",
+        "district": "Aizawl",
+        "village": "Aizawl"
+      },
+      {
+        "craft": "Gourd Craft",
+        "district": "Aizawl",
+        "village": "Aizawl"
+      },
+      {
+        "craft": "Pottery",
+        "district": "Aizawl",
+        "village": ""
+      }
+    ]
+  },
+  {
+    "state": "Tripura",
+    "count": 6,
+    "crafts": [
+      {
+        "craft": "Bamboo Crafts",
+        "district": "West Tripura",
+        "village": "Agartala, Nalchar, Churilam"
+      },
+      {
+        "craft": "Bamboo Fences",
+        "district": "West Tripura",
+        "village": "Shibnagar, Kamalghat, Ashram Bari, Mohanpur, Taranagar"
+      },
+      {
+        "craft": "Bamboo Furniture",
+        "district": "West Tripura",
+        "village": "Katlamara"
+      },
+      {
+        "craft": "Tripuri Handloom Textiles",
+        "district": "West Tripura",
+        "village": "Agartala"
+      },
+      {
+        "craft": "Pressed Clay Work",
+        "district": "Sepahijala",
+        "village": "Melaghar, Palpara"
+      },
+      {
+        "craft": "Traditional Bamboo Products",
+        "district": "West Tripura",
+        "village": "Nalchar, Churilam, Agartala, Majlishpur, Mohanpur, Sonamura, Melaghar, Teliamura, Khowai, Kalyanpur"
+      }
+    ]
+  },
+  {
+    "state": "Dadra and Nagar Haveli",
+    "count": 6,
+    "crafts": [
+      {
+        "craft": "Bamboo Baskets",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Vagchhipa"
+      },
+      {
+        "craft": "Bamboo Fish Traps",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Khanvel"
+      },
+      {
+        "craft": "Bamboo Fish Traps",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Silvassa"
+      },
+      {
+        "craft": "Fishing Nets",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Silvassa"
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Silvassa"
+      },
+      {
+        "craft": "Terracotta & Pottery",
+        "district": "Dadra and Nagar Haveli",
+        "village": "Vagchhipa"
+      }
+    ]
+  },
+  {
+  "state": "Puducherry",
+  "count": 19,
+  "crafts": [
+    {
+      "craft": "Terracotta and pottery (GI Tagged)",
+      "district": "Pondicherry",
+      "village": "Villianur"
+    },
+    {
+      "craft": "Kora matweaving",
+      "district": "Pondicherry",
+      "village": "Villianur, Odiampet"
+    },
+    {
+      "craft": "Stone craft",
+      "district": "Pondicherry",
+      "village": "Kossapalayam"
+    },
+    {
+      "craft": "Seashell craft",
+      "district": "Karaikal",
+      "village": "Karaikal"
+    },
+    {
+      "craft": "Paper Mache Dolls (GI Tagged)",
+      "district": "Pondicherry",
+      "village": "Thirukannur"
+    },
+    {
+      "craft": "Ceramic glazed pottery",
+      "district": "Pondicherry (Auroville Bio region)",
+      "village": "Alankuppam, Sanjeevi Nagar"
+    },
+    {
+      "craft": "Buff leather crafts",
+      "district": "Pondicherry (Auroville Bio region)",
+      "village": "Alankuppam, Sanjeevi Nagar"
+    },
+    {
+      "craft": "Handloom - Hammocks",
+      "district": "Pondicherry (Auroville Bio region)",
+      "village": "Alankuppam, Sanjeevi Nagar"
+    },
+    {
+      "craft": "Candles and Incense",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Handmade Bead Jewellery",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Handmade Footwear",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Coconut shell Crafts",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Crochet Crafts",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Handmade paper Crafts",
+      "district": "Pondicherry",
+      "village": "Not Specified"
+    },
+    {
+      "craft": "Netti / Pith Craft",
+      "district": "Karaikal",
+      "village": "Karaikal"
+    },
+    {
+      "craft": "Palmleaf craft",
+      "district": "Karaikal",
+      "village": "Karaikal"
+    },
+    {
+      "craft": "Handmade Bead Jewellery",
+      "district": "Karaikal",
+      "village": "Karaikal"
+    },
+    {
+      "craft": "Embroidery work",
+      "district": "Yanam",
+      "village": "Yanam"
+    },
+    {
+      "craft": "Crochet work",
+      "district": "Yanam",
+      "village": "Yanam"
+    },
+    {
+      "craft": "Mural works",
+      "district": "Mahe",
+      "village": "Mahe"
+    },
+    {
+      "craft": "Coconut shell Crafts",
+      "district": "Mahe",
+      "village": "Mahe"
+    },
+    {
+      "craft": "Embroidery work",
+      "district": "Mahe",
+      "village": "Mahe"
+    }
+  ]
+},
+  {
+    "state": "Sikkim",
+    "count": 2,
+    "crafts": [
+      {
+        "craft": "Choktse tables carved furniture",
+        "district": "East",
+        "village": "Gangtok"
+      },
+      {
+        "craft": "Ku buddhist figurines metal casting",
+        "district": "East",
+        "village": "Rumtek"
+      }
+    ]
+  },
+{
+  "state": "Chandigarh",
+  "count": 7,
+  "crafts": [
+    {
+      "craft": "Mitti da kaam (Terracotta & Clay Pottery)",
+      "district": "Chandigarh",
+      "village": "Chandigarh, Kishangarh, Saketri, Hallo Majra, Dadu Majra"
+    },
+    {
+      "craft": "Phulkari embroidery",
+      "district": "Chandigarh",
+      "village": "Chandigarh Urban Cluster"
+    },
+    {
+      "craft": "Dhurrie Weaving (Indian Carpets)",
+      "district": "Chandigarh",
+      "village": "Shastri Market (Sector 22), Mani Majra"
+    },
+    {
+      "craft": "Traditional Jutti Making & Tilla Embroidery",
+      "district": "Chandigarh",
+      "village": "Chandigarh Craft Clusters"
+    },
+    {
+      "craft": "Woodcraft & Contemporary Furniture Design",
+      "district": "Chandigarh",
+      "village": "Industrial Area Phase I & II"
+    },
+    {
+      "craft": "Chowk Poorana (Mud Wall Art & Warli-inspired Motifs)",
+      "district": "Chandigarh",
+      "village": "Peripheral Rural Pockets"
+    },
+    {
+      "craft": "Studio Pottery & Glazed Ceramics",
+      "district": "Chandigarh",
+      "village": "Sector 10 (Art College Area), Kishangarh"
+    }
+  ]
+},
+  {
+    "state": "DAMAN",
+    "count": 2,
+    "crafts": [
+      {
+        "craft": "Crochet andlace work",
+        "district": "Daman",
+        "village": "Daman"
+      },
+      {
+        "craft": "Tortoise shell",
+        "district": "Diu",
+        "village": "Diu"
+      }
+    ]
+  },
+  {
+    "state": "CHANDIGARH",
+    "count": 2,
+    "crafts": [
+      {
+        "craft": "Mitti da kaam",
+        "district": "Chandigarh",
+        "village": "Chandigarh, Kishangarh"
+      },
+      {
+        "craft": "Phulkari embroidery",
+        "district": "Chandigarh",
+        "village": "Chandigarh"
+      }
+    ]
+  }
+]

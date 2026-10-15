@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* ── HISTORY TWO-COLUMN ── */
+.history-section{padding:80px 48px;background:var(--linen)}
+.history-inner{max-width:1200px;margin:0 auto}
+.history-header{text-align:center;margin-bottom:56px}
+.history-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:start}
+.history-image-col{position:sticky;top:96px}
+.history-portrait{
+  width:100%;aspect-ratio:3/4;
+  background:linear-gradient(160deg,#2C1810 0%,#5C2C18 45%,#8B5230 75%,#C4844A 100%);
+  border-radius:4px;display:flex;align-items:center;justify-content:center;
+  overflow:hidden;position:relative;box-shadow:var(--shadow-lg);
+}
+.portrait-inner{text-align:center;color:rgba(250,246,239,0.85);padding:40px;z-index:1;position:relative}
+.portrait-inner svg{opacity:.18;margin-bottom:20px}
+.portrait-image{
+  width:100%;
+  max-width:320px;
+  height:auto;
+  object-fit:contain;
+  display:block;
+  margin:0 auto 18px;
+  border-radius:4px;
+}
+.portrait-name{font-family:'Cormorant Garamond',serif;font-size:22px;font-weight:500;font-style:italic;margin-bottom:6px}
+.portrait-years{font-size:11px;letter-spacing:3px;color:rgba(196,164,74,0.9);text-transform:uppercase}
+.portrait-desc{font-size:12px;margin-top:18px;line-height:1.7;opacity:.7}
+.portrait-bottom{
+  position:absolute;bottom:0;left:0;right:0;
+  background:linear-gradient(to top,rgba(44,24,16,0.85),transparent);
+  padding:20px 24px 18px;
+}
+.portrait-caption{font-size:10px;letter-spacing:2.5px;color:rgba(250,246,239,0.6);text-transform:uppercase}
+.history-pill{
+  display:inline-block;background:var(--cr-pale);color:var(--cr);
+  font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+  padding:4px 14px;border-radius:20px;margin-bottom:24px
+}
+.history-quote{
+  font-family:'Cormorant Garamond',serif;font-size:21px;font-weight:400;font-style:italic;
+  line-height:1.75;color:var(--cr);border-left:3px solid var(--cr);
+  padding-left:22px;margin:0 0 32px
+}
+.history-body p{font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:20px}
+.history-body p:last-child{margin-bottom:0}
+.history-body em{font-style:italic;color:var(--cr-deep)}
+
+/* ── VISION & MISSION ── */
+.vm-section{padding:80px 48px;background:#fff}
+.vm-inner{max-width:1000px;margin:0 auto;text-align:center}
+.vm-cards{display:grid;grid-template-columns:1fr 1fr;gap:32px;margin-top:56px;text-align:left}
+.vm-card{padding:48px 40px;border:1px solid var(--border);border-radius:6px;position:relative;background:var(--linen)}
+.vm-accent{position:absolute;top:0;left:40px;width:40px;height:3px;background:var(--cr)}
+.vm-label{font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;color:var(--cr);margin-bottom:16px}
+.vm-title{font-family:'Cormorant Garamond',serif;font-size:32px;font-weight:500;color:var(--ink);margin-bottom:20px;line-height:1.2}
+.vm-text{font-size:15px;line-height:1.85;color:var(--bark);font-weight:300}
+
+/* ── TEAM ── */
+.team-section{padding:80px 48px;background:var(--linen2)}
+.team-inner{max-width:1100px;margin:0 auto}
+.team-header{text-align:center;margin-bottom:56px}
+.team-note{font-size:13px;color:var(--mud);margin-top:10px;font-weight:300}
+.team-cols{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.tc-title{
+  font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--cr);padding-bottom:14px;border-bottom:1px solid var(--border);margin-bottom:0
+}
+.tc-list{list-style:none;margin:0;padding:0}
+.tc-list li{
+  display:flex;align-items:baseline;gap:12px;
+  padding:13px 0;border-bottom:1px solid var(--border);
+  font-size:15px;color:var(--bark);font-weight:300;line-height:1.4
+}
+.tc-list li:last-child{border-bottom:none}
+.tc-num{font-family:'Cormorant Garamond',serif;font-size:13px;color:var(--cr);opacity:.5;min-width:20px;flex-shrink:0}
+.tc-role{
+  font-size:11px;color:var(--cr);font-weight:500;
+  background:var(--cr-pale);padding:2px 8px;border-radius:3px;
+  margin-left:auto;flex-shrink:0;letter-spacing:.5px;white-space:nowrap
+}
+
+/* ── RESPONSIVE ── */
+@media(max-width:960px){
+  .history-section,.vm-section,.team-section{padding:60px 32px}
+  .history-grid{grid-template-columns:1fr;gap:40px}
+  .history-image-col{position:relative;top:auto}
+  .history-portrait{aspect-ratio:4/3;max-width:400px;margin:0 auto}
+  .vm-cards{grid-template-columns:1fr}
+  .team-cols{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+  .history-section,.vm-section,.team-section{padding:44px 20px}
+  .history-quote{font-size:18px}
+  .vm-card{padding:32px 24px}
+  .tc-list li{font-size:14px}
+  .history-portrait{
+  aspect-ratio:auto;
+  padding:20px 14px;
+}
+
+.portrait-inner{
+  padding:10px;
+}
+
+.portrait-image{
+  max-width:100%;
+  width:100%;
+}
+
+.portrait-name{
+  font-size:20px;
+}
+
+.portrait-desc{
+  font-size:11px;
+  line-height:1.6;
+}
+
+.history-grid{
+  gap:28px;
+}
+  /* .tc-role{display:none} */
+}
+</style>
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<!-- Hero -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">About CCI</h1>
+    <p class="page-subtitle">Six decades of championing India's artisan communities, preserving traditional crafts, and connecting heritage with the future.</p>
+  </div>
+</div>
+
+<!-- ── HISTORY ── -->
+<section class="history-section">
+  <div class="history-inner">
+    <div class="history-header">
+      <p class="s-tag">History</p>
+      <h2 class="s-title large">The Birth of CCI</h2>
+    </div>
+    <div class="history-grid">
+
+      <!-- Portrait column -->
+      <div class="history-image-col">
+        <div class="history-portrait">
+          
+          <div class="portrait-inner">
+           <img   src="images/Kamala-Devi.webp"   alt="Kamaladevi Chattopadhyay"   class="portrait-image"   loading="lazy" />
+            <div class="portrait-name">Kamaladevi Chattopadhyay</div>
+            <div class="portrait-years">1903 &ndash; 1988</div>
+            <p class="portrait-desc">Padma Vibhushan Awardee, 1987<br>Co-founder, World Crafts Council<br>Patron of Indian handicrafts</p>
+          </div>
+          <div class="portrait-bottom">
+            
+          </div>
+        </div>
+      </div>
+
+      <!-- Text column -->
+      <div>
+        <span class="history-pill">Founded 1964</span>
+        <blockquote class="history-quote">
+          "In the ancient books of the East it is said that when the hands of a craftsman are engaged in his craft, it is always ceremonial."
+        </blockquote>
+        <div class="history-body">
+          <p>The genesis of The Crafts Council of India can be traced back to the establishment of the World Crafts Council (WCC) in 1964 in New York City. The WCC was co-founded by Kamaladevi Chattopadhyay a visionary who saw craft not merely as heritage, but as a living instrument for empowering women, revitalising rural economies and building sustainable livelihoods across India.</p>
+          <p>In the 1950s, Nehruvian economic policies favouring industrialisation and the dominance of factory-made goods posed a serious threat to local craft traditions. Kamaladevi headed the All-India Handicrafts Board, established in 1952, to protect and promote traditional handicrafts through this turbulent post-colonial period.</p>
+          <p>The Crafts Council of India was initially set up in Bombay in 1964 and moved to New Delhi in 1966. In 1977, Kamaladevi guided a further relocation to Chennai believing the South, with its rich craft traditions and growing network of State Councils, had become the natural centre of this revival.</p>
+          <p>Vijaya Rajan, who became Founder-Chairperson of CCI Chennai, recalls how Kamaladevi entrusted her with the role of first Honorary Secretary in 1964 and later Chairperson in 1976. Under the subsequent stewardship of Ashoke Chatterjee and Kasturi Gupta Menon, the organisation grew into the credible, volunteer-driven body it is today, spanning ten affiliated State Councils and touching thousands of artisan families across 28 states.</p>
+          <p>The essence of CCI's ethos, as envisioned by Kamaladevi, remains volunteerism. Members give of their time freely, travel at their own expense, and fund operations through spectacular textile shows and craft exhibitions. The three words that define this work — support, promote, sustain — have guided the organisation through sixty years of service to India's craft world.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── VISION & MISSION ── -->
+<section id="vision" class="vm-section">
+  <div class="vm-inner">
+    <p class="s-tag">What drives us</p>
+    <h2 class="s-title large">Vision &amp; Mission</h2>
+    <div class="vm-cards">
+      <div class="vm-card">
+        <div class="vm-accent"></div>
+        <!--<div class="vm-label">Our Vision</div>-->
+        <h3 class="vm-title">Our Vision</h3>
+        <p class="vm-text">The Crafts Council of India strives towards an India in which its artisan communities are valued, respected and supported with an enabling environment that renews and enhances their heritage for contemporary relevance and self-worth.
+</p>
+      </div>
+      <div id="mission" class="vm-card">
+        <div class="vm-accent" style="background:var(--gd)"></div>
+        <!--<div class="vm-label" style="color:var(--gd)">Our Mission</div>-->
+        <h3 class="vm-title">Our Mission</h3>
+        <p class="vm-text">To help ensure sustainable livelihoods through crafts. (United Nations – SDG 8)<br>
+To help ensure growth for artisans and their families through opportunities for education and training. (United Nations – SDG 4)<br>
+To help bring technology, design, marketing and entrepreneurial skills for self-reliance within changing markets at home and abroad.<br>
+To advocate the critical importance of artisans and their crafts to the nation’s social, economic, cultural and environmental well-being. (United Nations – SDG 12)
+</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── TEAM ── -->
+<section id="team" class="team-section">
+  <div class="team-inner">
+    <div class="team-header">
+      <p class="s-tag">Leadership</p>
+      <h2 class="s-title large">Executive Committee 2025–2027</h2>
+      <p class="team-note">CCI is governed by its Executive Committee, elected every two years. Following the direction of our founder, Kamaladevi ji, volunteerism is at the core of CCI. Members not only give of their time but also travel on work at their own expense.</p>
+    </div>
+    <div class="team-cols">
+      <div>
+        <div class="tc-title">EC Members</div>
+        <ul class="tc-list">
+          <li>Smt. Asha Ravi</li>
+          <li>Smt. Bela Khaleeli</li>
+          <li>Smt. Bela Kothari</li>
+          <li>Smt. Geetha Raja</li>
+          <li>Smt. Ibha Kapur</li>
+          <li>Smt. Jayasri Samyukta</li>
+          <li>Smt. Malavika Phadke</li>
+          <li>Smt. Meera Mammen </li>
+          <li>Smt. Renu Sabanayagam</li>
+          <li>Smt. Sowmithra Srinivasan</li>
+          <li>Smt. Sharmila Chatterjee</li>
+          <li>Smt. Sudha Shivakumar</li>
+          <li>Smt. Thejomaye Menon</li>
+          <li>Smt. Visalakshi Ramaswamy</li>
+          <li>Smt. Vharsha Raheja</li>
+        </ul>
+      </div>
+      <div>
+        <div class="tc-title">Office Bearers</div>
+        <ul class="tc-list">
+          <li>Shri. Ashok Chatterjee<span class="tc-role">Honorary Advisor</span></li>
+          <li>Smt. Sudha Shivkumar<span class="tc-role">Vice President</span></li>
+          <li>Smt. Visalakshi Ramaswamy<span class="tc-role">Chairperson</span></li>
+          <li>Smt. Bela Khaleeli<span class="tc-role">Vice-Chairperson</span></li>
+          <li>Smt. Malavika Phadke<span class="tc-role">Hon. Secretary</span></li>
+          <li>Smt. Asha Ravi<span class="tc-role">Joint Secretary</span></li>
+          <li>Smt. Ibha Kapur<span class="tc-role">Joint Secretary</span></li>
+          <li>Smt. Geetha Raja<span class="tc-role">Treasurer</span></li>
+          <li>Smt. Gita Ram<span class="tc-role">Chairperson - Emeritus</span></li>
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+ 
+
+<div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+ 
+</body>
+</html>

@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>News Details - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.ed-hero{
+  position:relative;
+  min-height:450px;
+  display:flex;
+  align-items:flex-end;
+  overflow:hidden;
+}
+
+.ed-hero-bg{
+  position:absolute;
+  inset:0;
+  background-size:cover;
+  background-position:center;
+  transition:transform 8s ease;
+}
+
+.ed-hero:hover .ed-hero-bg{
+  transform:scale(1.03);
+}
+
+.ed-hero-overlay{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(
+    to top,
+    rgba(20,10,6,.88) 0%,
+    rgba(20,10,6,.45) 60%,
+    rgba(20,10,6,.15) 100%
+  );
+}
+
+.ed-hero-content{
+  position:relative;
+  z-index:2;
+  padding:56px 48px;
+  width:100%;
+  max-width:900px;
+}
+
+.ed-breadcrumb{
+  display:flex;
+  gap:8px;
+  flex-wrap:wrap;
+  font-size:12px;
+  color:rgba(250,246,239,.7);
+  margin-bottom:20px;
+}
+
+.ed-breadcrumb a{
+  color:rgba(250,246,239,.7);
+  text-decoration:none;
+}
+
+.ed-tag{
+  display:inline-block;
+  padding:4px 12px;
+  border-radius:3px;
+  font-size:11px;
+  letter-spacing:1.5px;
+  text-transform:uppercase;
+  margin-bottom:18px;
+}
+
+.ed-title{
+  font-family:'Cormorant Garamond',serif;
+  font-size:54px;
+  line-height:1.08;
+  color:#FAF6EF;
+  margin-bottom:18px;
+}
+
+.ed-subtitle{
+  font-size:16px;
+  line-height:1.8;
+  color:rgba(250,246,239,.82);
+  font-weight:300;
+}
+
+/* =========================================================
+   BODY
+========================================================= */
+
+.ed-body{
+  max-width:1200px;
+  margin:0 auto;
+  padding:56px 48px 80px;
+}
+
+.ed-section-label{
+  display:block;
+  font-size:11px;
+  letter-spacing:2px;
+  text-transform:uppercase;
+  color:var(--cr);
+  margin-bottom:14px;
+}
+
+.ed-divider{
+  width:48px;
+  height:2px;
+  background:var(--cr);
+  margin-bottom:30px;
+}
+
+.ed-description p{
+  font-size:16px;
+  line-height:1.9;
+  color:var(--bark);
+  font-weight:300;
+  margin-bottom:22px;
+}
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.ed-gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+  gap:12px;
+  margin-top:36px;
+}
+
+.ed-gallery-item{
+  border-radius:8px;
+  overflow:hidden;
+  cursor:pointer;
+  background:#eee;
+}
+
+.ed-gallery-item img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+  transition:transform .3s ease;
+}
+
+.ed-gallery-item:hover img{
+  transform:scale(1.03);
+}
+
+.video-item iframe{
+  width:100%;
+  aspect-ratio:16/9;
+  height:auto;
+  border:none;
+  display:block;
+}
+
+/* youtube GALLERY*/
+.video-gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+    margin-top:30px;
+}
+
+.video-card{
+    background:#fff;
+    border-radius:16px;
+    overflow:hidden;
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+
+.video-card h3{
+    padding:16px 20px;
+    margin:0;
+    font-size:18px;
+    line-height:1.4;
+}
+
+.video-card .premium-video{
+    margin:0;
+}
+
+.video-card iframe{
+    width:100%;
+    aspect-ratio:16/9;
+    border:0;
+}
+
+/**/
+
+
+
+/*================================*/
+    YOUTUBE
+/*====================================*/
+/* ===============================
+WINNER SECTION FINAL FIX
+=============================== */
+
+.winner-grid{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    width:100% !important;
+    gap:24px !important;
+    margin-top:50px !important;
+}
+
+.winner-card{
+    flex:1 1 0 !important;
+    min-width:0 !important;
+
+    background:transparent !important;
+    box-shadow:none !important;
+
+    padding:10px;
+    text-align:center;
+}
+
+.winner-img{
+    width:120px;
+    height:120px;
+    border-radius:50%;
+    object-fit:cover;
+    display:block;
+    margin:0 auto 18px;
+}
+
+.winner-position{
+    font-size:14px;
+    font-weight:600;
+    color:#8A4820;
+    margin-bottom:10px;
+}
+
+.winner-name{
+    margin:0;
+    font-size:24px;
+}
+
+.winner-doc{
+    margin:10px 0 20px;
+    opacity:.7;
+    font-style:italic;
+}
+
+.winner-card .premium-video,
+.winner-card iframe{
+    width:100%!important;
+    max-width:100%!important;
+    margin:20px auto !importan
+}
+
+
+.premium-video,
+..premium-video iframe
+{
+    width:100%!important;
+    max-width:100%!important;
+    margin:20px auto !importan
+}
+
+/**/
+@media(min-width:1025px){
+    .winner-grid{
+    display:flex !important;
+    flex-wrap:nowrap !important;
+    width:100% !important;
+    gap:24px !important;
+    margin-top:50px !important;
+}
+}
+
+/* Tablet */
+
+@media(max-width:1024px){
+
+.winner-grid{
+    display:flex !important;
+    flex-wrap:wrap !important;
+}
+
+.winner-card{
+    flex:0 0 calc(50% - 12px)!important;
+}
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.winner-grid{
+    display:flex !important;
+    flex-wrap:wrap !important;
+}
+
+.winner-card{
+    flex:0 0 100%!important;
+}
+
+}
+
+/* Responsive cinematic landscape video */
+
+.winner-card .premium-video iframe{
+    width:100% !important;
+    aspect-ratio:21 / 9;
+    min-height:240px;
+    height:auto !important;
+    border:none;
+    border-radius:12px;
+    display:block;
+}
+
+.premium-video iframe{
+    width:100% !important;
+    aspect-ratio:21 / 9;
+    min-height:240px;
+    height:auto !important;
+    border:none;
+    border-radius:12px;
+    display:block;
+}
+
+/* Tablet */
+@media(max-width:1024px){
+
+.winner-card .premium-video iframe{
+    aspect-ratio:16 / 9;
+    min-height:220px;
+}
+
+
+.premium-video iframe{
+    aspect-ratio:16 / 9;
+    min-height:220px;
+}
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.winner-card .premium-video iframe{
+    aspect-ratio:16 / 9;
+    min-height:180px;
+}
+
+.premium-video iframe{
+    aspect-ratio:16 / 9;
+    min-height:180px;
+}
+
+}
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.lightbox{
+  position:fixed;
+  inset:0;
+  background:rgba(0,0,0,.94);
+
+  z-index:99999;
+
+  display:flex;
+  align-items:center;
+  justify-content:center;
+
+  opacity:0;
+  visibility:hidden;
+
+  transition:.25s ease;
+}
+
+.lightbox.active{
+  opacity:1;
+  visibility:visible;
+}
+
+.lightbox img{
+  max-width:92%;
+  max-height:88vh;
+  object-fit:contain;
+
+  border-radius:8px;
+
+  box-shadow:0 20px 80px rgba(0,0,0,.45);
+}
+
+.lightbox-close{
+  position:absolute;
+  top:20px;
+  right:20px;
+
+  width:42px;
+  height:42px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(255,255,255,.12);
+  color:#fff;
+
+  font-size:20px;
+  cursor:pointer;
+}
+
+.lightbox-nav{
+  position:absolute;
+  top:50%;
+  transform:translateY(-50%);
+
+  width:52px;
+  height:52px;
+
+  border:none;
+  border-radius:50%;
+
+  background:rgba(255,255,255,.12);
+  color:#fff;
+
+  font-size:32px;
+  cursor:pointer;
+}
+
+.lightbox-nav.prev{
+  left:24px;
+}
+
+.lightbox-nav.next{
+  right:24px;
+}
+
+
+/* ── READ MORE BUTTON ── */
+
+.btn-readmore{
+  display:inline-flex;
+  margin-bt: 10px;
+  align-items:center;
+  gap:8px;
+  padding:12px 26px;
+  background:var(--cr);
+  color:#FAF6EF;
+  text-decoration:none;
+  font-size:14px;
+  font-weight:400;
+  font-family:'DM Sans',sans-serif;
+  transition:
+    background .3s ease,
+    transform .3s ease,
+    box-shadow .3s ease;
+}
+
+.btn-readmore:hover{
+  background:var(--cr-deep);
+  transform:translateY(-2px);
+  box-shadow:
+    0 8px 18px rgba(0,0,0,.08);
+}
+
+.btn-readmore::after{
+  content:"";
+  transition:transform .3s ease;
+}
+
+.btn-readmore:hover::after{
+  transform:translateX(4px);
+}
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:960px){
+
+  .ed-title{
+    font-size:40px;
+  }
+
+  .ed-body{
+    padding:48px 32px 72px;
+  }
+
+}
+
+@media(max-width:640px){
+
+  .ed-hero{
+    min-height:360px;
+  }
+
+  .ed-hero-content{
+    padding:34px 20px;
+  }
+
+  .ed-title{
+    font-size:30px;
+  }
+
+  .ed-subtitle{
+    font-size:14px;
+  }
+
+  .ed-body{
+    padding:42px 20px 64px;
+  }
+
+  .ed-gallery{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .lightbox-nav{
+    width:44px;
+    height:44px;
+    font-size:26px;
+  }
+
+  .lightbox-nav.prev{
+    left:12px;
+  }
+
+  .lightbox-nav.next{
+    right:12px;
+  }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<nav id="main-nav"></nav>
+
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<!-- NEWS PAGE -->
+<div id="eventPage"></div>
+
+<!-- LIGHTBOX -->
+
+<div class="lightbox" id="lightbox">
+
+  <button class="lightbox-close" id="lightboxClose">
+    ✕
+  </button>
+
+  <button class="lightbox-nav prev" id="lightboxPrev">
+    ‹
+  </button>
+
+  <img id="lightboxImg" src="" alt="Gallery image">
+
+  <button class="lightbox-nav next" id="lightboxNext">
+    ›
+  </button>
+
+</div>
+
+ 
+ 
+
+
+<!-- SCRIPTS -->
+<div id="site-footer"></div>
+<script src="config.js?v=2026.08.01.04"></script>
+<script src="loader.js?v=2026.08.01.04"></script>
+<script>
+(function () {
+  function renderFromUrl() {
+    if (!window.NEWS) return;
+    const params = new URLSearchParams(window.location.search);
+    const id = params.get('id');
+    if (!id) return;
+    const item = window.NEWS.find(function (entry) {
+      return entry.id === id;
+    });
+    if (!item) return;
+    if (typeof window.renderNews === 'function') {
+      window.renderNews(item);
+      if (item.gallery) {
+        if (typeof window.initLightbox === 'function') {
+          window.initLightbox(item.gallery);
+        }
+      }
+    }
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', renderFromUrl, { once: true });
+  } else {
+    renderFromUrl();
+  }
+
+  window.addEventListener('site-scripts-ready', renderFromUrl, { once: true });
+  setTimeout(renderFromUrl, 250);
+})();
+</script>
+</html>

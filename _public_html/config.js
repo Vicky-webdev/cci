@@ -1,0 +1,1 @@
+window.APP_VERSION = "2026.10.13.01";

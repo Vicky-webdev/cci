@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Events - Crafts Council of India</title>
+<link rel="stylesheet" href="cci.css?v=1.0">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+  .event-overlay {
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,0.4), transparent);
+}
+.event-image {
+  position:relative;
+}
+</style>
+</head>
+
+<body>
+
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">Events & Exhibitions</h1>
+    <p class="page-subtitle">
+      Celebrating crafts through workshops, exhibitions, and cultural gatherings
+    </p>
+  </div>
+</div>
+
+<div class="section">
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <button class="filter-btn active" onclick="filterEvents(this,'all')">All Events</button>
+    <button class="filter-btn" onclick="filterEvents(this,'upcoming')">Upcoming</button>
+    <button class="filter-btn" onclick="filterEvents(this,'workshop')">Workshops</button>
+    <button class="filter-btn" onclick="filterEvents(this,'exhibition')">Exhibitions</button>
+  </div>
+
+  <!-- GRID -->
+  <div class="events-grid" id="eventsGrid"></div>
+
+  <!-- LOAD MORE -->
+  <!-- <div class="load-more">
+    <button class="btn-primary" onclick="loadMoreEvents()">Load More Events</button>
+  </div> -->
+
+</div>
+
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+<script>
+// let visibleCount = 3;
+let currentFilter = 'all';
+
+
+// ============================
+// 📅 DATE PARSER
+// ============================
+// ============================
+// 📅 ROBUST EVENT DATE PARSER
+// ============================
+function getEventDate(e) {
+  if (!e || !e.dates || typeof e.dates !== 'string') {
+    return new Date(0);
+  }
+
+  const dateStr = e.dates.trim();
+
+  const months = {
+    january: 0,
+    february: 1,
+    march: 2,
+    april: 3,
+    may: 4,
+    june: 5,
+    july: 6,
+    august: 7,
+    september: 8,
+    october: 9,
+    november: 10,
+    december: 11
+  };
+
+  // Supports:
+  // 24–26 September 2026
+  // 9, 10 & 12 October 2026
+  // 23 October 2026 – 21 January 2027
+  // 10 September 2026
+  const match = dateStr.match(
+    /\b(\d{1,2})(?:\s*[-–—]\s*\d{1,2})?(?:,\s*\d{1,2})*(?:\s*&\s*\d{1,2})?\s+([A-Za-z]+)\s+(20\d{2})\b/i
+  );
+
+  if (match) {
+    const day = parseInt(match[1], 10);
+    const monthName = match[2].toLowerCase();
+    const year = parseInt(match[3], 10);
+
+    if (months[monthName] !== undefined) {
+      return new Date(year, months[monthName], day);
+    }
+  }
+
+  return new Date(0);
+}
+
+
+// ============================
+// 🔥 EVENT STATUS
+// ============================
+function getStatus(e) {
+  const today = new Date();
+  today.setHours(0, 0, 0, 0);
+
+  const eventDate = getEventDate(e);
+  eventDate.setHours(0, 0, 0, 0);
+
+  return eventDate >= today ? 'upcoming' : 'past';
+}
+
+// ============================
+// 🔥 AUTO STATUS (FIXES BUG)
+// ============================
+function getStatus(e) {
+  const today = new Date();
+  const eventDate = getEventDate(e);
+
+  today.setHours(0,0,0,0);
+  eventDate.setHours(0,0,0,0);
+
+  return eventDate > today ? 'upcoming' : 'past';
+}
+
+// ============================
+// 🎯 MAIN RENDER
+// ============================
+function renderEvents(filter = 'all') {
+  const grid = document.getElementById('eventsGrid');
+  if (!grid || !window.EVENTS) return;
+
+  const filtered = EVENTS
+
+    // ✅ FILTER LOGIC
+    .filter(e => {
+      if (filter === 'all') return true;
+      if (filter === 'upcoming') return getStatus(e) === 'upcoming';
+      return e.type === filter;
+    })
+
+    // ✅ SORT LOGIC (CORRECT ORDER)
+    .sort((a, b) => {
+      const statusA = getStatus(a);
+      const statusB = getStatus(b);
+
+      // Upcoming first
+      if (statusA === 'upcoming' && statusB !== 'upcoming') return -1;
+      if (statusA !== 'upcoming' && statusB === 'upcoming') return 1;
+
+      // Then by latest date
+      return getEventDate(b) - getEventDate(a);
+    });
+
+
+  if (!filtered.length) {
+    grid.innerHTML = `
+      <div style="padding:60px;text-align:center">
+        <h3>No events found</h3>
+        <p>Try another filter</p>
+      </div>`;
+    return;
+  }
+
+  // const visibleEvents = filtered.slice(0, visibleCount);
+
+  grid.innerHTML = filtered.map(e => `
+    <div class="event-card card-hover">
+
+   <a href="event-detail.html?id=${e.id}" class="event-image-link">
+  <div class="event-image" style="
+    ${e.image 
+      ? `background-image:url('${e.image}');background-size:cover;background-position:center;`
+      : `background:${e.heroGradient};display:flex;align-items:center;justify-content:center;font-size:40px;`
+    }
+  ">
+    ${e.image ? '<div class="event-overlay"></div>' : ''}
+    ${!e.image ? (e.heroEmoji || '🎨') : ''}
+  </div>
+</a>
+
+      <div class="event-content">
+
+        <!-- ✅ FIXED TAG -->
+      <span class="event-tag ${e.tagClass || ''}">
+  ${getStatus(e) === 'upcoming'
+    ? (e.tagLabel || 'Upcoming Event')
+    : 'Events & Highlights'}
+</span>
+
+        <h3 class="event-title">${e.title}</h3>
+
+        <div class="event-meta">
+          <span>📅 ${e.dates}</span>
+          <span>📍 ${(e.city || '').split(',')[0]}</span>
+        </div>
+
+        <p class="event-desc">${e.subtitle || ''}</p>
+
+        <a href="event-detail.html?id=${e.id}" class="event-link">
+          Learn more →
+        </a>
+
+      </div>
+    </div>
+  `).join('');
+}
+
+
+// ============================
+// 🎛 FILTER BUTTON
+// ============================
+function filterEvents(btn, cat) {
+  currentFilter = cat;
+   
+
+  document.querySelectorAll('.filter-btn')
+    .forEach(b => b.classList.remove('active'));
+
+  btn.classList.add('active');
+
+  renderEvents(cat);
+}
+
+
+// ============================
+// ➕ LOAD MORE
+// ============================
+// function loadMoreEvents() {
+//   visibleCount += 3;
+//   renderEvents(currentFilter);
+// }
+
+
+// INIT
+// INIT — wait for loader.js to finish loading events.js
+window.addEventListener('site-scripts-ready', function () {
+  renderEvents();
+});
+
+</script>
+    <div style="text-align:center;padding:24px 0 0;border-top:1px solid var(--border)">
+      <p style="font-size:13px;color:var(--mud);font-weight:300"><a href="past-events.html" style="color:var(--cr);text-decoration:none;font-weight:400">See Past Events →</a></p><p><br></p>
+    </div>
+<div id="site-footer"></div>
+</body>
+</html>

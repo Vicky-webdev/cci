@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Newsletters Archive - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css">
+<link rel="stylesheet" href="custom.css">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* ── NEWSLETTER PAGE ── */
+
+/* Latest issue hero */
+.nl-latest{
+  display:grid;grid-template-columns:1fr 1fr;
+  gap:0;background:#fff;border-bottom:1px solid var(--border);
+}
+.nl-latest-cover{
+  background:linear-gradient(160deg,var(--cr-deep) 0%,var(--cr) 60%,var(--cr-light) 100%);
+  display:flex;align-items:center;justify-content:center;
+  padding:64px 48px;min-height:420px;position:relative;overflow:hidden;
+}
+.nl-latest-cover::before{
+  content:'';position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,rgba(250,246,239,.03) 0,rgba(250,246,239,.03) 1px,transparent 1px,transparent 12px);
+}
+.nl-cover-card{
+  width:200px;background:#FAF6EF;border-radius:4px;
+  box-shadow:0 12px 40px rgba(0,0,0,.3);
+  position:relative;z-index:1;overflow:hidden;
+}
+.nl-cover-card-top{
+  padding:24px 20px 16px;
+  background:var(--cr);color:#FAF6EF;
+}
+.nl-cover-logo{font-size:9px;letter-spacing:2px;text-transform:uppercase;opacity:.7;margin-bottom:8px}
+.nl-cover-title{font-family:'Cormorant Garamond',serif;font-size:18px;font-weight:500;line-height:1.2}
+.nl-cover-issue{font-size:9px;letter-spacing:1.5px;margin-top:8px;opacity:.6;text-transform:uppercase}
+.nl-cover-body{padding:16px 20px}
+.nl-cover-thumb{width:100%;height:80px;background:var(--cr-pale);border-radius:2px;margin-bottom:10px;display:flex;align-items:center;justify-content:center;font-size:28px}
+.nl-cover-snippet{font-size:9px;line-height:1.5;color:var(--mud);font-weight:300}
+
+.nl-latest-info{padding:64px 56px;display:flex;flex-direction:column;justify-content:center}
+.nl-latest-badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--cr-pale);color:var(--cr);
+  font-size:11px;font-weight:500;letter-spacing:1.5px;text-transform:uppercase;
+  padding:5px 14px;border-radius:20px;margin-bottom:24px;width:fit-content;
+}
+.nl-latest-badge span{width:6px;height:6px;border-radius:50%;background:var(--cr);display:block}
+.nl-latest-vol{font-size:12px;color:var(--mud);font-weight:300;margin-bottom:10px;letter-spacing:.5px}
+.nl-latest-title{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:500;color:var(--ink);line-height:1.15;margin-bottom:16px}
+.nl-latest-date{font-size:13px;color:var(--mud);font-weight:300;margin-bottom:20px}
+.nl-latest-desc{font-size:15px;line-height:1.85;color:var(--bark);font-weight:300;margin-bottom:32px;max-width:440px}
+.nl-latest-actions{display:flex;gap:12px;flex-wrap:wrap}
+.btn-download{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:11px 24px;background:var(--cr);color:#FAF6EF;
+  font-size:13px;border-radius:3px;text-decoration:none;
+  transition:background .2s;font-weight:400;
+}
+.btn-download:hover{background:var(--cr-deep)}
+.btn-download svg{flex-shrink:0}
+
+/* Archive grid */
+.nl-archive{padding:72px 48px;background:var(--linen)}
+.nl-archive-inner{max-width:1200px;margin:0 auto}
+.nl-year-group{margin-bottom:56px}
+.nl-year-label{
+  font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;
+  color:var(--cr);opacity:.25;margin-bottom:24px;line-height:1;
+  border-bottom:1px solid var(--border);padding-bottom:16px;
+}
+.nl-grid{
+  display:grid;grid-template-columns:repeat(4,1fr);gap:20px;
+}
+.nl-card{
+  background:#fff;border:1px solid var(--border);border-radius:6px;
+  overflow:hidden;cursor:pointer;
+  transition:box-shadow .2s,transform .2s;
+  display:flex;flex-direction:column;
+}
+.nl-card:hover{box-shadow:var(--shadow-md);transform:translateY(-2px)}
+.nl-card-cover{
+  width:100%;aspect-ratio:3/4;
+  display:flex;flex-direction:column;align-items:stretch;
+  overflow:hidden;flex-shrink:0;
+}
+.nl-card-cover-top{
+  flex:1;padding:16px;
+  display:flex;flex-direction:column;justify-content:space-between;
+}
+.nl-card-cover-logo{font-size:7px;letter-spacing:2px;text-transform:uppercase;opacity:.8;color:#FAF6EF}
+.nl-card-cover-headline{font-family:'Cormorant Garamond',serif;font-size:14px;font-weight:500;color:#FAF6EF;line-height:1.3;margin-top:auto}
+.nl-card-cover-strip{
+  height:36px;background:rgba(0,0,0,.2);
+  display:flex;align-items:center;padding:0 14px;
+  font-size:8px;letter-spacing:1.5px;text-transform:uppercase;color:rgba(250,246,239,.7);
+}
+.nl-card-body{padding:14px 16px;flex:1;display:flex;flex-direction:column}
+.nl-card-vol{font-size:10px;color:var(--cr);font-weight:500;letter-spacing:1.5px;text-transform:uppercase;margin-bottom:4px}
+.nl-card-title{font-family:'Cormorant Garamond',serif;font-size:16px;font-weight:500;color:var(--ink);line-height:1.3;margin-bottom:6px}
+.nl-card-date{font-size:11px;color:var(--mud);font-weight:300}
+.nl-card-footer{
+  padding:10px 16px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;
+}
+.nl-card-read{font-size:11px;color:var(--cr);font-weight:400;text-decoration:none}
+.nl-card-read:hover{text-decoration:underline}
+.nl-card-dl{
+  width:28px;height:28px;border-radius:50%;border:1px solid var(--border);
+  display:flex;align-items:center;justify-content:center;
+  color:var(--mud);text-decoration:none;transition:background .2s,color .2s;
+}
+.nl-card-dl:hover{background:var(--cr);color:#FAF6EF;border-color:var(--cr)}
+
+/* Subscribe band */
+.nl-subscribe{
+  background:var(--cr-deep);padding:72px 48px;text-align:center;color:#FAF6EF;
+}
+.nl-subscribe-title{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:500;margin-bottom:12px}
+.nl-subscribe-desc{font-size:15px;font-weight:300;opacity:.75;margin-bottom:36px;max-width:480px;margin-left:auto;margin-right:auto;line-height:1.7}
+.nl-subscribe-form{display:flex;gap:8px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center}
+.nl-email-input{
+  flex:1;min-width:220px;padding:12px 16px;
+  background:rgba(250,246,239,.1);border:1px solid rgba(250,246,239,.25);
+  border-radius:3px;color:#FAF6EF;font-size:14px;
+  font-family:'DM Sans',sans-serif;outline:none;
+  transition:border-color .2s;
+}
+.nl-email-input::placeholder{color:rgba(250,246,239,.4)}
+.nl-email-input:focus{border-color:rgba(250,246,239,.6)}
+.nl-subscribe-btn{
+  padding:12px 24px;background:var(--gd);color:#FAF6EF;
+  border:none;border-radius:3px;font-size:13px;cursor:pointer;
+  font-family:'DM Sans',sans-serif;font-weight:500;
+  transition:background .2s;white-space:nowrap;
+}
+.nl-subscribe-btn:hover{background:var(--gd-light)}
+.nl-success{
+  margin-top:16px;font-size:13px;color:var(--gd-light);
+  display:none;
+}
+
+/* Responsive */
+@media(max-width:1024px){.nl-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:768px){
+  .nl-latest{grid-template-columns:1fr}
+  .nl-latest-cover{min-height:280px;padding:40px 20px;order:1}
+  .nl-latest-info{padding:40px 20px;order:2}
+  .nl-latest-title{font-size:28px}
+  .nl-archive{padding:48px 20px}
+  .nl-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .nl-subscribe{padding:48px 20px}
+  .nl-subscribe-title{font-size:28px}
+}
+@media(max-width:480px){
+  .nl-grid{grid-template-columns:repeat(2,1fr);gap:10px}
+}
+</style>
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">Past Newsletters</h1>
+    <p class="page-subtitle">Dispatches from the world of Indian crafts — artisan stories, event reports, policy updates and more.</p>
+  </div>
+</div>
+
+<section class="nl-archive">
+  <div class="nl-archive-inner">
+    <div style="text-align:center;margin-bottom:56px">
+      <p class="s-text" style="margin-top:12px"></p>
+    </div>
+        </div>
+         
+
+       <div class="nl-year-group">
+  <div class="nl-year-label"></div>
+
+  <div class="nl-grid nl-grid-reports">
+
+    <!-- PDF 1 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter February 2017.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            The Currency of Dil Bhavna
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          The Currency of Dil Bhavna
+        </div>
+        <div class="nl-card-date">February 2017</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter February 2017.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter February 2017.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 2 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter July 2015.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            MANAGING AN INDIAN HERITAGE: What should globalization finally mean?
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+         MANAGING AN INDIAN HERITAGE: What should globalization finally mean?
+        </div>
+        <div class="nl-card-date">July 2015</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter July 2015.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter July 2015.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 3 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter Feburary 2014.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            LONG AGO AND FAR AWAY
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          LONG AGO AND FAR AWAY
+        </div>
+        <div class="nl-card-date">February 2014</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter Feburary 2014.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter Feburary 2014.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 4 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter September 2014.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            A GOLDEN OPPORTUNITY FOR REFLECTION:<br>Finally, What Does It Take to Value the Artisan?
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+           A GOLDEN OPPORTUNITY FOR REFLECTION:<br>Finally, What Does It Take to Value the Artisan?
+        </div>
+        <div class="nl-card-date">September 2014</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter September 2014.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter September 2014.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+
+     <!-- PDF 5 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter January 2013.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            REMEMBRANCE<br>LALITHA PRASAD : 21.2.1941 TO 14.12.2012
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+           REMEMBRANCE<br>LALITHA PRASAD : 21.2.1941 TO 14.12.2012
+        </div>
+        <div class="nl-card-date">January 2013</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter January 2013.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter January 2013.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="nl-grid nl-grid-reports">
+
+    <!-- PDF 1 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter July 2013.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            “Shifting Sands”<br>Another way of looking at Geographic Indicators
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          “Shifting Sands”<br>Another way of looking at Geographic Indicators
+        </div>
+        <div class="nl-card-date">July 2013</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter July 2013.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter July 2013.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 2 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter Feburary 2012.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            LEARNING TOGETHER: A LESSON FROM CRAFT ECONOMICS
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+         LEARNING TOGETHER: A LESSON FROM CRAFT ECONOMICS
+        </div>
+        <div class="nl-card-date">Feburary 2012</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter Feburary 2012.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter Feburary 2012.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 3 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter August 2012.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            ECONOMIC IMPACT OF ARTISANS & THEIR CRAFTS: AN UP DATE
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          ECONOMIC IMPACT OF ARTISANS & THEIR CRAFTS: AN UP DATE
+        </div>
+        <div class="nl-card-date">August 2012</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter August 2012.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter August 2012.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 4 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter Feburary 2011.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            “BURRA DIN” AT KAMALA’S CHRISTMAS BAZAAR
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+           “BURRA DIN” AT KAMALA’S CHRISTMAS BAZAAR
+        </div>
+        <div class="nl-card-date">Feburary 2011</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter Feburary 2011.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter Feburary 2011.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+     <!-- PDF 5 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter August 2011.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            VARANASI-A TAPESTRY IN BROCADE
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          VARANASI-A TAPESTRY IN BROCADE
+        </div>
+        <div class="nl-card-date">August 2011</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter August 2011.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter August 2011.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+ 
+
+<div class="nl-year-group">
+  <div class="nl-year-label"></div>
+
+<div class="nl-grid nl-grid-reports">
+
+    <!-- PDF 1 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter January 2010.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            “KAMALA” COMES TO KOLKATA<br>Kasturi Gupta Menon
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+          “KAMALA” COMES TO KOLKATA<br>Kasturi Gupta Menon
+        </div>
+        <div class="nl-card-date">January 2010</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter January 2010.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter January 2010.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- PDF 2 -->
+    <div class="nl-card">
+      <div class="nl-card-cover" style="background:linear-gradient(160deg,#d9d2cb,#f3efe9)">
+        
+        <img src="images/News letter images/CCI Newsletter Feburary 2009.webp" class="nl-card-img">
+
+        <div class="nl-card-cover-top">
+          <div class="nl-card-cover-logo">CCI Newsletter</div>
+          <div class="nl-card-cover-headline">
+            1850 To The Present – Hidden Textile Treasures Recovered<br>Kasturi Gupta Menon
+          </div>
+        </div>
+
+        <div class="nl-card-cover-strip"></div>
+      </div>
+
+      <div class="nl-card-body">
+        <div class="nl-card-vol"></div>
+        <div class="nl-card-title">
+         MANAGING AN INDIAN HERITAGE: What should globalization finally mean?
+        </div>
+        <div class="nl-card-date">Feburary 2009</div>
+      </div>
+
+      <div class="nl-card-footer">
+        <a href="docs/CCI Newsletter Feburary 2009.pdf"
+           class="nl-card-read"
+           target="_blank"
+           rel="noopener noreferrer">
+          Read online →
+        </a>
+
+        <a href="docs/CCI Newsletter Feburary 2009.pdf"
+           class="nl-card-dl"
+           title="Download PDF">
+
+          <svg width="12" height="12" viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2"
+               stroke-linecap="round">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+        
+
+ 
+
+  </div>
+</section>
+
+ 
+
+ 
+
+
+<script>
+function nlSubscribe(){
+  var email = document.getElementById('nlEmail').value.trim();
+  if(!email || !email.includes('@')) return;
+  document.getElementById('nlSuccess').style.display = 'block';
+  document.getElementById('nlEmail').value = '';
+}
+</script>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+</body>
+</html>

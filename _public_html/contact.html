@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="cci.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+ <style>
+  /* =========================================
+   AFFILIATES SECTION
+========================================= */
+
+.affiliates-section{
+  padding:80px 48px;
+  background:var(--linen2);
+}
+
+.affiliates-inner{
+  max-width:1280px;
+  margin:0 auto;
+}
+
+.affiliates-header{
+  text-align:center;
+  margin-bottom:60px;
+}
+
+.affiliates-intro{
+  margin-top:16px;
+  max-width:720px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+/* =========================================
+   GRID
+========================================= */
+
+.affiliate-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  align-items:start;
+}
+
+
+/* =========================================
+   CARD
+========================================= */
+
+.affiliate-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.affiliate-card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-md);
+  border-color:rgba(0,0,0,.08);
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.affiliate-top{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:18px;
+  align-items:flex-start;
+  margin-bottom:18px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.affiliate-logo{
+  width:110px;
+  height:110px;
+  border-radius:8px;
+  overflow:hidden;
+  background:#f5f1ea;
+  border:1px solid var(--border);
+  flex-shrink:0;
+}
+
+.affiliate-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* =========================================
+   QUICK INFO
+========================================= */
+
+.affiliate-quick{
+  display:flex;
+  flex-direction:column;
+  gap:8px;
+  min-width:0;
+}
+
+.affiliate-state-tag{
+  display:inline-flex;
+  align-items:center;
+  width:fit-content;
+  background:var(--cr-pale);
+  color:var(--cr);
+  font-size:9px;
+  font-weight:500;
+  letter-spacing:1px;
+  text-transform:uppercase;
+  padding:4px 9px;
+  border-radius:20px;
+  margin-bottom:2px;
+}
+
+.affiliate-quick-row{
+  display:flex;
+  align-items:flex-start;
+  gap:8px;
+  font-size:12px;
+  color:var(--mud);
+  font-weight:300;
+  line-height:1.5;
+}
+
+.affiliate-quick-label{
+  min-width:52px;
+  flex-shrink:0;
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:var(--cr);
+  opacity:.75;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.affiliate-name{
+  font-family:'Cormorant Garamond',serif;
+  font-size:20px;
+  font-weight:500;
+  color:var(--ink);
+  margin-bottom:12px;
+  line-height:1.25;
+}
+
+.affiliate-desc{
+  font-size:13.5px;
+  line-height:1.8;
+  color:var(--bark);
+  font-weight:300;
+  margin-bottom:20px;
+  flex:1;
+}
+
+
+/* =========================================
+   CONTACT
+========================================= */
+
+.affiliate-contact{
+  border-top:1px solid var(--border);
+  padding-top:16px;
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+}
+
+.affiliate-contact-row{
+  display:flex;
+  align-items:flex-start;
+  gap:10px;
+  font-size:12px;
+  color:var(--mud);
+  font-weight:300;
+  line-height:1.6;
+}
+
+.affiliate-contact-label{
+  min-width:58px;
+  flex-shrink:0;
+  font-size:10px;
+  font-weight:500;
+  letter-spacing:1.2px;
+  text-transform:uppercase;
+  color:var(--cr);
+  opacity:.75;
+}
+
+
+/* =========================================
+   LARGE TABLET
+========================================= */
+
+@media(max-width:1100px){
+
+  .affiliate-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+    gap:22px;
+  }
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:768px){
+
+  .affiliate-grid{
+    grid-template-columns:1fr;
+  }
+
+  .affiliate-card{
+    padding:20px;
+  }
+
+  .affiliate-top{
+    grid-template-columns:100px 1fr;
+    gap:16px;
+  }
+
+  .affiliate-logo{
+    width:100px;
+    height:100px;
+  }
+
+  .affiliate-name{
+    font-size:19px;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+  .affiliate-card{
+    padding:18px;
+  }
+
+  .affiliate-top{
+    grid-template-columns:85px 1fr;
+    gap:14px;
+  }
+
+  .affiliate-logo{
+    width:85px;
+    height:85px;
+  }
+
+  .affiliate-name{
+    font-size:18px;
+  }
+
+  .affiliate-desc{
+    font-size:13px;
+    line-height:1.75;
+  }
+
+  .affiliate-quick-row,
+  .affiliate-contact-row{
+    flex-direction: row !important;
+    gap:6px;
+
+  }
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media(max-width:768px){
+
+  .affiliates-section{
+    padding:48px 20px;
+  }
+
+  .affiliates-header{
+    margin-bottom:40px;
+  }
+
+  .affiliate-card{
+    padding:22px;
+  }
+
+  .affiliate-top{
+    grid-template-columns:1fr;
+    gap:20px;
+  }
+
+  .affiliate-logo{
+    max-width:220px;
+    aspect-ratio:1/1;
+  }
+
+  .affiliate-name{
+    font-size:24px;
+  }
+
+  .affiliate-desc{
+    font-size:13px;
+    line-height:1.8;
+  }
+
+  .affiliate-quick-row,
+  .affiliate-contact-row{
+    flex-direction:column;
+    gap:4px;
+  }
+
+  .affiliate-quick-label,
+  .affiliate-contact-label{
+    width:auto;
+  }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media(max-width:480px){
+
+  .affiliates-section{
+    padding:44px 16px;
+  }
+
+  .affiliate-card{
+    padding:18px;
+    border-radius:6px;
+  }
+
+  .affiliate-top{
+    gap:18px;
+  }
+
+  .affiliate-logo{
+    max-width:180px;
+  }
+
+  .affiliate-name{
+    font-size:22px;
+  }
+
+  .affiliate-desc{
+    font-size:13px;
+    line-height:1.8;
+    margin-bottom:22px;
+  }
+
+  .affiliate-contact{
+    gap:14px;
+    padding-top:18px;
+  }
+}
+
+
+/* =========================================
+   CARD EQUAL HEIGHT FIX
+========================================= */
+
+.affiliate-grid{
+  display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:24px;
+  align-items:stretch;
+}
+
+.affiliate-card{
+  background:#fff;
+  border:1px solid var(--border);
+  border-radius:8px;
+  padding:22px;
+  display:flex;
+  flex-direction:column;
+  height:100%;
+  min-height:100%;
+}
+
+.affiliate-desc{
+  flex:1;
+}
+
+
+/* =========================================
+   TOP SECTION
+========================================= */
+
+.affiliate-top{
+  display:grid;
+  grid-template-columns:95px 1fr;
+  gap:16px;
+  align-items:flex-start;
+  margin-bottom:18px;
+}
+
+
+/* =========================================
+   LOGO
+========================================= */
+
+.affiliate-logo{
+  width:95px;
+  height:95px;
+  border-radius:8px;
+  overflow:hidden;
+  border:1px solid var(--border);
+  background:#f6f3ee;
+  flex-shrink:0;
+}
+
+.affiliate-logo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  display:block;
+}
+
+
+/* =========================================
+   ACRONYM TAG
+========================================= */
+
+.affiliate-state-tag{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  width:fit-content;
+  background:var(--cr-pale);
+  color:var(--cr);
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:1.6px;
+  text-transform:uppercase;
+  padding:5px 10px;
+  border-radius:30px;
+  margin-bottom:4px;
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVE
+========================================= */
+
+@media(max-width:1100px){
+
+  .affiliate-grid{
+    grid-template-columns:repeat(2,minmax(0,1fr));
+  }
+
+}
+
+
+@media(max-width:768px){
+
+  .affiliate-grid{
+    grid-template-columns:1fr;
+  }
+
+  .affiliate-card{
+    padding:18px;
+  }
+
+  .affiliate-top{
+    grid-template-columns:80px 1fr;
+    gap:14px;
+    align-items:center;
+  }
+
+  .affiliate-logo{
+    width:80px;
+    height:80px;
+  }
+
+  .affiliate-name{
+    font-size:18px;
+    margin-bottom:10px;
+  }
+
+  .affiliate-desc{
+    font-size:13px;
+    line-height:1.7;
+  }
+
+  .affiliate-quick-row{
+    font-size:11.5px;
+    line-height:1.45;
+  }
+
+  .affiliate-contact-row{
+    font-size:11.5px;
+    line-height:1.55;
+  }
+
+}
+
+
+@media(max-width:480px){
+
+  .affiliate-top{
+    /* grid-template-columns:72px 1fr; */
+    gap:12px;
+  }
+
+  .affiliate-logo{
+    width:72px;
+    height:72px;
+  }
+
+  .affiliate-state-tag{
+    font-size:9px;
+    padding:4px 8px;
+    letter-spacing:1.3px;
+  }
+
+}
+
+
+/* =========================================
+   FORM STATUS
+========================================= */
+
+.form-submit{
+  position:relative;
+  transition:.25s ease;
+}
+
+.form-submit.loading{
+  opacity:.8;
+  pointer-events:none;
+}
+
+#formMessage{
+  margin-top:18px;
+  padding:14px 16px;
+  border-radius:6px;
+  font-size:14px;
+  display:none;
+  line-height:1.6;
+}
+
+#formMessage.success{
+  display:block;
+  background:#edf8f0;
+  color:#1d6b35;
+  border:1px solid #b7e2c2;
+}
+
+#formMessage.error{
+  display:block;
+  background:#fff0f0;
+  color:#b42318;
+  border:1px solid #f0b7b7;
+}
+ </style>
+
+ 
+
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">Get in Touch</h1>
+    <p class="page-subtitle">We'd love to hear from you. Reach out for partnerships, collaborations, or general inquiries.</p>
+  </div>
+</div>
+
+<!-- Contact form + info -->
+<div class="section">
+  <div class="contact-grid">
+    <div>
+      <h2 style="font-family:'Cormorant Garamond',serif;font-size:36px;margin-bottom:16px">Send us a message</h2>
+      <p style="font-size:15px;color:var(--mud);margin-bottom:32px;line-height:1.7;font-weight:300">Fill out the form below and we'll get back to you within 24 hours.</p>
+   <form id="contactForm" method="POST" action="send_enquiry.php">
+
+  <div class="form-group">
+    <label class="form-label">Full Name *</label>
+
+    <input type="text"
+           name="full_name"
+           class="form-input"
+           required
+           placeholder="Your name">
+  </div>
+
+
+  <div class="form-group">
+    <label class="form-label">Email Address *</label>
+
+    <input type="email"
+           name="email"
+           class="form-input"
+           required
+           placeholder="your@email.com">
+  </div>
+
+
+  <div class="form-group">
+    <label class="form-label">Phone Number</label>
+
+    <input type="tel"
+           name="phone"
+           class="form-input"
+           placeholder="Your Phone Number">
+  </div>
+
+
+  <div class="form-group">
+    <label class="form-label">Subject *</label>
+
+    <input type="text"
+           name="subject"
+           class="form-input"
+           required
+           placeholder="What is this regarding?">
+  </div>
+
+
+  <div class="form-group">
+    <label class="form-label">Message *</label>
+
+    <textarea name="message"
+              class="form-textarea"
+              required
+              placeholder="Tell us more..."></textarea>
+  </div>
+
+
+ <div class="g-recaptcha"
+     data-sitekey="6LeZzeYsAAAAAOnq7DrMKaPOtP9aFuaL-JqOF5Jn">
+</div>
+<br>
+
+<button type="submit"
+        class="form-submit"
+        id="submitBtn">
+
+  <span id="btnText">Send Message</span>
+
+  <span id="btnLoader" style="display:none;">
+    Sending...
+  </span>
+
+</button>
+
+<div id="formMessage"></div>
+
+</form>
+    </div>
+    <div>
+      <div class="contact-info">
+        <h3 class="info-title">Contact Information</h3>
+        <div class="info-item"><div class="info-icon">&#128205;</div><div class="info-content"><h4>Head Office</h4><p>GF, Temple Trees Apartments<br>37 Venkatanarayana Road, T. Nagar<br>Chennai &ndash; 600017, Tamil Nadu</p></div></div>
+        <div class="info-item"><div class="info-icon">&#128231;</div><div class="info-content"><h4>Email</h4><p>info@craftscouncilofindia.in</p></div></div>
+        <div class="info-item"><div class="info-icon">&#128222;</div><div class="info-content"><h4>Phone</h4><p>+91-44-24341456<br>+91-98405 41456</p></div></div>
+        <div class="info-item"><div class="info-icon">&#128336;</div><div class="info-content"><h4>Office Hours</h4><p>Monday &ndash; Friday: 10:00 AM &ndash; 5:00 PM<br>Saturday: Closed on 2nd & 4th Saturdays<br>Sunday: Closed</p></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- =========================================
+     AFFILIATES SECTION
+========================================= -->
+
+<section class="affiliates-section">
+
+  <div class="affiliates-inner">
+
+    <!-- HEADER -->
+    <div class="affiliates-header">
+      <p class="s-tag">Our Network</p>
+
+      <h2 class="s-title large">
+        Affiliated State Councils
+      </h2>
+
+      <p class="s-text affiliates-intro">
+        The Crafts Council of India is a network of affiliated
+        State Councils, each an autonomous registered Society
+        working for artisans in their region.
+      </p>
+    </div>
+
+
+    <!-- GRID -->
+    <div class="affiliate-grid">
+
+              <!-- =========================================
+            ANDHRA PRADESH
+        ========================================= -->
+
+        <div class="affiliate-card">
+
+          <div class="affiliate-top">
+
+            <div class="affiliate-logo">
+              <img src="images/councils/ccap.png"
+                  alt="Crafts Council of Andhra Pradesh">
+            </div>
+
+            <div class="affiliate-quick">
+
+              <span class="affiliate-state-tag">CCAP</span>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Est.</span>
+                <span>1987</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">State</span>
+                <span>Andhra Pradesh</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Focus</span>
+                <span>Kondapalli toys, leather puppetry</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3 class="affiliate-name">
+            Crafts Council of Andhra Pradesh
+          </h3>
+
+          <p class="affiliate-desc">
+            Set up in 1987, CCAP has championed the revival of
+            Kondapalli toys, leather puppetry, and supported a
+            group of Banjara women artisans on the outskirts of
+            Hyderabad. Craft Tourism has been one of its more
+            recent initiatives, showcasing Andhra Pradesh's rich
+            weaving traditions.
+          </p>
+
+          <div class="affiliate-contact">
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Address</span>
+
+              <span>
+                #32-6-12C, Vishalandhra Road,<br>
+                Prajashakti Nagar, Moghalrajpuram,<br>
+                Vijayawada 520010
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Phone</span>
+              <span>073307 84849</span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Email</span>
+              <span>craftscouncilap@gmail.com</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+            ASSAM
+        ========================================= -->
+
+        <div class="affiliate-card">
+
+          <div class="affiliate-top">
+
+            <div class="affiliate-logo">
+              <img src="images/councils/cca.png"
+                  alt="Crafts Council of Assam">
+            </div>
+
+            <div class="affiliate-quick">
+
+              <span class="affiliate-state-tag">CCA</span>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Est.</span>
+                <span>1991</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">State</span>
+                <span>Assam</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Focus</span>
+                <span>Eri & Muga silk, bamboo & cane</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3 class="affiliate-name">
+            Crafts Council of Assam
+          </h3>
+
+          <p class="affiliate-desc">
+            Set up in 1991, the CCA has worked tirelessly in
+            natural dyes, Eri and Muga silk weaving, and the
+            bamboo and cane industry. A particular contribution
+            has been ensuring craftspeople from the North East
+            are represented at national events across India.
+          </p>
+
+          <div class="affiliate-contact">
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Address</span>
+
+              <span>
+                1/1, Penn Road, Alipore,<br>
+                Kolkata 700027
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Phone</span>
+
+              <span>
+                033 46053525<br>
+                9830075453
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Email</span>
+
+              <span>
+                nandini.dutta1947@gmail.com
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+      <!-- =========================================
+          DELHI
+      ========================================= -->
+
+      <div class="affiliate-card">
+
+        <div class="affiliate-top">
+
+          <div class="affiliate-logo">
+            <img src="images/councils/delhi-cci.png"
+                alt="Delhi Crafts Council">
+          </div>
+
+          <div class="affiliate-quick">
+
+            <span class="affiliate-state-tag">DCC</span>
+
+            <div class="affiliate-quick-row">
+              <span class="affiliate-quick-label">Est.</span>
+              <span>1967</span>
+            </div>
+
+            <div class="affiliate-quick-row">
+              <span class="affiliate-quick-label">State</span>
+              <span>Delhi, NCR</span>
+            </div>
+
+            <div class="affiliate-quick-row">
+              <span class="affiliate-quick-label">Focus</span>
+              <span>Design, retail, craft revival</span>
+            </div>
+
+          </div>
+
+        </div>
+
+        <h3 class="affiliate-name">
+          Delhi Crafts Council
+        </h3>
+
+        <p class="affiliate-desc">
+          Established in 1967, the DCC predates the Chennai headquarters.
+          It is known for reviving chiks, Sanjhi craft and Chamba Rumal.
+          The DCC operates the Kamala retail outlet — a storehouse for
+          innovations by young artisans — and awards the Kamaladevi
+          Puraskar scholarship annually.
+        </p>
+
+        <div class="affiliate-contact">
+
+          <div class="affiliate-contact-row">
+            <span class="affiliate-contact-label">Address</span>
+
+            <span>
+              116-A/1, First Floor, Shahpur Jat,<br>
+              Near UCO Bank,<br>
+              New Delhi 110049
+            </span>
+          </div>
+
+          <div class="affiliate-contact-row">
+            <span class="affiliate-contact-label">Phone</span>
+
+            <span>
+              011 2649 1571<br>
+              011 4905 5415
+            </span>
+          </div>
+
+          <div class="affiliate-contact-row">
+            <span class="affiliate-contact-label">Email</span>
+
+            <span>
+              delhicraft@gmail.com
+            </span>
+          </div>
+
+        </div>
+
+      </div>
+
+
+              <!-- =========================================
+            GUJARAT
+        ========================================= -->
+
+        <div class="affiliate-card">
+
+          <div class="affiliate-top">
+
+            <div class="affiliate-logo">
+              <img src="images/councils/cci-gujarat.png"
+                  alt="Crafts Council of Gujarat">
+            </div>
+
+            <div class="affiliate-quick">
+
+              <span class="affiliate-state-tag">CCG</span>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Est.</span>
+                <span>2023</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">State</span>
+                <span>Gujarat</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Focus</span>
+                <span>Handloom revival, women artisans</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3 class="affiliate-name">
+            Crafts Council of Gujarat
+          </h3>
+
+          <p class="affiliate-desc">
+            The newest addition to the network, set up in 2023 in
+            collaboration with the Weavers Service Centre. CCG focuses
+            on empowering artisans — especially women — through
+            grassroots initiatives aimed at reviving traditional
+            handloom practices through skill development and
+            knowledge sharing.
+          </p>
+
+          <div class="affiliate-contact">
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Address</span>
+
+              <span>
+                004, Ground Floor, Sears Tower,<br>
+                Patel Society, Gulbai Tekra,<br>
+                Ahmedabad 380016
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Phone</span>
+              <span>+91 8200778711</span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Email</span>
+              <span>Craftcouncilgujarat@gmail.com</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+            KARNATAKA
+        ========================================= -->
+
+        <div class="affiliate-card">
+
+          <div class="affiliate-top">
+
+            <div class="affiliate-logo">
+              <img src="images/councils/karnataka.png"
+                  alt="Crafts Council of Karnataka">
+            </div>
+
+            <div class="affiliate-quick">
+
+              <span class="affiliate-state-tag">CCK</span>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Est.</span>
+                <span>1967 (reg. 1982)</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">State</span>
+                <span>Karnataka</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Focus</span>
+                <span>Silk weaving, Bidri, stone carving</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3 class="affiliate-name">
+            Crafts Council of Karnataka
+          </h3>
+
+          <p class="affiliate-desc">
+            First set up in 1967 and formally registered in 1982,
+            CCK is known for its strength in publications and
+            large-scale events. It promoted a tie-up between Canara
+            Bank and tool manufacturers to benefit artisans, and
+            supports Ilkal sarees, Mysore silk, Channapatna toys,
+            Bidri work, and stone carving from Badami and Hampi.
+          </p>
+
+          <div class="affiliate-contact">
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Address</span>
+
+              <span>
+                'Sri Bhooma' No. 37,<br>
+                17th Cross, Malleswaram,<br>
+                Bengaluru 560055
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Phone</span>
+
+              <span>
+                080 2346 2520<br>
+                96202 35041
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Email</span>
+
+              <span>
+                Craftscouncilofkarnataka@yahoo.in
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- =========================================
+            ODISHA
+        ========================================= -->
+
+        <div class="affiliate-card">
+
+          <div class="affiliate-top">
+
+            <div class="affiliate-logo">
+              <img src="images/councils/odhisha.png"
+                  alt="Crafts Council of Odisha">
+            </div>
+
+            <div class="affiliate-quick">
+
+              <span class="affiliate-state-tag">CCO</span>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Est.</span>
+                <span>2019</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">State</span>
+                <span>Odisha</span>
+              </div>
+
+              <div class="affiliate-quick-row">
+                <span class="affiliate-quick-label">Focus</span>
+                <span>Artisan relief, craft promotion</span>
+              </div>
+
+            </div>
+
+          </div>
+
+          <h3 class="affiliate-name">
+            Crafts Council of Odisha
+          </h3>
+
+          <p class="affiliate-desc">
+            Formed in 2019 by a group of craft lovers, CCO began
+            its activities during the pandemic by providing relief
+            to artisans who had lost their livelihoods, and participated
+            in virtual exhibitions organised by CCI. It represents
+            one of India's richest craft states.
+          </p>
+
+          <div class="affiliate-contact">
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Address</span>
+
+              <span>
+                At-Suryaprabha, 516/1765,<br>
+                Patia Nandankanan Road,<br>
+                KIIT Area, Bhubaneswar, Khurdha,<br>
+                Odisha 751024
+              </span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Phone</span>
+              <span>99370 37071</span>
+            </div>
+
+            <div class="affiliate-contact-row">
+              <span class="affiliate-contact-label">Email</span>
+              <span>craftcilodisha@gmail.com</span>
+            </div>
+
+          </div>
+
+        </div>
+
+
+
+    <!-- =========================================
+        PUDUCHERRY
+    ========================================= -->
+
+    <div class="affiliate-card">
+
+      <div class="affiliate-top">
+
+        <div class="affiliate-logo">
+          <img src="images/councils/puducherry.png"
+              alt="Crafts Council of Puducherry">
+        </div>
+
+        <div class="affiliate-quick">
+
+          <span class="affiliate-state-tag">CCP</span>
+
+          <div class="affiliate-quick-row">
+            <span class="affiliate-quick-label">Est.</span>
+            <span>2021</span>
+          </div>
+
+          <div class="affiliate-quick-row">
+            <span class="affiliate-quick-label">State</span>
+            <span>Puducherry</span>
+          </div>
+
+          <div class="affiliate-quick-row">
+            <span class="affiliate-quick-label">Focus</span>
+            <span>Terracotta, paper mâché</span>
+          </div>
+
+        </div>
+
+      </div>
+
+      <h3 class="affiliate-name">
+        Crafts Council of Puducherry
+      </h3>
+
+      <p class="affiliate-desc">
+        Set up in 2021, CCP builds on Puducherry's two GI-tagged
+        craft traditions — Villianur terracotta works and
+        Thirukannur paper mâché crafts. The council has introduced
+        HAPPY (Handicrafts Awareness Programme for Pondicherry Youth)
+        and is creating a craft map of artisanal work across
+        Puducherry and Auroville.
+      </p>
+
+      <div class="affiliate-contact">
+
+        <div class="affiliate-contact-row">
+          <span class="affiliate-contact-label">Address</span>
+
+          <span>
+            No: 480/11, Mathur Road,<br>
+            Pondicherry University P.O,<br>
+            Opp Tsunami Quarters, Kalapet,<br>
+            Pondicherry 605014
+          </span>
+        </div>
+
+        <div class="affiliate-contact-row">
+          <span class="affiliate-contact-label">Phone</span>
+          <span>8300985450</span>
+        </div>
+
+        <div class="affiliate-contact-row">
+          <span class="affiliate-contact-label">Email</span>
+          <span>craftscouncilpudu@gmail.com</span>
+        </div>
+
+      </div>
+
+    </div>
+ 
+
+    <!-- =========================================
+     TAMIL NADU
+========================================= -->
+
+<div class="affiliate-card">
+
+  <div class="affiliate-top">
+
+    <div class="affiliate-logo">
+      <img src="images/councils/cctn.png"
+           alt="Crafts Council of Tamil Nadu">
+    </div>
+
+    <div class="affiliate-quick">
+
+      <span class="affiliate-state-tag">CCTN</span>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Est.</span>
+        <span>1988</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">State</span>
+        <span>Tamil Nadu</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Focus</span>
+        <span>Silk weaving, bronze, Tanjore art</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="affiliate-name">
+    Crafts Council of Tamil Nadu
+  </h3>
+
+  <p class="affiliate-desc">
+    Founded in Coimbatore in 1988 with about 25 members,
+    CCTN began by encouraging Toda embroidery, Pattamadai
+    mat weavers and Kurumba kambili weavers. It has grown
+    to support Kanchipuram silks, Madurai sungudi, Tanjore
+    paintings, bronzes, Chettinad crafts, ari embroidery
+    and pottery.
+  </p>
+
+  <div class="affiliate-contact">
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Address</span>
+
+      <span>
+        'Vue Grande', 3rd Floor,<br>
+        #339/C-6, Chinnasamynaidu Street,<br>
+        New Siddhapudur,<br>
+        Coimbatore 641044
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Phone</span>
+
+      <span>
+        099527 78667
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Email</span>
+
+      <span>
+        cctncbe@gmail.com
+      </span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================
+     TELANGANA
+========================================= -->
+
+<div class="affiliate-card">
+
+  <div class="affiliate-top">
+
+    <div class="affiliate-logo">
+      <img src="images/councils/telengana.png"
+           alt="Crafts Council of Telangana">
+    </div>
+
+    <div class="affiliate-quick">
+
+      <span class="affiliate-state-tag">CCT</span>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Est.</span>
+        <span>2017 (orig. 1987)</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">State</span>
+        <span>Telangana</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Members</span>
+        <span>167 members</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="affiliate-name">
+    Crafts Council of Telangana
+  </h3>
+
+  <p class="affiliate-desc">
+    Originally part of the Crafts Council of Andhra Pradesh,
+    CCT was set up as an independent council in 2017 following
+    the formation of Telangana state. Today its membership
+    stands at 167 members including many artisans, inspired
+    by the legacy of Kamaladevi Chattopadhyay.
+  </p>
+
+  <div class="affiliate-contact">
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Address</span>
+
+      <span>
+        #8-2-686/28/1/3/1,<br>
+        Lalitha Prasad Floor,<br>
+        MLA Colony, Road No – 12,<br>
+        Banjara Hills,<br>
+        Hyderabad – 500034
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Phone</span>
+
+      <span>
+        +91 99494 55533
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Email</span>
+
+      <span>
+        info@craftscounciloftelangana.com
+      </span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================
+     WEST BENGAL
+========================================= -->
+
+<div class="affiliate-card">
+
+  <div class="affiliate-top">
+
+    <div class="affiliate-logo">
+      <img src="images/councils/ccwb.png"
+           alt="Crafts Council of West Bengal">
+    </div>
+
+    <div class="affiliate-quick">
+
+      <span class="affiliate-state-tag">CCWB</span>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Est.</span>
+        <span>1966</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">State</span>
+        <span>West Bengal</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Focus</span>
+        <span>Kantha, solapith, lost wax crafts</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="affiliate-name">
+    Crafts Council of West Bengal
+  </h3>
+
+  <p class="affiliate-desc">
+    Founded in 1966 at the initiation of Kamaladevi
+    Chattopadhyay, with Ila Palchoudhary as Founder-Member.
+    CCWB has revived languishing crafts including kantha work,
+    solapith, lost wax metal casting and Satgaon quilts —
+    preserving West Bengal's vibrant cultural legacy.
+  </p>
+
+  <div class="affiliate-contact">
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Address</span>
+
+      <span>
+        C/o Artisana 13,<br>
+        Chowringhee Terrace,<br>
+        Kolkata 700029
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Phone</span>
+
+      <span>
+        033 2223 9422 | 
+        033 6515 5185 |<br>
+        085840 79336 |
+        98310 09845
+      </span>
+    </div>
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Email</span>
+
+      <span>
+        craftscouncilofwb@gmail.com<br>
+        ccwb.ind@gmail.com
+      </span>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+<!-- =========================================
+     UTTAR PRADESH
+========================================= -->
+
+<div class="affiliate-card">
+
+  <div class="affiliate-top">
+
+    <div class="affiliate-logo">
+      <img src="images/councils/CCUP.png"
+           alt="Crafts Council Of Uttar Pradesh">
+    </div>
+
+    <div class="affiliate-quick">
+
+      <span class="affiliate-state-tag">CCUP</span>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Est.</span>
+        <span>1991</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">State</span>
+        <span>Uttar Pradesh</span>
+      </div>
+
+      <div class="affiliate-quick-row">
+        <span class="affiliate-quick-label">Focus</span>
+        <span>Chikankari, block printing</span>
+      </div>
+
+    </div>
+
+  </div>
+
+  <h3 class="affiliate-name">
+    Crafts Council Of Uttar Pradesh
+  </h3>
+
+  <p class="affiliate-desc">
+    Founded in Lucknow in 1991, CCUP focuses on chikankari
+    women artisans. Over three decades it has conducted
+    40+ training programmes in block printing, chikankari
+    embroidery, Tharu patchwork and Daraz appliqué, and
+    organised 30+ exhibitions across 20 cities in partnership
+    with DC Handicrafts.
+  </p>
+
+  <div class="affiliate-contact">
+
+    <div class="affiliate-contact-row">
+      <span class="affiliate-contact-label">Address</span>
+
+      <span>
+        Arif Aashiyana Building, First Floor,<br>
+        Neebu Park,<br>
+        Opp Lohia Park, Chowk,<br>
+        Lucknow, Uttar Pradesh
+      </span>
+    </div>
+
+  </div>
+
+</div>
+
+    </div>
+    
+    
+     <!-- Network note + map -->
+    <div style="margin-top:24px;padding-top:16px;">
+      <div class="network-grid">
+        <div>
+          <p class="s-tag">The Network</p>
+          <h3 class="s-title" style="margin-bottom:20px">A federated structure across India</h3>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">Kamaladevi Chattopadhyay's vision for the State Councils was work at the grassroots level — for the welfare of the artisan and for craft promotion. She believed in a federated structure with State Councils affiliated to the CCI, each working autonomously within their regions.</p>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">Their functions include documentation of local crafts, organisation of exhibitions and fairs, marketing support, advocating for artisan rights, and facilitating training and skill development. A National Meet is held every year with all Councils in attendance, followed by a Business Meet where every Council reports on their work.</p>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">The Crafts Council of India currently has <strong style="color:var(--cr);font-weight:500">11 affiliated State Councils</strong> spread across India, with membership drawn entirely from volunteers committed to the cause of craft.</p>
+        </div>
+        <!-- Schematic India map showing council locations -->
+        <div>
+          <img src="images/CCI-Affiliations_map.webp"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</section>
+
+
+
+
+
+
+
+<!-- ── AFFILIATES ── -->
+<section class="affiliates-section d-none" style="display: none;">
+  <div class="affiliates-inner">
+    <div class="affiliates-header">
+      <p class="s-tag">Our Network</p>
+      <h2 class="s-title large">Affiliated State Councils</h2>
+      <p class="s-text" style="margin-top:16px;max-width:640px;margin-left:auto;margin-right:auto">The Crafts Council of India is a network of ten affiliated State Councils, each an autonomous registered Society working for artisans in their region.</p>
+    </div>
+
+    <div class="affiliate-grid">
+
+      <!-- DCC -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">DCC</div>
+        </div>
+        <span class="affiliate-state-tag">DCC</span>
+        <!-- <div class="affiliate-abbr">DCC</div> -->
+        <h3 class="affiliate-name">Delhi Crafts Council</h3>
+        <p class="affiliate-desc">Established in 1967, the DCC predates the Chennai headquarters. It is known for reviving chiks, Sanjhi craft and Chamba Rumal. The DCC operates the Kamala retail outlet — a storehouse for innovations by young artisans — and awards the Kamaladevi Puraskar scholarship annually.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1967</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Delhi, NCR</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Design, retail, craft revival</div>
+        </div>
+      </div>
+
+
+      
+
+      <!-- CCWB -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCWB</div>
+        </div>
+        <span class="affiliate-state-tag">CCWB</span>
+        <!-- <div class="affiliate-abbr">CCWB</div> -->
+        <h3 class="affiliate-name">Crafts Council of West Bengal</h3>
+        <p class="affiliate-desc">Founded in 1966 at the initiation of Kamaladevi Chattopadhyay, with Ila Palchoudhary as Founder-Member. CCWB has revived languishing crafts including kantha work, solapith, lost wax metal casting and Satgaon quilts — preserving West Bengal's vibrant cultural legacy.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1966</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>West Bengal</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Kantha, solapith, lost wax crafts</div>
+        </div>
+      </div>
+
+      <!-- CCK -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCK</div>
+        </div>
+        <span class="affiliate-state-tag">CCK</span>
+        <!-- <div class="affiliate-abbr">CCK</div> -->
+        <h3 class="affiliate-name">Crafts Council of Karnataka</h3>
+        <p class="affiliate-desc">First set up in 1967 and formally registered in 1982, CCK is known for its strength in publications and large-scale events. It promoted a tie-up between Canara Bank and tool manufacturers to benefit artisans, and supports Ilkal sarees, Mysore silk, Channapatna toys, Bidri work, and stone carving from Badami and Hampi.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1967 (reg. 1982)</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Karnataka</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Silk weaving, Bidri, stone carving</div>
+        </div>
+      </div>
+
+      <!-- CCAP -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCAP</div>
+        </div>
+        <span class="affiliate-state-tag">CCAP</span>
+        <!-- <div class="affiliate-abbr">CCAP</div> -->
+        <h3 class="affiliate-name">Crafts Council of Andhra Pradesh</h3>
+        <p class="affiliate-desc">Set up in 1987, CCAP has championed the revival of Kondapalli toys, leather puppetry, and supported a group of Banjara women artisans on the outskirts of Hyderabad. Craft Tourism has been one of its more recent initiatives, showcasing Andhra Pradesh's rich weaving traditions.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1987</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Andhra Pradesh</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Kondapalli toys, leather puppetry</div>
+        </div>
+      </div>
+
+      <!-- CCTN -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCTN</div>
+        </div>
+        <span class="affiliate-state-tag">CCTN</span>
+        <!-- <div class="affiliate-abbr">CCTN</div> -->
+        <h3 class="affiliate-name">Crafts Council of Tamil Nadu</h3>
+        <p class="affiliate-desc">Founded in Coimbatore in 1988 with about 25 members, CCTN began by encouraging Toda embroidery, Pattamadai mat weavers and Kurumba kambili weavers. It has grown to support Kanchipuram silks, Madurai sungudi, Tanjore paintings, bronzes, Chettinad crafts, ari embroidery and pottery.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1988</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Tamil Nadu</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Silk weaving, bronze, Tanjore art</div>
+        </div>
+      </div>
+
+      <!-- CCA -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCA</div>
+        </div>
+        <span class="affiliate-state-tag">CCA</span>
+        <!-- <div class="affiliate-abbr">CCA</div> -->
+        <h3 class="affiliate-name">Crafts Council of Assam</h3>
+        <p class="affiliate-desc">Set up in 1991, the CCA has worked tirelessly in natural dyes, Eri and Muga silk weaving, and the bamboo and cane industry. A particular contribution has been ensuring craftspeople from the North East are represented at national events across India.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1991</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Assam</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Eri &amp; Muga silk, bamboo &amp; cane</div>
+        </div>
+      </div>
+
+      <!-- CCUP -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCUP</div>
+        </div>
+        <span class="affiliate-state-tag">CCUP</span>
+        <!-- <div class="affiliate-abbr">CCUP</div> -->
+        <h3 class="affiliate-name">Crafts Council of Uttar Pradesh</h3>
+        <p class="affiliate-desc">Founded in Lucknow in 1991, CCUP focuses on chikankari women artisans. Over three decades it has conducted 40+ training programmes in block printing, chikankari embroidery, Tharu patchwork and Daraz appliqué, and organised 30+ exhibitions across 20 cities in partnership with DC Handicrafts.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>1991</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Uttar Pradesh</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Chikankari, block printing</div>
+        </div>
+      </div>
+
+      <!-- CCT -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text" style="font-size:11px">CCT</div>
+        </div>
+        <span class="affiliate-state-tag">CCT</span>
+        <!-- <div class="affiliate-abbr">CCT</div> -->
+        <h3 class="affiliate-name">Crafts Council of Telangana</h3>
+        <p class="affiliate-desc">Originally part of the Crafts Council of Andhra Pradesh, CCT was set up as an independent council in 2017 following the formation of Telangana state. Today its membership stands at 167 members including many artisans, inspired by the legacy of Kamaladevi Chattopadhyay.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>2017 (orig. 1987)</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Telangana</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Members</span>167 members</div>
+        </div>
+      </div>
+
+      <!-- CCO -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCO</div>
+        </div>
+        <span class="affiliate-state-tag">Odisha</span>
+        <!-- <div class="affiliate-abbr">CCO</div> -->
+        <h3 class="affiliate-name">Crafts Council of Odisha</h3>
+        <p class="affiliate-desc">Formed in 2019 by a group of craft lovers, CCO began its activities during the pandemic by providing relief to artisans who had lost their livelihoods, and participated in virtual exhibitions organised by CCI. It represents one of India's richest craft states.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>2019</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Odisha</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Artisan relief, craft promotion</div>
+        </div>
+      </div>
+
+      <!-- CCP -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCP</div>
+        </div>
+        <span class="affiliate-state-tag">Puducherry</span>
+        <!-- <div class="affiliate-abbr">CCP</div> -->
+        <h3 class="affiliate-name">Crafts Council of Puducherry</h3>
+        <p class="affiliate-desc">Set up in 2021, CCP builds on Puducherry's two GI-tagged craft traditions — Villianur terracotta works and Thirukannur paper mâché crafts. The council has introduced HAPPY (Handicrafts Awareness Programme for Pondicherry Youth) and is creating a craft map of artisanal work across Puducherry and Auroville.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>2021</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Puducherry</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Terracotta, paper mâché</div>
+        </div>
+      </div>
+
+      <!-- CCG -->
+      <div class="affiliate-card">
+        <div class="affiliate-logo">
+          <div class="affiliate-logo-text">CCG</div>
+        </div>
+        <span class="affiliate-state-tag">Gujarat</span>
+        <!-- <div class="affiliate-abbr">CCG</div> -->
+        <h3 class="affiliate-name">Crafts Council of Gujarat</h3>
+        <p class="affiliate-desc">The newest addition to the network, set up in 2023 in collaboration with the Weavers Service Centre. CCG focuses on empowering artisans — especially women — through grassroots initiatives aimed at reviving traditional handloom practices through skill development and knowledge sharing.</p>
+        <div class="affiliate-meta">
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Est.</span>2023</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">State</span>Gujarat</div>
+          <div class="affiliate-meta-row"><span class="affiliate-meta-label">Focus</span>Handloom revival, women artisans</div>
+        </div>
+      </div>
+
+    </div><!-- /affiliate-grid -->
+
+    <!-- Network note + map -->
+    <div style="margin-top:24px;padding-top:16px;border-top:1px solid var(--border)">
+      <div class="network-grid">
+        <div>
+          <p class="s-tag">The Network</p>
+          <h3 class="s-title" style="margin-bottom:20px">A federated structure across India</h3>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">Kamaladevi Chattopadhyay's vision for the State Councils was work at the grassroots level — for the welfare of the artisan and for craft promotion. She believed in a federated structure with State Councils affiliated to the CCI, each working autonomously within their regions.</p>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">Their functions include documentation of local crafts, organisation of exhibitions and fairs, marketing support, advocating for artisan rights, and facilitating training and skill development. A National Meet is held every year with all Councils in attendance, followed by a Business Meet where every Council reports on their work.</p>
+          <p style="font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px">The Crafts Council of India currently has <strong style="color:var(--cr);font-weight:500">11 affiliated State Councils</strong> spread across India, with membership drawn entirely from volunteers committed to the cause of craft.</p>
+        </div>
+        <!-- Schematic India map showing council locations -->
+        <div>
+          <img src="images/CCI-Affiliations_map.webp"/>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+ 
+<script>
+function handleSubmit(e){
+  e.preventDefault();
+  var m=document.getElementById('successMsg');
+  m.style.display='block';
+  e.target.reset();
+  setTimeout(function(){m.style.display='none';},6000);
+}
+</script>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=6LeZzeYsAAAAAOnq7DrMKaPOtP9aFuaL-JqOF5Jn"></script>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<script>
+
+const form = document.getElementById('contactForm');
+
+form.addEventListener('submit', async function(e){
+
+    e.preventDefault();
+
+    const submitBtn = document.getElementById('submitBtn');
+
+    const btnText = document.getElementById('btnText');
+
+    const btnLoader = document.getElementById('btnLoader');
+
+    const formMessage = document.getElementById('formMessage');
+
+
+
+    // ==========================
+    // LOADING STATE
+    // ==========================
+
+    submitBtn.classList.add('loading');
+
+    btnText.style.display = 'none';
+
+    btnLoader.style.display = 'inline';
+
+    formMessage.style.display = 'none';
+
+
+
+    try{
+
+        const formData = new FormData(form);
+
+        const response = await fetch('send_enquiry.php', {
+
+            method:'POST',
+
+            body:formData
+
+        });
+
+        const data = await response.json();
+
+
+
+        // ==========================
+        // SUCCESS
+        // ==========================
+
+        if(data.success){
+
+            formMessage.className = 'success';
+
+            formMessage.innerHTML =
+            '✓ Message sent successfully. We will contact you shortly.';
+
+            form.reset();
+
+            grecaptcha.reset();
+
+        }
+
+        // ==========================
+        // ERROR
+        // ==========================
+
+        else{
+
+            formMessage.className = 'error';
+
+            formMessage.innerHTML =
+            data.message || 'Something went wrong.';
+
+        }
+
+    }
+
+    catch(error){
+
+        formMessage.className = 'error';
+
+        formMessage.innerHTML =
+        'Server error. Please try again later.';
+
+    }
+
+
+
+    // ==========================
+    // RESET BUTTON
+    // ==========================
+
+    submitBtn.classList.remove('loading');
+
+    btnText.style.display = 'inline';
+
+    btnLoader.style.display = 'none';
+
+    formMessage.style.display = 'block';
+
+});
+
+</script>
+ <div id="site-footer"></div>
+</body>
+</html>

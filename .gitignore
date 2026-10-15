@@ -1,0 +1,10 @@
+# Private credentials — keep only on the server (template: _public_html/secrets.example.php)
+_public_html/secrets.php
+
+# OS / editor junk
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Local tooling
+.claude/

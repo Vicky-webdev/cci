@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>report - Crafts Council of India</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="cci.css">
+  <link rel="stylesheet" href="custom.css">
+ 
+</head>
+
+<body>
+  <nav id="main-nav"></nav>
+  <div id="mobileMenu" class="mobile-menu"></div>
+
+  <div class="page-hero">
+    <div class="page-hero-content">
+      <h1 class="page-title">Reports</h1>
+      <p class="page-subtitle">Research reports examining the economic landscape and impact of the Indian crafts sector.</p>
+    </div>
+  </div>
+
+  <!-- ── LATEST ISSUE ── -->
+  <div class="nl-latest">
+    <div class="nl-latest-cover">
+      <div class="nl-cover-card">
+        <img src="images/reports/economics-of-indian-craft.webp" class="nl-card-img">
+        <div class="nl-cover-card-top">
+          <div class="nl-cover-logo">Crafts Council of India</div>
+          <div class="nl-cover-title">Economics of Indian Craft</div>
+          <div class="nl-latest-date">May 2026</div>
+        </div>
+      </div>
+    </div>
+    <div class="nl-latest-info">
+      <div class="nl-latest-badge"><span></span>Latest</div>
+      <h2 class="nl-latest-title">Economics of Indian Craft</h2>
+      <p class="nl-latest-desc">Estimating Employment and Value Added in the Handicraft and Handloom Sector</p>
+      <div class="nl-latest-actions">
+         <a href="docs/economics-of-indian-craft.pdf" class="btn-download btn-ghost" target="_blank" rel="noopener noreferrer>
+        <svg width=" 14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" /></svg>
+          View Report
+        </a> 
+        <!-- <a href="docs/CCI Newsletter June 2025.pdf" class="btn-ghost" target="_blank" 
+   rel="noopener noreferrer">Read Online</a>-->
+      </div>
+    </div>
+  </div>
+
+  <section class="nl-archive">
+    <!--<div class="nl-archive-inner">-->
+    <!--  <div style="text-align:center;margin-bottom:56px">-->
+    <!--    <p class="s-text" style="margin-top:12px"></p>-->
+    <!--  </div>-->
+    <!--</div>-->
+    
+
+    <div class="nl-year-group">
+      <div class="nl-year-label"></div>
+
+      <div class="nl-grid nl-grid-reports">
+
+        <!-- PDF 1 -->
+        <div class="nl-card">
+          <div class="nl-card-cover" style="background:linear-gradient(160deg)">
+
+            <img src="images/reports/report-images-0.webp" class="nl-card-img">
+
+            <div class="nl-card-cover-top">
+              <div class="nl-card-cover-logo">CCI report</div>
+              <div class="nl-card-cover-headline">
+                CRAFT ECONOMICS
+              </div>
+            </div>
+
+            <div class="nl-card-cover-strip"></div>
+          </div>
+
+          <div class="nl-card-body">
+            <div class="nl-card-vol"></div>
+            <div class="nl-card-title">
+              Craft Economics and Impact Study
+            </div>
+            <div class="nl-card-date">April 2011</div>
+          </div>
+
+          <div class="nl-card-footer">
+            <a href="#" class="nl-card-read" target="_blank" rel="noopener noreferrer">
+              Read online →
+            </a>
+
+            <a href="#" class="nl-card-dl" title="Download Report">
+
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    
+     
+  </section>
+
+ 
+
+ 
+
+  <script>
+    function nlSubscribe() {
+      var email = document.getElementById('nlEmail').value.trim();
+      if (!email || !email.includes('@')) return;
+      document.getElementById('nlSuccess').style.display = 'block';
+      document.getElementById('nlEmail').value = '';
+    }
+  </script>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+</body>
+</html>

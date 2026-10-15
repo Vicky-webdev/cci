@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What We Do - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* ── STICKY NAV ANCHOR BAR ── */
+.anchor-bar{
+  position:sticky;top:72px;z-index:900;
+  background:var(--linen);border-bottom:1px solid var(--border);
+  box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+.anchor-bar-inner{
+  max-width:1200px;margin:0 auto;
+  display:flex;align-items:center;gap:0;
+  padding:0 48px;overflow-x:auto;
+  scrollbar-width:none;-ms-overflow-style:none;
+}
+.anchor-bar-inner::-webkit-scrollbar{display:none}
+.anchor-link{
+  display:block;padding:0 20px;height:52px;line-height:52px;
+  font-size:13px;font-weight:400;color:var(--mud);text-decoration:none;
+  white-space:nowrap;border-bottom:2px solid transparent;
+  transition:color .2s,border-color .2s;flex-shrink:0;
+}
+.anchor-link:hover{color:var(--cr)}
+.anchor-link.active{color:var(--cr);border-bottom-color:var(--cr)}
+
+/* ── SECTION BLOCKS (alternating) ── */
+.wwd-block{
+  padding:96px 48px;
+  scroll-margin-top:130px;/* nav 72px + anchor bar 52px + 6px buffer */
+}
+.wwd-block:nth-child(even){background:#fff}
+.wwd-block:nth-child(odd){background:var(--linen)}
+
+.wwd-inner{
+  max-width:1200px;margin:0 auto;
+  display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:center;
+}
+/* Even blocks: image RIGHT, text LEFT (default) */
+/* Odd blocks get image first on desktop: reverse */
+.wwd-block.img-left .wwd-inner{direction:ltr}
+.wwd-block.img-right .wwd-inner{direction:rtl}
+.wwd-block.img-right .wwd-inner>*{direction:ltr}
+
+.wwd-image{
+  width:100%;aspect-ratio:4/3;
+  border-radius:6px;overflow:hidden;
+  position:relative;box-shadow:var(--shadow-lg);
+}
+.wwd-image-placeholder{
+  width:100%;height:100%;
+  display:flex;flex-direction:column;align-items:center;justify-content:center;
+  gap:12px;
+}
+.img-label{font-size:12px;letter-spacing:2px;text-transform:uppercase;opacity:.5;font-weight:400}
+
+/* image colour themes per section */
+.img-support{background:linear-gradient(135deg,#5C3A1E 0%,#8B5230 50%,#C4844A 100%)}
+.img-promote{background:linear-gradient(135deg,#2C4A2C 0%,#4A7A4A 50%,#7AAA5A 100%)}
+.img-sustain{background:linear-gradient(135deg,#1E3A5C 0%,#2E5C8A 50%,#4A84C0 100%)}
+.img-advocacy{background:linear-gradient(135deg,#5C2C1E 0%,#8B4030 50%,#C07050 100%)}
+
+.wwd-text{}
+.wwd-tag{
+  font-size:11px;font-weight:500;letter-spacing:2.5px;text-transform:uppercase;
+  color:var(--cr);margin-bottom:16px;display:block;
+}
+.wwd-title{
+  font-family:'Cormorant Garamond',serif;font-size:42px;font-weight:500;
+  color:var(--ink);margin-bottom:24px;line-height:1.1;
+}
+.wwd-body p{
+  font-size:15px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px;
+}
+.wwd-body p:last-child{margin-bottom:0}
+.wwd-divider{
+  width:48px;height:2px;background:var(--cr);margin:28px 0;
+}
+
+/* Advocacy report button */
+.btn-report{
+  display:inline-flex;align-items:center;gap:10px;
+  margin-top:32px;padding:13px 28px;
+  background:var(--cr);color:#FAF6EF;
+  font-size:13px;font-weight:400;letter-spacing:.5px;
+  border-radius:3px;text-decoration:none;
+  transition:background .2s,transform .15s;
+  border:none;cursor:pointer;
+}
+.btn-report:hover{background:var(--cr-deep);transform:translateY(-1px)}
+.btn-report svg{flex-shrink:0}
+
+
+/* ── SECTION IMAGE SLIDER ── */
+.wwd-slider {
+  width: 100%; aspect-ratio: 4/3;
+  border-radius: 6px; overflow: hidden;
+  position: relative; box-shadow: var(--shadow-lg);
+  direction: ltr; /* override rtl from img-right parent */
+}
+.wwd-slider-track {
+  display: flex;
+  height: 100%;
+  /* scroll-snap instead of transform — no iOS gap/overflow issues */
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.wwd-slider-track::-webkit-scrollbar { display: none; }
+.wwd-slide {
+  flex: none;           /* exact — no subpixel rounding */
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  position: relative;
+  overflow: hidden;
+}
+.wwd-slide img {
+  width: 100%; height: 100%;
+  object-fit: cover; display: block;
+  pointer-events: none;
+}
+/* placeholder tile when no real image yet */
+.wwd-slide-placeholder {
+  width: 100%; height: 100%;
+  display: flex; flex-direction: column;
+  align-items: center; justify-content: center; gap: 10px;
+}
+.wwd-slide-placeholder .slide-emoji { font-size: 52px; opacity: .55; }
+.wwd-slide-placeholder .slide-lbl {
+  font-size: 11px; letter-spacing: 2px; text-transform: uppercase;
+  color: rgba(250,246,239,.45); font-family: 'DM Sans', sans-serif;
+}
+/* arrows */
+.wwd-sl-arrow {
+  position: absolute; top: 50%; transform: translateY(-50%);
+  width: 36px; height: 36px; border-radius: 50%;
+  border: 1px solid rgba(250,246,239,.3);
+  background: rgba(0,0,0,.25); backdrop-filter: blur(4px);
+  color: #FAF6EF; font-size: 18px; line-height: 1;
+  cursor: pointer; display: flex; align-items: center; justify-content: center;
+  transition: background .2s, border-color .2s; z-index: 10;
+  user-select: none;
+}
+.wwd-sl-arrow:hover { background: rgba(0,0,0,.5); border-color: rgba(250,246,239,.6); }
+.wwd-sl-prev { left: 12px; }
+.wwd-sl-next { right: 12px; }
+/* dots */
+.wwd-sl-dots {
+  position: absolute; bottom: 14px; left: 50%; transform: translateX(-50%);
+  display: flex; gap: 6px; z-index: 10;
+}
+.wwd-sl-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: rgba(250,246,239,.35);
+  cursor: pointer; transition: background .2s, transform .2s;
+}
+.wwd-sl-dot.active { background: #FAF6EF; transform: scale(1.3); }
+/* slide caption */
+.wwd-slide-caption {
+  position: absolute; bottom: 0; left: 0; right: 0;
+  padding: 12px 16px;
+  background: linear-gradient(to top, rgba(0,0,0,.55), transparent);
+  color: rgba(250,246,239,.85);
+  font-size: 11px; letter-spacing: .5px; font-weight: 300;
+  font-family: 'DM Sans', sans-serif;
+}
+/* responsive */
+@media(max-width: 960px) {
+  .wwd-slider { aspect-ratio: 16/9; }
+  .anchor-bar-inner { padding: 0 24px; }
+  .wwd-block { padding: 64px 32px; scroll-margin-top: 130px; }
+  .wwd-inner { grid-template-columns: 1fr; gap: 40px; }
+  .wwd-block.img-right .wwd-inner { direction: ltr; }
+  .wwd-image { aspect-ratio: 16/9; }
+  /* Slider always first, text always second on mobile */
+  .wwd-slider { order: -1; }
+  .wwd-text { order: 0; }
+}
+@media(max-width: 600px) {
+  .wwd-block { padding: 44px 20px; scroll-margin-top: 130px; }
+  .wwd-title { font-size: 34px; }
+  .anchor-link { padding: 0 14px; font-size: 12px; }
+}
+</style>
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<!-- Hero -->
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">What We Do</h1>
+    <p class="page-subtitle">CCI’s key areas of work are to Support, Promote and Sustain:</p>
+  </div>
+</div>
+
+<!-- Sticky anchor bar -->
+<div class="anchor-bar">
+  <div class="anchor-bar-inner">
+    <a class="anchor-link active" href="#support">Support</a>
+    <a class="anchor-link" href="#promote">Promote</a>
+    <a class="anchor-link" href="#sustain">Sustain</a>
+  </div>
+</div>
+
+<!-- ── SUPPORT ── (image right, text left) -->
+<section id="support" class="wwd-block img-right">
+  <div class="wwd-inner">
+    <div class="wwd-text">
+      <h2 class="wwd-title">Support</h2>
+      <div class="wwd-divider"></div>
+      <div class="wwd-body">
+        <p>To ensure that the craft skills are transferred from one generation to the next, CCI supports artisans’ children with stipends to help them get through schooling and learn their hereditary craft on weekends.</p>
+<p>Projects to introduce tools and technology for stone artisans, wood finishes for wood carvers and introducing safe dyes to natural fibre artisans are ways CCI has supported crafts to help scale up and reach wider markets. CCI has reached and impacted 700 artisans under these programmes.</p>
+       </div>
+    </div>
+    <div class="wwd-slider" data-slider="support" data-autoplay="4000">
+      <div class="wwd-slider-track">
+
+        <!-- Slide 1: replace src with your real image path -->
+
+        <!-- Slide 2 -->
+        <div class="wwd-slide">
+   
+          <img src="images/support2.webp" alt="Tools and technology support">
+         </div>
+
+        <!-- Slide 3 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#4A2C10,#9A6030)">
+            <span class="slide-emoji">👨‍👧</span>
+            <span class="slide-lbl">Support · Image 3</span>
+          </div>-->
+           <img src="images/support3.webp" alt="Children stipend programme"> 
+          <div class="wwd-slide-caption">Stipend programme for artisans' children</div>
+        </div>
+
+      </div>
+      <button class="wwd-sl-arrow wwd-sl-prev" aria-label="Previous">&#8249;</button>
+      <button class="wwd-sl-arrow wwd-sl-next" aria-label="Next">&#8250;</button>
+      <div class="wwd-sl-dots">
+        <span class="wwd-sl-dot active"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PROMOTE ── (image left, text right) -->
+<section id="promote" class="wwd-block img-left">
+  <div class="wwd-inner">
+    <div class="wwd-slider" data-slider="promote" data-autoplay="4500">
+      <div class="wwd-slider-track">
+
+        <!-- Slide 1 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder img-promote">
+            <span class="slide-emoji">🏪</span>
+            <span class="slide-lbl">Promote · Image 1</span>
+          </div>-->
+          <img src="images/promote1.webp" alt="Crafts bazaar">
+          <!--<div class="wwd-slide-caption">100-stall crafts bazaar connecting artisans with the public</div>-->
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="wwd-slide">
+        
+           <img src="images/promote2.webp" alt="International Folk Art Mart">
+         <!--<div class="wwd-slide-caption">International Folk Art Mart, Santa Fe USA</div>-->
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#2C5C2C,#7AAA4A)">
+            <span class="slide-emoji">🎨</span>
+            <span class="slide-lbl">Promote · Image 3</span>
+          </div>-->
+           <img src="images/promote3.webp" alt="Craftpreneur Exhibition">
+          <!--<div class="wwd-slide-caption">Craftpreneur Exhibition — design meets tradition</div>-->
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#3A6A1E,#8AAA30)">
+            <span class="slide-emoji">🛍️</span>
+            <span class="slide-lbl">Promote · Image 4</span>
+          </div>-->
+          <img src="images/promote4.webp" alt="Kamala craft retail">
+          <div class="wwd-slide-caption">Kamala craft retail outlets — 2,000+ artisans</div>
+        </div>
+
+      </div>
+      <button class="wwd-sl-arrow wwd-sl-prev" aria-label="Previous">&#8249;</button>
+      <button class="wwd-sl-arrow wwd-sl-next" aria-label="Next">&#8250;</button>
+      <div class="wwd-sl-dots">
+        <span class="wwd-sl-dot active"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+      </div>
+    </div>
+    <div class="wwd-text">
+      <!--<span class="wwd-tag">02 &nbsp;·&nbsp; Promote</span>-->
+      <h2 class="wwd-title">Promote</h2>
+      <div class="wwd-divider" style="background:var(--gd)"></div>
+      <div class="wwd-body">
+        <p>Marketing of the crafts to make craft a sustainable livelihood is an area of focus for CCI. CCI’s 100-stall crafts bazaars have brought to the forefront many artisans who lacked a platform to connect with the public. The Craftpreneur Exhibition encourages designers and artisan-turned-entrepreneurs to sell to up-market consumers, showing the public how design helps enhance traditional craft.</p>
+<p>For over ten years, CCI has helped artisans participate in the International Folk Art Mart Santa Fe, USA. This has helped launch many of these artisans into international markets on their own.</p>
+<p>The CCI family of artisans now extends to over 4000 artisans in every state of the country. Focused national exhibitions on specific crafts, for example basketry and pottery brought together artisans from across the country encouraging exchange of skills and traditions. The two Kamala craft retail outlets have an artisan base of over 2000 artisans who supply to the shops regularly. The objective is to increase this number every year.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SUSTAIN ── (image right, text left) -->
+<section id="sustain" class="wwd-block img-right">
+  <div class="wwd-inner">
+    <div class="wwd-text">
+      <!--<span class="wwd-tag">03 &nbsp;·&nbsp; Sustain</span>-->
+      <h2 class="wwd-title">Sustain</h2>
+      <div class="wwd-divider" style="background:#4A84C0"></div>
+      <div class="wwd-body">
+        <h4>⁠⁠Revival of Crafts and Design</h4>
+
+<p>One of CCI’s primary objective is the revival of traditional handicrafts which were once an integral part of various communities. The restoration of these culturally rich crafts not only preserve’s the past but also create’s a sustainable future where these products have a place in modern society. CCI has consistently recognised the need to nurture these crafts to ensure their survival and relevance. By reviving traditional handicrafts, the artisans can be innovative and create designs for contemporary markets.  CCI has been successful in reviving crafts like the Killimangalam mats, the Pattamadai mats and the kalchatty.</p>
+
+<h4>⁠Relief</h4>
+<p>The Covid-19 pandemic and natural disasters have wiped out many artisan communities who did not have the resources to support themselves.  Over the years CCI has stepped in on several occasions to lend a helping hand to artisans to recoup and cut their losses. Measures are in place to see that the artisan and his craft do not suffer hugely due to these factors.</p>
+
+<h4>⁠Craft Economics</h4>
+<p>CCI’s efforts to bring awareness to the lack of robust data on the handicrafts and handloom sector led to the Central Statistical Organisation agreeing to include handicrafts and handlooms in the Sixth Economic census in 2013. In 2023, in collaboration with the Institute of Human Development CCI has worked on a toolkit for a methodology to collect data on artisans and to be able to bring their contribution into the national accounting systems. A pilot study in five states has been completed and a final report is awaited.</p>
+
+      </div>
+    </div>
+    <div class="wwd-slider" data-slider="sustain" data-autoplay="5000">
+      <div class="wwd-slider-track">
+   <!-- Slide 1 -->
+                <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder img-sustain">
+            <span class="slide-emoji">🏺</span>
+            <span class="slide-lbl">Sustain · Image 1</span>
+          </div>-->
+           <img src="images/sustain-pattamadai.webp" alt="Craft revival">
+          <!--<div class="wwd-slide-caption">Revival of the Pattamadai korai mat weaving tradition</div>-->
+        </div>
+   <!-- Slide 2 -->
+                <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder img-sustain">
+            <span class="slide-emoji">🏺</span>
+            <span class="slide-lbl">Sustain · Image 1</span>
+          </div>-->
+           <img src="images/sustain-pattamadai -2.webp" alt="Craft revival">
+          <!--<div class="wwd-slide-caption">Revival of the Pattamadai korai mat weaving tradition</div>-->
+        </div>
+
+
+        <!-- Slide 3 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder img-sustain">
+            <span class="slide-emoji">🏺</span>
+            <span class="slide-lbl">Sustain · Image 1</span>
+          </div>-->
+           <img src="images/sustain1.webp" alt="Craft revival">
+          <!--<div class="wwd-slide-caption">Revival of the Pattamadai korai mat weaving tradition</div>-->
+        </div>
+
+        <!-- Slide 4 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#1A2C5C,#3A6A9A)">
+            <span class="slide-emoji">🤝</span>
+            <span class="slide-lbl">Sustain · Image 2</span>
+          </div>-->
+          <img src="images/sustain2.webp" alt="Covid relief for artisans">
+          <!--<div class="wwd-slide-caption">Artisan relief support during Covid-19</div>-->
+        </div>
+
+        <!-- Slide 5 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#2C3A5C,#5A7AC0)">
+            <span class="slide-emoji">📊</span>
+            <span class="slide-lbl">Sustain · Image 3</span>
+          </div>-->
+          <img src="images/sustain3.webp" alt="Craft economics">
+          <!--<div class="wwd-slide-caption">Craft economics data toolkit — five-state pilot study</div>-->
+        </div>
+
+        <!-- Slide 6 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#0E2040,#2A5080)">
+            <span class="slide-emoji">🪨</span>
+            <span class="slide-lbl">Sustain · Image 4</span>
+          </div>-->
+          <img src="images/sustain4.webp" alt="Kalchatty revival"> 
+          <!--<div class="wwd-slide-caption">Revival of the Kalchatty soapstone craft, Salem</div>-->
+        </div>
+
+                <!-- Slide 7 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#0E2040,#2A5080)">
+            <span class="slide-emoji">🪨</span>
+            <span class="slide-lbl">Sustain · Image 4</span>
+          </div>-->
+          <img src="images/sustain5.webp" alt="Kalchatty revival"> 
+          <!--<div class="wwd-slide-caption">Revival of the Kalchatty soapstone craft, Salem</div>-->
+        </div>
+
+                <!-- Slide 8 -->
+        <div class="wwd-slide">
+          <!--<div class="wwd-slide-placeholder" style="background:linear-gradient(135deg,#0E2040,#2A5080)">
+            <span class="slide-emoji">🪨</span>
+            <span class="slide-lbl">Sustain · Image 4</span>
+          </div>-->
+          <img src="images/sustain6.webp" alt="Kalchatty revival"> 
+          <!--<div class="wwd-slide-caption">Revival of the Kalchatty soapstone craft, Salem</div>-->
+        </div>
+
+      </div>
+      <button class="wwd-sl-arrow wwd-sl-prev" aria-label="Previous">&#8249;</button>
+      <button class="wwd-sl-arrow wwd-sl-next" aria-label="Next">&#8250;</button>
+      <div class="wwd-sl-dots">
+        <span class="wwd-sl-dot active"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+        <span class="wwd-sl-dot"></span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ADVOCACY ── (image left, text right) -->
+<!--<section id="advocacy" class="wwd-block img-left">
+  <div class="wwd-inner">
+    <div class="wwd-image">
+      <div class="wwd-image-placeholder img-advocacy">
+        <svg width="64" height="64" viewBox="0 0 64 64" fill="none"><path d="M12 48 L12 24 L32 12 L52 24 L52 48" stroke="rgba(250,246,239,.4)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><rect x="22" y="32" width="20" height="16" rx="2" stroke="rgba(250,246,239,.4)" stroke-width="2"/><path d="M28 32 V28 Q28 24 32 24 Q36 24 36 28 V32" stroke="rgba(250,246,239,.4)" stroke-width="2"/></svg>
+        <span class="img-label" style="color:rgba(250,246,239,.4)">Advocacy · Placeholder image</span>
+      </div>
+    </div>
+    <div class="wwd-text">
+      <span class="wwd-tag">04 &nbsp;·&nbsp; Advocacy</span>
+      <h2 class="wwd-title">A voice for India's craft sector</h2>
+      <div class="wwd-divider" style="background:#C07050"></div>
+      <div class="wwd-body">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. The coming together of several NGOs in the sector has shown the importance of a cohesive group lobbying for the craft community's needs.</p>
+        <p>Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus.</p>
+      </div>
+      <a href="#" class="btn-report">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        View Advocacy Report
+      </a>
+    </div>
+  </div>
+</section>-->
+
+ 
+
+ 
+
+<script>
+/* ── SECTION SLIDERS ── */
+document.querySelectorAll('.wwd-slider').forEach(function(slider) {
+  var track   = slider.querySelector('.wwd-slider-track');
+  var dots    = slider.querySelectorAll('.wwd-sl-dot');
+  var total   = slider.querySelectorAll('.wwd-slide').length;
+  var current = 0;
+  var delay   = parseInt(slider.dataset.autoplay) || 4000;
+  var timer   = null;
+
+  function go(n) {
+    current = (n + total) % total;
+    track.scrollLeft = current * track.clientWidth;
+    dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+  }
+
+  function startAuto() { timer = setInterval(function() { go(current + 1); }, delay); }
+  function stopAuto()  { clearInterval(timer); }
+
+  slider.querySelector('.wwd-sl-prev').addEventListener('click', function() { stopAuto(); go(current - 1); startAuto(); });
+  slider.querySelector('.wwd-sl-next').addEventListener('click', function() { stopAuto(); go(current + 1); startAuto(); });
+  dots.forEach(function(dot, i) {
+    dot.addEventListener('click', function() { stopAuto(); go(i); startAuto(); });
+  });
+
+  slider.addEventListener('mouseenter', stopAuto);
+  slider.addEventListener('mouseleave', startAuto);
+
+  /* keep dots in sync when user swipes manually on touch */
+  track.addEventListener('scroll', function() {
+    var idx = Math.round(track.scrollLeft / track.clientWidth);
+    if (idx !== current) {
+      current = idx;
+      dots.forEach(function(d, i) { d.classList.toggle('active', i === current); });
+    }
+  }, { passive: true });
+
+  startAuto();
+});
+</script>
+
+<script>
+(function(){
+  var links = document.querySelectorAll('.anchor-link');
+
+  // Smooth scroll on click
+  links.forEach(function(l){
+    l.addEventListener('click', function(e){
+      var id = l.getAttribute('href').slice(1);
+      var target = document.getElementById(id);
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth'});
+      }
+    });
+  });
+
+  // Highlight active section using IntersectionObserver
+  var observer = new IntersectionObserver(function(entries){
+    entries.forEach(function(entry){
+      if(entry.isIntersecting){
+        links.forEach(function(l){ l.classList.remove('active'); });
+        var active = document.querySelector('.anchor-link[href="#'+entry.target.id+'"]');
+        if(active) active.classList.add('active');
+      }
+    });
+  }, { rootMargin: '-130px 0px -50% 0px', threshold: 0 });
+
+  ['support','promote','sustain','advocacy'].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) observer.observe(el);
+  });
+})();
+</script>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+</body>
+</html>

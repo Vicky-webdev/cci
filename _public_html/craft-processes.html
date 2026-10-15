@@ -1,0 +1,553 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Craft Processes - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css">
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+<style>
+/* ── PROCESS GRID ── */
+.process-section{padding:72px 48px;background:var(--linen)}
+.process-inner{max-width:1200px;margin:0 auto}
+.process-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:24px;
+  margin-top:56px;
+}
+.process-card{
+  background:#fff;border:1px solid var(--border);border-radius:6px;
+  overflow:hidden;cursor:pointer;
+  transition:box-shadow .25s,transform .25s;
+  display:flex;flex-direction:column;
+}
+.process-card:hover{box-shadow:var(--shadow-md);transform:translateY(-3px)}
+.process-card-img{
+  width:100%;aspect-ratio:4/3;
+  display:flex;align-items:center;justify-content:center;
+  position:relative;flex-shrink:0;overflow:hidden;
+}
+.process-card-icon{font-size:48px;opacity:.7}
+.process-card-body{padding:20px;flex:1;display:flex;flex-direction:column}
+.process-card-category{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--cr);margin-bottom:8px;opacity:.8}
+.process-card-title{font-family:'Cormorant Garamond',serif;font-size:20px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.2}
+.process-card-desc{font-size:12.5px;color:var(--mud);line-height:1.7;font-weight:300;flex:1}
+.process-card-link{
+  display:inline-flex;align-items:center;gap:6px;
+  margin-top:14px;font-size:12px;color:var(--cr);font-weight:400;
+  text-decoration:none;
+}
+.process-card-link svg{transition:transform .2s}
+.process-card:hover .process-card-link svg{transform:translateX(3px)}
+
+/* ── DETAIL MODAL / PANEL ── */
+.detail-overlay{
+  position:fixed;inset:0;background:rgba(30,20,16,.65);z-index:2000;
+  opacity:0;pointer-events:none;transition:opacity .25s;
+}
+.detail-overlay.open{opacity:1;pointer-events:all}
+.detail-panel{
+  position:fixed;top:0;right:0;bottom:0;
+  width:min(640px,100vw);background:var(--linen);
+  overflow-y:auto;z-index:2001;
+  transform:translateX(100%);transition:transform .3s cubic-bezier(.4,0,.2,1);
+  box-shadow:-4px 0 32px rgba(0,0,0,.15);
+}
+.detail-panel.open{transform:translateX(0)}
+.detail-close{
+  position:sticky;top:0;z-index:10;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:16px 28px;background:var(--linen);border-bottom:1px solid var(--border);
+}
+.detail-close-btn{
+  width:36px;height:36px;border-radius:50%;border:1px solid var(--border);
+  background:none;cursor:pointer;display:flex;align-items:center;justify-content:center;
+  transition:background .2s;
+}
+.detail-close-btn:hover{background:var(--cr-pale)}
+.detail-close-breadcrumb{font-size:12px;color:var(--mud);font-weight:300}
+.detail-hero{
+  width:100%;aspect-ratio:16/7;
+  display:flex;align-items:center;justify-content:center;
+  font-size:96px;
+}
+.detail-content{padding:36px 36px 48px}
+.detail-category{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--cr);margin-bottom:12px;display:block}
+.detail-title{font-family:'Cormorant Garamond',serif;font-size:38px;font-weight:500;color:var(--ink);margin-bottom:8px;line-height:1.1}
+.detail-subtitle{font-size:14px;color:var(--mud);font-weight:300;margin-bottom:28px;line-height:1.6;font-style:italic}
+.detail-divider{width:48px;height:2px;background:var(--cr);margin:0 0 28px}
+.detail-section-label{font-size:10px;font-weight:500;letter-spacing:2px;text-transform:uppercase;color:var(--cr);opacity:.8;margin:28px 0 12px}
+.detail-body p{font-size:14px;line-height:1.9;color:var(--bark);font-weight:300;margin-bottom:16px}
+.detail-body p:last-child{margin-bottom:0}
+.detail-steps{list-style:none;padding:0;margin:0;counter-reset:steps}
+.detail-step{counter-increment:steps;display:flex;gap:16px;margin-bottom:20px;align-items:baseline}
+.detail-step-num{
+  font-family:'Cormorant Garamond',serif;font-size:28px;font-weight:500;
+  color:var(--cr);opacity:.4;line-height:1;flex-shrink:0;min-width:28px;
+}
+.detail-step-text{font-size:14px;line-height:1.8;color:var(--bark);font-weight:300}
+.detail-step-title{font-weight:500;color:var(--ink);display:block;margin-bottom:3px}
+.detail-materials{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.material-tag{background:var(--cr-pale);color:var(--cr);font-size:12px;padding:4px 10px;border-radius:20px;font-weight:300}
+.detail-states{display:flex;flex-wrap:wrap;gap:8px}
+.state-chip{background:var(--linen2);border:1px solid var(--border);color:var(--bark);font-size:12px;padding:4px 10px;border-radius:20px;font-weight:300}
+
+/* Responsive */
+@media(max-width:960px){
+  .process-section{padding:56px 32px}
+  .process-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:600px){
+  .process-section{padding:44px 20px}
+  .process-grid{grid-template-columns:repeat(2,1fr);gap:14px}
+  .process-card-body{padding:14px}
+  .process-card-title{font-size:17px}
+  .detail-panel{width:100vw}
+  .detail-content{padding:24px 20px 36px}
+  .detail-title{font-size:30px}
+}
+
+.process-card-icon img {
+  /* width: 48px;
+  height: 48px; */
+  object-fit: contain;
+}
+
+.detail-hero img {
+  /* width: 180px;
+  height: 180px;
+  object-fit: contain; */
+}
+
+.process-card-desc {
+  font-size:12.5px;
+  color:var(--mud);
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+</style>
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<div class="page-hero">
+  <div class="page-hero-content">
+    <h1 class="page-title">Craft Processes</h1>
+    <p class="page-subtitle">From raw material to finished object — explore the techniques, tools, and traditions behind India's extraordinary handicrafts.</p>
+  </div>
+</div>
+
+<section class="process-section">
+  <div class="process-inner">
+    <div style="text-align:center;max-width:700px;margin:0 auto">
+      <p class="s-text" style="margin-top:12px">Each craft tradition is defined by a unique process — a set of techniques passed down through generations. Click any process to explore it in detail.</p>
+    </div>
+    <div class="process-grid" id="processGrid"></div>
+  </div>
+</section>
+
+ 
+
+<!-- Detail Panel -->
+<div class="detail-overlay" id="detailOverlay" onclick="closeDetail()"></div>
+<div class="detail-panel" id="detailPanel">
+  <div class="detail-close">
+    <span class="detail-close-breadcrumb">Craft Processes</span>
+    <button class="detail-close-btn" onclick="closeDetail()" aria-label="Close">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+    </button>
+  </div>
+  <div id="detailBody"></div>
+</div>
+
+<script>
+// ── PROCESS DATA ─────────────────────────────────────────────────────────────
+var PROCESSES = [
+  {
+    id:'a-typical-turned-wood-furniture',
+    category:'Wood',
+    icon:'images/craft_process/A_Typical_Turned_Wood_Furniture/cover.png',
+    color:'linear-gradient(135deg,#3A2010,#9A6030)',
+    title:'A Typical Turned Wood Furniture',
+    subtitle:'Hand crafted furniture is made in many states each of which is unique in style.',
+    intro:'Hand crafted furniture is made in many states each of which is unique in style. As in UP, Rajasthan, Gujarat, Punjab, There are wood carved, wood painted, wood turned furniture. Rose wood furniture with inlay is made in Karnataka. There is also cane and bamboo furniture made in almost every state.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Metal   Tools and accessories'},
+      {title:'Wood turning',text:'The individual components are made by turning the teak wood on a lathe.'},
+      {title:'Shaping and contouring',text:'The craftsman deftly uses chisels and gouges to shape the wood and achieves symmetric and even contours.'},
+      {title:'Coloring & ornamentation',text:'The craftsmen then maps the ornamental patterns free-hand, matching them perfectly.'},
+      {title:'Assembling and packing',text:'The various parts are then assembled.                       Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'knitting--crochet',
+    category:'Craft',
+    icon:'images/craft_process/Knitting_Crochet/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Knitting / Crochet',
+    subtitle:'Knitting includes, Crochet, Lace, Macrame, Braiding are skills that have been taught to children in their growing years.',
+    intro:'Knitting includes, Crochet, Lace, Macrame, Braiding are skills that have been taught to children in their growing years. There have been craft pockets spread across the country that have done them commercially.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials preparation',text:'Yarn   Dyes and chemicals   Tools and machinery'},
+      {title:'Preparing process',text:'Carding/Combing   Hand spinning   Yarn washing   Hand making process'},
+      {title:'Dyeing of the fiber',text:'Depending on the requirements the yarn is dyed using natural or synthetic dyes.'},
+      {title:'Knitting/Crochet',text:'The textile is also produced using needle techniques like knitting and crochet.'},
+      {title:'Finishing',text:'Once the product is knitted/crocheted completely, the edges are finished and trimmed.'},
+      {title:'Packing',text:'Once the products are finished they are packed and transported for sale                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'leather-bag',
+    category:'Craft',
+    icon:'images/craft_process/Leather_Bag/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Leather Bag',
+    subtitle:'Leather bags are made by communities which stitch footwear.',
+    intro:'Leather bags are made by communities which stitch footwear. The same techniques are used to embelish the leather',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Rags, pulp, adhessive           Tools and accessories'},
+      {title:'Preparing the leather',text:'Soking & drying   Expoliation   Preparation for veg tanning   Tanning'},
+      {title:'Design templates and leather smoothening:',text:'The tanned leather is the smoothened out and simultaneously on the design templates prepared.'},
+      {title:'Pattern cutting',text:'The pattern cutting is done based on the design templates.'},
+      {title:'Punching, Stitching & Assmebling',text:'The various parts are then asembled together by a series of punching holes & sewing processes.'},
+      {title:'Finishing and packing',text:'The surface is then brushed, polished and finished.                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'iron-craft',
+    category:'Craft',
+    icon:'images/craft_process/Iron_Craft/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Iron Craft',
+    subtitle:'Iron is usually worked on by the lohars who are itinerents.',
+    intro:'Iron is usually worked on by the lohars who are itinerents.The heated metal is beaten into the required shape with heavy hammers',
+    materials:['Scrap iron, varnish','Publications','Instagram','Tools and accessories','Privacy Policy','About Us'],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Scrap iron, varnish   Tools and accessories'},
+      {title:'Heating Iron',text:'The process starts with scrap iron being beaten re peatedly when hot'},
+      {title:'Beating (forging)',text:'Desired shape is given carefully by beating it at necessary spots.'},
+      {title:'Cutting',text:'Then unnecessary portions are cut away and filed to remove sharp objects'},
+      {title:'Shapping and Joining',text:'The various parts are the finally cut and assembled'},
+      {title:'Finishing',text:'On completion, varnish coat is applied to enhance the luster.                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'lac-bangles',
+    category:'Craft',
+    icon:'images/craft_process/Lac_Bangles/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Lac Bangles',
+    subtitle:'Lac is an insect based resin.',
+    intro:'Lac is an insect based resin.Its property of being malleable with heat and its ability to absorb colour have made it ideal for making bangles.The bangle thus made can be embellished with beads mirrors etc.In Orissa, lac is used to coat and decorate bamboo dowry boxes, and in Orissa and West Bengal terracotta figures and dolls.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and raw material preparation',text:'Lac   Dyes, trims and chemicals   Tools and machinery'},
+      {title:'Lac collection & Preparation',text:'The insetc resin is collected from the trees.   The resin is then melted strained and prepared.'},
+      {title:'Dyeing & preparation of tubes',text:'The lac is colored while its prepared   They are made into tubes with batons & roller pins.'},
+      {title:'Moulding',text:'These tubes are then circled to the required size around a wooden baton and then concealed with heat'},
+      {title:'Finishing',text:'Once the mould is ready, then the suface is ormaneted if reqd and finished.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'wood-inlay',
+    category:'Wood',
+    icon:'images/craft_process/Wood_Inlay/cover.png',
+    color:'linear-gradient(135deg,#3A2010,#9A6030)',
+    title:'Wood Inlay',
+    subtitle:'Wood is inlaid with different coloured wood, with bone or with wire.',
+    intro:'Wood is inlaid with different coloured wood, with bone or with wire. The surface is incised with the required design/motif. The material to be inlaid is then beaten into the grooves',
+    materials:['Publications','Instagram','Tools and accessories','Privacy Policy','About Us','Contact us'],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Metal   Tools and accessories'},
+      {title:'Wood selection & Design preparation',text:'The base wood is first selected.   The final design drawing is prepared.'},
+      {title:'Design Transferring',text:'The Final design is then transferred onto the wood.'},
+      {title:'Groove Making',text:'Based on the design, grooves are made on the areas to be inlayed.'},
+      {title:'Inlay process',text:'Once the mould is ready, then the suface is ormaneted if reqd and finished.'},
+      {title:'Assembling and packing',text:'Once the inlay process is completed the product is then assembled, polished and finished.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'music-instruments',
+    category:'Craft',
+    icon:'images/craft_process/Music_Instruments/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Music Instruments',
+    subtitle:'Most of India’s musical instruments need to be made very professionally using very specific materials for different part of the instrument.',
+    intro:'Most of India’s musical instruments need to be made very professionally using very specific materials for different part of the instrument.The instrument makers are required to be musicials so that the instrument can be well tuned.Gourds are used in string instruments . Many of the simple folk music instruments however are home made.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Skin, Metal, wood   Tools and accessories'},
+      {title:'Preparation of the skin',text:'Selection and preparation of the skin is the first stage of tabla making   The next step is to shape the skin into a form known as “saancha”.'},
+      {title:'Gajra Making',text:'The thick outer edge of the playing surface known as gajra is woven on.'},
+      {title:'Structuring & assembling',text:'The skin is then placed on the shell constituting the bottom half of the instrument.   The bottom half of the instrument is made of rose wood/ metal.'},
+      {title:'Siyahi',text:'Preparation & application of a black paste known as siyahi on the centre of the playing surface'},
+      {title:'Finishing',text:'The tabla is tightened with the help of leather straps, which pass through the edge of the gajra and the bottom   Eight cylindrical pieces of wood are equally passed through the straps in the wooden drum to assist in tuning the instrument                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'horn--bone-carving',
+    category:'Craft',
+    icon:'images/craft_process/Horn_Bone_Carving/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Horn / Bone Carving',
+    subtitle:'Buffalo horn is commonly used to make articles – mostly combs in bengal.',
+    intro:'Buffalo horn is commonly used to make articles – mostly combs in bengal. Horn is heated & then flattened & cut and shaped or carved. Some artifacts are made in Kerala,and Andhra Pradesh.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Metal   Tools and accessories'},
+      {title:'Preparatory process',text:'Raw bone is cut into pieces of desired size and immersed in water   Later pieces are scrapped and cleaned'},
+      {title:'Design Transferring',text:'The Final design is then transferred onto the bone/ horn.'},
+      {title:'Turning & Carving',text:'The piece is then shaped on a lathe.   Carving done with a file drill.'},
+      {title:'Smoothening & staining',text:'The surface is then smoothened.   It is stained if required.'},
+      {title:'Assembling and packing',text:'The final product is then assembled and finished.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'paper-making',
+    category:'Craft',
+    icon:'images/craft_process/Paper_Making/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Paper Making',
+    subtitle:'The Mughals introduced handmade paper to India.',
+    intro:'The Mughals introduced handmade paper to India. Paper making is done in Jaipur where they made Bahi’s – Cloth bound books used by small businessmen and retailers. Auroville is a centre for handmade paper products.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Rags, pulp, adhessive   Tools and accessories'},
+      {title:'Pulp making',text:'Cutting the fibers and also preparing the pulp.   The strand of fibre are then soaked in the pulp mixture and heated.'},
+      {title:'Adding dried flowers',text:'The dried flowers & leaves are hand sorted & added for texture if required.'},
+      {title:'Stretching',text:'The pulp is then stretched on a reed mat for making the sheets. Once lifted the sheets are stacked with a muslin sheet inbetween.'},
+      {title:'Pasting, Drying & finishing',text:'The stack of wet paper is then hand pasted onto a drying wall. Then coated with starch and burnished'},
+      {title:'Cutting and packing',text:'On completion, the papers are then cut to the required size and packed finally.                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'sheet-metal-craft',
+    category:'Metal',
+    icon:'images/craft_process/Sheet_Metal_Craft/cover.png',
+    color:'linear-gradient(135deg,#5C3A1E,#8B6914)',
+    title:'Sheet Metal Craft',
+    subtitle:'Copper, brass and bell metal can be beaten into required shape from flat sheets of the metal.',
+    intro:'Copper, brass and bell metal can be beaten into required shape from flat sheets of the metal. A typical water pot will be done two or more sections are beaten to hemispheres and then welded together with a rim to form a pot. Sometimes the metal is ornamented by beating, shaping and embossing designs on it.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Sheet Metal   Trims and accessories'},
+      {title:'Preparing and cutting the metal sheets',text:'Square or circular pieces are cut out of the flat metal sheets.'},
+      {title:'Hammering & Beating',text:'These disks are beaten up using a mallet with varying weights and a wooden support.   The metal is beaten till it naturally bends along a concave or convex curve as required.'},
+      {title:'Texturing',text:'A sold iron rod bent at the tip further contribute to the process of handling the utensil while it is being textured.'},
+      {title:'Welding and Assembling',text:'The desired utensil is always designed as a combination of parts which are welded into a unanimous whole.'},
+      {title:'Finishing',text:'Eventually, the obtained products are given an acid wash until they appear to shine like gold.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'repousse',
+    category:'Craft',
+    icon:'images/craft_process/Repousse/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Repousse',
+    subtitle:'1.',
+    intro:'1. Sourcing and Transporting raw materials and creation of wax model',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Metal, wax   Trims and accessories'},
+      {title:'Preparing the mould',text:'Basic mould making   Design finalization   Design transfer'},
+      {title:'Wax filling',text:'Based on the design the mould is filled with wax and then the beating process is started.'},
+      {title:'Repousse and Chasing',text:'The repousse and chasing process is then completed.'},
+      {title:'Finishing and packing',text:'The surface is then brushed, polished and finished.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'hand-made-jewellery',
+    category:'Craft',
+    icon:'images/craft_process/Hand_Made_Jewellery/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Hand Made Jewellery',
+    subtitle:'There is a variety of jewellery made in India.',
+    intro:'There is a variety of jewellery made in India. Seeds and grasses are used in some places and gold and intricately worked silver ornaments in some places. Kundan and Meenakari work are highly specialised skills. Beads of a great variety is produced. The materials vary from terracotta, to seeds, grasses, glass, lac, bone, silver. The skill of putting together or the stringing of the beads is unique to the ‘patwa’.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Metal   Tools and accessories'},
+      {title:'Melting & sheet casting',text:'The first step in this process is annealing or heating the metal at a predetermined temperature.   Simultaneously the final design drawign is also prepared.   Once the gold or silver is melted, this is poured into a sheet mold so that this can be molded into a small bar.'},
+      {title:'Sawing and cutting',text:'The second step involves forming the gold or silver into its desired shape'},
+      {title:'Soldering & Assembling',text:'The different parts of the jewelry being made are arranged or joined together by soldering in order to complete the design'},
+      {title:'Filling & forming',text:'The edges and corners of the completed jewelry are polished using different types of files.   Stonesetting involves the insertion or mounting of precious or semi-precious stones in the gold or silver jewelery.'},
+      {title:'Polishing & plating',text:'Polishing and plating are done to enhance the jewelry’ brilliance with the help of a polishing motor.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'enamel-jewellery',
+    category:'Craft',
+    icon:'images/craft_process/Enamel_Jewellery/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Enamel Jewellery',
+    subtitle:'1.',
+    intro:'1. Sourcing and Transporting raw materials',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials',text:'Metal, Enammel   Various hand tools and instruments   Trims and accessories'},
+      {title:'Design Sketching',text:'The outline is drawn to based on which the design is prepared.   Simultaneously the final design drawign is also prepared.   Once the gold or silver is melted, this is poured into a sheet mold so that this can be molded into a small bar.'},
+      {title:'Engraving',text:'The area where the enammeling is to be donw is hand engraved.'},
+      {title:'Enammeling',text:'The engraved area is then filled with the enamel .'},
+      {title:'Firing and re enammeling',text:'After firing the first color the consequent colors are filled one by one in the same format.'},
+      {title:'Finishing',text:'Once all the colors are done filled the surface is then finished.'},
+    ],
+    states:[]
+  },
+  {
+    id:'cane-&-bamboo-furniture',
+    category:'Natural Fibre',
+    icon:'/images/craft_process/Cane_&_Bamboo_Furniture/cover.png',
+    color:'linear-gradient(135deg,#1A3A10,#5A8A30)',
+    title:'Cane & Bamboo Furniture',
+    subtitle:'Bamboo grows all over the country and cane and bamboo have been used by societies for a variety of uses: carrying, winnowing, as containers, for fencing, roofing, as fishing traps etc.',
+    intro:'Bamboo grows all over the country and cane and bamboo have been used by societies for a variety of uses: carrying, winnowing, as containers, for fencing, roofing, as fishing traps etc.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and creation of wax model',text:'Bamboo   Trims and accessories'},
+      {title:'Preparing the wood',text:'The first step in this process is to prepare the bamboo/cane.   Simultaneously the final design drawign is also prepared.   Once the gold or silver is melted, this is poured into a sheet mold so that this can be molded into a small bar.'},
+      {title:'Structuring and Framework',text:'The second step involves working on the frame work and finalising the same'},
+      {title:'Filling',text:'The inner hollows of the frame work is now either woven/or attached and filled in.'},
+      {title:'Assembling & Securing',text:'The edges and corners of the completed furniture is now finished and secured.'},
+      {title:'Finishing',text:'The surface of the polish is stained, varnished and finished.                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'stone-carving',
+    category:'Stone',
+    icon:'images/craft_process/Stone_Carving/cover.png',
+    color:'linear-gradient(135deg,#3A3A3A,#8A8A8A)',
+    title:'Stone Carving',
+    subtitle:'Stone artisans use their specialised skills to produce carvings, jaali in different local stones.',
+    intro:'Stone artisans use their specialised skills to produce carvings, jaali in different local stones. Agate work is done in Vadodra, marble carving is done in Rajsthan, Uttar Pradesh, Orissa. Andhra Pradesh,Tamil Nadu Karnataka, Kerala, Gujarat.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials and raw material preparation',text:'Stone   Tools and instruments'},
+      {title:'Preparing the stone',text:'The large boulder is cut into smaller workable pieces first.'},
+      {title:'Shaping the stone',text:'The smaller pieces are then given its basic shape.'},
+      {title:'Sketching and carving',text:'After the outline sketch is made on the block the actual carving process starts.'},
+      {title:'Jaali work',text:'The jaali work is also done at this stage.'},
+      {title:'Hand finishing',text:'Once the carving is done, the finishing and polishing is done and the product is done.                     Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+  {
+    id:'mixed-media-crafts',
+    category:'Craft',
+    icon:'images/craft_process/Mixed_Media_Crafts/cover.png',
+    color:'linear-gradient(135deg,#333,#777)',
+    title:'Mixed Media Crafts',
+    subtitle:'Boat making and cart making have evolved over centuries.',
+    intro:'Boat making and cart making have evolved over centuries. Wood is used mainly,along with rope and iron. Many of the Indian festivals, large constructions of impermanent nature are required to be built which use miscellaneous media, including floweres and leaves.',
+    materials:[],
+    steps:[
+      {title:'Sourcing and Transporting raw materials',text:'Wood   Coir, synthetic rope, twine   Various hand tools'},
+      {title:'Plywood bending',text:'Mild heat treatment to bend the wood and shape it'},
+      {title:'Hand joining of planks',text:'All the additional planks are hand joined.'},
+      {title:'Hand stitching/attachment of coir bundles',text:'Bundles of choir hand stiched with coir between the wooden planks'},
+      {title:'Hand hammering/tightening',text:'The coir is pulled and tightened manually from the outside surface.'},
+      {title:'Manual hole making',text:'Once the carving is done, the finishing and polishing is done and the product is done.                   Copyright ©  Crafts Council of India. All Rights Reserved.    Facebook Instagram News   Disclaimer   Privacy Policy                 Scroll to top'},
+    ],
+    states:[]
+  },
+];
+
+
+
+// ── RENDER GRID ──────────────────────────────────────────────────────────────
+var grid = document.getElementById('processGrid');
+PROCESSES.forEach(function(p){
+  var card = document.createElement('div');
+  card.className = 'process-card';
+  card.innerHTML =
+    '<div class="process-card-img" style="background:'+p.color+'">'
+    +'<div class="process-card-icon"><img src="'+p.icon+'" alt="'+p.title+'"></div>'
+    +'</div>'
+    +'<div class="process-card-body">'
+    +'<div class="process-card-category">'+p.category+'</div>'
+    +'<h3 class="process-card-title">'+p.title+'</h3>'
+    +'<p class="process-card-desc">'+p.subtitle+'</p>'
+    +'<span class="process-card-link">Explore process '
+    +'<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>'
+    +'</span>'
+    +'</div>';
+  card.addEventListener('click', function(){ openDetail(p); });
+  grid.appendChild(card);
+});
+
+// ── DETAIL PANEL ─────────────────────────────────────────────────────────────
+var overlay = document.getElementById('detailOverlay');
+var panel = document.getElementById('detailPanel');
+var body = document.getElementById('detailBody');
+
+function openDetail(p){
+  body.innerHTML =
+    '<div class="detail-hero" style="background:'+p.color+'">'
+  +'<img src="'+p.icon+'" alt="'+p.title+'">'
++'</div>'
+    +'<div class="detail-content">'
+    +'<span class="detail-category">'+p.category+'</span>'
+    +'<h2 class="detail-title">'+p.title+'</h2>'
+    +'<p class="detail-subtitle">'+p.subtitle+'</p>'
+    +'<div class="detail-divider"></div>'
+    +'<div class="detail-body"><p>'+p.intro+'</p></div>'
+
+    +'<div class="detail-section-label">Materials used</div>'
+    +'<div class="detail-materials">'+p.materials.map(function(m){return '<span class="material-tag">'+m+'</span>';}).join('')+'</div>'
+
+    +'<div class="detail-section-label">The Process — Step by Step</div>'
+    +'<ol class="detail-steps">'+p.steps.map(function(s,i){
+      return '<li class="detail-step">'
+        +'<span class="detail-step-num">'+(i+1<10?'0':'')+(i+1)+'</span>'
+        +'<span class="detail-step-text"><span class="detail-step-title">'+s.title+'</span>'+s.text+'</span>'
+        +'</li>';
+    }).join('')+'</ol>'
+
+    +'<div class="detail-section-label">Practised in</div>'
+    +'<div class="detail-states">'+p.states.map(function(s){return '<span class="state-chip">'+s+'</span>';}).join('')+'</div>'
+    +'</div>';
+
+  panel.scrollTop = 0;
+  overlay.classList.add('open');
+  panel.classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeDetail(){
+  overlay.classList.remove('open');
+  panel.classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e){
+  if(e.key === 'Escape') closeDetail();
+});
+</script>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kamala Awards - Crafts Council of India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:wght@300;400;500&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="cci.css?v=2026.10.13b">
+<style>
+/* ── FIXED COLUMN ALIGNMENT ACROSS ALL AWARD TABLES ── 
+   Tables here have mixed structures: some 2-col, some 3-col.
+   Pinning col 1 (Name) and col 3 (State) keeps the Award
+   column starting at the same point in every table.        */
+.awards-table {
+  table-layout: fixed;
+  width: 100%;
+}
+/* Name — always 28% */
+.awards-table th:nth-child(1),
+.awards-table td:nth-child(1) {
+  width: 28%;
+  word-break: break-word;
+}
+/* Award & Craft — fills remaining space automatically */
+.awards-table th:nth-child(2),
+.awards-table td:nth-child(2) {
+  word-break: break-word;
+}
+/* State — 18% when present (3-col tables only) */
+.awards-table th:nth-child(3),
+.awards-table td:nth-child(3) {
+  width: 18%;
+  word-break: break-word;
+}
+</style>
+<!-- Favicon -->
+<link rel="icon" type="image/png" href="images/favico.png" sizes="32x32">
+<link rel="icon" type="image/png" href="images/favico.png" sizes="16x16">
+<link rel="apple-touch-icon" href="images/favico.png">
+<meta name="theme-color" content="#8B3A1E">
+</head>
+<body>
+<nav id="main-nav"></nav>
+<div id="mobileMenu" class="mobile-menu"></div>
+
+<div class="page-hero gold-hero">
+  <div class="kamala-bg" aria-hidden="true">KAMALA</div>
+  <div class="page-hero-content">
+    <h1 class="page-title">Kamala Awards</h1>
+    <p class="page-subtitle">Celebrating craftspeople who have made exceptional contributions to India's living heritage and cultural economy.</p>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  KAMALA AWARDS 2025 — CALL FOR APPLICATIONS
+  Linked from the homepage card (index.html → awards.html#kamala-call).
+  ═══════════════════════════════════════════════════════════════════ -->
+<div class="section alt kc-section" id="kamala-call">
+  <div class="kc-grid">
+
+    <div class="kc-cover" role="img" aria-label="The Crafts Council of India — Kamala Awards 2025 — Call for Applications">
+      <div class="kc-logo"><img src="images/cci-logo.png" alt="" width="64"></div>
+      <div class="kc-org">The Crafts Council of India</div>
+      <div class="kc-title"><span class="kc-script">Kamala Awards</span><span>2025</span></div>
+      <div class="kc-cta">Call for Applications</div>
+    </div>
+
+    <div class="kc-info">
+      <span class="kc-badge">Now accepting nominations</span>
+      <h2>Kamala Awards 2025</h2>
+      <div class="kc-info-sub">Call for Applications</div>
+      <p>The Kamala Awards honour outstanding artisans and individuals, whose work reflects excellence, dedication and significant contribution to India's craft traditions and communities.</p>
+      <p>The Crafts Council of India requests nominations to its <strong>KAMALA AWARDS 2025</strong>.</p>
+
+      <div class="kc-deadline">
+        <div>
+          <div class="kc-deadline-label">Last Date for Applications</div>
+          <div class="kc-deadline-date">30th November 2026</div>
+        </div>
+      </div>
+
+      <div class="kc-actions">
+        <a href="https://docs.google.com/document/d/1VOc7rtEbo6j_ACJXvmVufc6WgpF60_Rg/edit?usp=drivesdk&amp;ouid=106085599378725444185&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer" class="btn-primary">
+          Application Form
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+        <a href="https://docs.google.com/document/d/19zLCE4x3N3rw6i4GvIsyP3c8TjTHLH2_/edit?usp=drivesdk&amp;ouid=106085599378725444185&amp;rtpof=true&amp;sd=true" target="_blank" rel="noopener noreferrer" class="btn-ghost">
+          Application Information
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section">
+  <div style="max-width:900px;margin:0 auto;text-align:center">
+    <h2 class="s-title large">Honoring Excellence in Craftsmanship</h2>
+    <p class="s-text" style="margin-top:16px">The Kamala Awards, instituted in 2000, recognize and celebrate artisans who have dedicated their lives to preserving and advancing traditional Indian crafts.</p>
+  </div>
+  <div class="award-categories">
+    <div class="category-card"><h3 class="category-title">Kamala Samman</h3><p class="category-desc">Kamala Samman honors a senior person who is dedicated to the cause of craft over a period of time. The work of these awardees should have significantly benefitted the community of craftspeople and transformed their lives. They have helped in setting up handloom co-operative societies that have made vast improvements in the social and working conditions of craftspeople.</p></div>
+    <div class="category-card"><h3 class="category-title">Kamala Award for Excellence in Craftsmanship</h3><p class="category-desc">The Kamala Award for Exceellence in Craftmanship recognises the high level of proficiency and skill achieved by a craftsperson as exhibited in a body of work done over the years. The award since its inception has been given to various craftspeople, some of the products being copper-coated bells, wooden puppets, leather puppetry, jute, bamboo and cane products, embroidery skills and wood and stone craft.</p></div>
+    <div class="category-card"><h3 class="category-title">Kamala Award for Contribution to Crafts</h3><p class="category-desc">This award is given to craftspeople who have contributed to the handicraft sector through their work in the government service, to their community clusters, or for training and mentoning weavers, especially women. Artisans working with the communities involved in sholapith and metal craft. Puttapaka textile weaving, muga silk weaving, wooden block making, terracota pottery, garland making, bronze icons and Bhuta masks, were recognised and conferred the award over the years.</p></div>
+    <div class="category-card"><h3 class="category-title">Shanta Prasad Award for Excellence in Weaving</h3><p class="category-desc">This award honours an artisan for proficiency in traditional handloom weaving. The award is instituted in the memory of late Smt. Shanta Prasad, senior member of CCI by her family.</p></div>
+    <div class="category-card"><h3 class="category-title">Young Artisan Award</h3><p class="category-desc">The Crafts Council of India and other organisations confer the 'Young Artisan Award' which recognises the excellence of craft of young artisans who represent the face of India's future. This award carries a cash prize, a medal, an <i>angavastram</i>, citation and a certificate.</p></div>
+    <div class="category-card"><h3 class="category-title">Kamala Award for Revival of Languishing Crafts</h3><p class="category-desc">This award is instituted by Smt. Visalakshi Ramaswamy and recognizes and honours an artisan for his/ her effort to revive a languishing craft.</p></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════════════════════
+  RECENT YEARS — with photo cards (2024, 2023)
+  To add a photo: set .awardee-photo as a container and add an <img>
+  inside it. If no photo, the gradient placeholder shows automatically.
+  ═══════════════════════════════════════════════════════════════════ -->
+<div class="section alt">
+  <div style="text-align:center;margin-bottom:40px">
+  <div style="text-align:center;margin-bottom:40px">
+    <p class="s-tag">Recent Recipients</p>
+    <h2 class="s-title large">2024 - 2025 Awardees</h2>
+  </div>
+  <div class="awardees-grid">
+
+    <div class="awardee-card card-hover">
+      <div class="awardee-photo"><img src="images/awardee/kirshnamoorthy.webp" alt="B. Krishnamoorthy"> </div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Samman</div><h4 class="awardee-name">B. Krishnamoorthy</h4><p class="awardee-craft">Weaving & Designing of Kanchipuram Sarees</p></div>
+    </div>
+
+    <div class="awardee-card card-hover">
+      <div class="awardee-photo" style="background:linear-gradient(135deg,#B08840,#7A5C10)"><img src="images/awardee/Khwaja-Nazir-Ali.webp" alt="Khawaja Nazir Ali"> </div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Award for Excellence in Craft</div><h4 class="awardee-name">Khawaja Nazir Ali</h4><p class="awardee-craft">Sozni Embroidery</p></div>
+    </div>
+
+      <div class="awardee-card card-hover">
+      <div class="awardee-photo" style="background:linear-gradient(135deg,#B08840,#7A5C10)"><img src="images/awardee/srinivasa-rao.webp" alt="Srinivasa Rao"> </div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Award for Excellence in Craft</div><h4 class="awardee-name">K. Srinivasarao</h4><p class="awardee-craft">Wood Craft</p></div>
+    </div>
+
+    <div class="awardee-card card-hover">
+      <div class="awardee-photo" style="background:linear-gradient(135deg,#C4845C,#8A4820)"><img src="images/awardee/rahman-lone.webp" alt="Rahman Lone"></div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Award for Contribution to Craft</div><h4 class="awardee-name">Rahman Lone</h4><p class="awardee-craft">Handloom Weaving</p></div>
+    </div>
+
+    <div class="awardee-card card-hover">
+      <div class="awardee-photo" style="background:linear-gradient(135deg,#8B7355,#4A3728)"><img src="images/awardee/kumari-suman.webp" alt="kumari suman"> </div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Young Artisan Award</div><h4 class="awardee-name">Kumari Suman</h4><p class="awardee-craft">Hand-Knotted Carpet Weaving</p></div>
+    </div>
+  <div class="awardee-card card-hover">
+      <div class="awardee-photo" style="background:linear-gradient(135deg,#8B7355,#4A3728)"><img src="images/awardee/gurindar-kaur-bhullar.webp" alt="Gurinder Kaur Bhullar"></div>
+      <div class="awardee-content"><div class="awardee-year">Kamala Award for Revival of Languishing Craft</div><h4 class="awardee-name">Gurinder Kaur Bhullar</h4><p class="awardee-craft">Phulkari Handwork</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- 2023 -->
+  <div class="awards-table-section">
+    <div class="awards-table-year">2023</div>
+    <table class="awards-table">
+      <thead><tr><th>Name</th><th>AWARD & CRAFT</th></tr></thead>
+      <tbody>
+        <tr><td>Gajam Govardhana</td><td>KAMALA SAMMAN</td></tr>
+        <tr><td>Pushpa Kumari</td><td>Kamala Samman Excellence in Craft</td></tr>
+        <tr><td>Sundari Devi - Jaipur Rugs</td><td>Kamala Award for Excellence in Handloom Weaving</td></tr>
+        <tr><td>Sivaprasad Reddy K</td><td>Kamala Award for Contribution to Crafts</td></tr>
+        <tr><td>Yethin N</td><td>Kamala Award for Young Artisan</td></tr>
+        <tr><td>Santoshkumar Chitragar - CCK</td><td>Kamala Award for Revival of Languishing Craft</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 2022 -->
+  <div class="awards-table-section">
+    <div class="awards-table-year">2022</div>
+    <table class="awards-table">
+      <thead><tr><th>Name</th><th>AWARD & CRAFT</th></tr></thead>
+      <tbody>
+        <tr><td>Shri. Khatri Nasrinbanu Gulamhusen</td><td>Excellence in Crafts</td></tr>
+        <tr><td>Shri. Jepar Bharat Verashi</td><td>Excellence in Handloom Weaving</td></tr>
+        <tr><td>Shri. Ramju Alimamad Kumbhar</td><td>Contribution to Crafts</td></tr>
+        <tr><td>Shri. Vankar Shamji Vishram</td><td>Contribution to Crafts</td></tr>
+        <tr><td>Shri. Khatri Abdul Jabar Mahmed</td><td>Contribution to Crafts</td></tr>
+        <tr><td>Shri. Khatri Fahd Gulamhusen</td><td>Young Artisan</td></tr>
+        <tr><td>Shri. Siju Ashwin Devji</td><td>Young Artisan</td></tr>
+        <tr><td>Shri. Vurugonda Odellu</td><td>Revival of Languishing Craft</td></tr>
+        <tr><td>Smt. Hemalatha Jain</td><td>Revival of Languishing Craft</td></tr>
+        <tr><td>Shri. Jyotindra Jain </td><td>Kamala Samman</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 2021 -->
+  <div class="awards-table-section">
+    <div class="awards-table-year">2021</div>
+    <table class="awards-table">
+      <thead><tr><th>Name</th><th>AWARD & CRAFT</th></tr></thead>
+      <tbody>
+        <tr><td>Smt. Jaya Jaitly</td><td>Kamala Samman Award 2021</td></tr>
+        <tr><td>Shri. M.Ramamurthy</td><td>Kamala Award for Excellence in Crafts 2021</td></tr>
+        <tr><td>Shri. Vinod Kumar Shakya</td><td>Kamala Award for Excellence in Crafts 2021</td></tr>
+        <tr><td>Shri. Marvada Devji Harji</td><td>Kamala Award for Excellence in Handloom Weaving 2021</td></tr>
+        <tr><td>Shri. Banamali Mahapatra </td><td>Kamala Award for Contribution to Craft 2021</td></tr>
+        <tr><td>Shri. Abdulrazak Mohmed Khatri</td><td>Kamala Award for Contribution to Craft 2021</td></tr>
+        <tr><td>Shri. Sanjib Basak</td><td>Kamala Award for Creativity during Covid 2021</td></tr>
+        <tr><td>Shri. Rakeshkumar Jitendrakumar Petigara</td><td>Kamala Award for the Revival of Languishing Craft 2021</td></tr>
+        <tr><td>Shri. Abdulvahab Haidrali Khatri</td><td>Kamala Award for Young Artisan 2021</td></tr>
+        <tr><td>Shri. Khatri Mohmad Rizwan Sidhik</td><td>Kamala Award for Young Artisan 2021</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- 2020 -->
+  <div class="awards-table-section">
+    <div class="awards-table-year">2020</div>
+    <table class="awards-table">
+      <thead><tr><th>Name</th><th>AWARD & CRAFT</th><th>State</th></tr></thead>
+      <tbody>
+        <tr><td>Shri.L.Rathakrishnan Sthapathy</td><td>Excellence in the Craft of Traditional Bronze Casting Icons</td><td>Tamil Nadu</td></tr>
+        <tr><td>Shri. K.P. Vinod</td><td>Excellence in the Craft of Metalware</td><td>Kerala</td></tr>
+        <tr><td>Shri. Ali Mohammad Banka</td><td>Excellence in the Craft of Papier Machie</td><td>Jammu & Kashmir</td></tr>
+        <tr><td>Smt. Amrita Choudhary</td><td>Contribution to the Craft of Shibori, Tie & Dye</td><td>Rajasthan</td></tr>
+        <tr><td>Shri. Gaurang Shah</td><td>Kamala Award for Revival of Languishing Craft of Jamdani & Khadi Weaving</td><td>Telangana</td></tr>
+        <tr><td>Smt. Masto Devi</td><td>Kamala Award for Revival of Languishing Craft of Chamba Rumaal Embroidery</td><td>Himachal Pradesh</td></tr>
+        <tr><td>Shri. Vyasaraya Shettigar</td><td>Shanta Prasad Award for Excellence in Weaving (Udupi Cotton Saris)</td><td>Karnataka</td></tr>
+        <tr><td>Shri. Ishver Singh</td><td>Kamala Award for Young Artisan in the Craft of Miniature Pottery</td><td>Rajasthan</td></tr>
+        <tr><td>Shri. Satishbhai Chittara</td><td>Kamala Award for Young Artisan in the Craft of Mata-ni-pachedi (Kalamkari)</td><td>Gujarat</td></tr>
+        <tr><td></td><td>Kamala Samman 2020 - Contribution to the Craft Sector</td><td></td></tr>
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+   <!--<div class="step"><div class="step-num">2</div><h4 class="step-title">Documentation</h4><p class="step-desc">Provide work samples and supporting documents</p></div>
+    <div class="step"><div class="step-num">3</div><h4 class="step-title">Review</h4><p class="step-desc">Expert jury evaluates all nominations</p></div>
+    <div class="step"><div class="step-num">4</div><h4 class="step-title">Recognition</h4><p class="step-desc">Selected artisans honored at annual ceremony</p></div>
+  </div>
+  <a href="contact.html" class="btn-primary light">Nominate Now</a>
+</div>--> 
+
+ <div id="site-footer"></div>
+<script src="config.js"></script>
+<script src="loader.js?v=2"></script>
+ 
+</body>
+</html>
