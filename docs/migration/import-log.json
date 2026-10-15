@@ -1,0 +1,21 @@
+{
+  "startedAt": "2026-10-15T01:40:43.637Z",
+  "finishedAt": "2026-10-15T01:40:44.014Z",
+  "mode": "refresh (overwrite)",
+  "dryRun": false,
+  "only": [
+    "pages"
+  ],
+  "counts": {
+    "pages": {
+      "discovered": 20,
+      "created": 0,
+      "updated": 20,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    }
+  },
+  "issues": []
+}
