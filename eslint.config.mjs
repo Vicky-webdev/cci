@@ -12,6 +12,11 @@ const eslintConfig = defineConfig([
     "out/**",
     "build/**",
     "next-env.d.ts",
+    // Legacy static site: preserved verbatim as the migration source of truth.
+    "_public_html/**",
+    "src/generated/**",
+    "public/**",
+    "storage/**",
   ]),
 ]);
 

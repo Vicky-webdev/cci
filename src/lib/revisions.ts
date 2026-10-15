@@ -26,7 +26,7 @@ export async function recordRevision(
 export function listRevisions(entityType: string, entityId: string) {
   return db.revision.findMany({
     where: { entityType, entityId },
-    orderBy: { createdAt: "desc" },
+    orderBy: [{ createdAt: "desc" }, { id: "desc" }],
     take: 50,
     select: { id: true, createdAt: true, createdById: true, note: true },
   });

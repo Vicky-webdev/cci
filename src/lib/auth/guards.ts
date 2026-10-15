@@ -17,10 +17,18 @@ export async function requireUser(): Promise<SessionUser> {
   return user;
 }
 
-/** For admin pages: renders the forbidden screen when the permission is missing. */
+/** For admin pages: renders the forbidden screen when the permission is missing. Users with a temporary password must change it first. */
 export async function requirePagePermission(permission: string): Promise<SessionUser> {
   const user = await requireUser();
+  if (user.mustChangePassword) redirect("/admin/account");
   if (!hasPermission(user, permission)) redirect("/admin/forbidden");
+  return user;
+}
+
+export async function requireAnyPagePermission(permissions: string[]): Promise<SessionUser> {
+  const user = await requireUser();
+  if (user.mustChangePassword) redirect("/admin/account");
+  if (!permissions.some((p) => hasPermission(user, p))) redirect("/admin/forbidden");
   return user;
 }
 
@@ -28,6 +36,7 @@ export async function requirePagePermission(permission: string): Promise<Session
 export async function requirePermission(permission: string): Promise<SessionUser> {
   const user = await getSessionUser();
   if (!user) throw new AuthorizationError("Your session has expired. Please sign in again.");
+  if (user.mustChangePassword) throw new AuthorizationError("Please set a new password before making changes.");
   if (!hasPermission(user, permission)) throw new AuthorizationError();
   return user;
 }

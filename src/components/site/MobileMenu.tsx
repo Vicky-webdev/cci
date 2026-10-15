@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import { usePathname } from "next/navigation";
 import type { MenuNode } from "@/lib/queries/site";
 import { SmartLink } from "./SmartLink";
 
@@ -11,12 +10,6 @@ export function MobileMenu({ menu, ctaLabel, ctaHref }: { menu: MenuNode[]; ctaL
   const [openSub, setOpenSub] = useState<string | null>(null);
   const menuRef = useRef<HTMLDivElement>(null);
   const btnRef = useRef<HTMLButtonElement>(null);
-  const pathname = usePathname();
-
-  useEffect(() => {
-    setOpen(false);
-    setOpenSub(null);
-  }, [pathname]);
 
   useEffect(() => {
     if (!open) return;
@@ -50,7 +43,18 @@ export function MobileMenu({ menu, ctaLabel, ctaHref }: { menu: MenuNode[]; ctaL
         <span></span>
         <span></span>
       </button>
-      <div ref={menuRef} id="mobileMenu" className={`mobile-menu${open ? " active" : ""}`}>
+      <div
+        ref={menuRef}
+        id="mobileMenu"
+        className={`mobile-menu${open ? " active" : ""}`}
+        onClick={(e) => {
+          // Close after following a link (client-side navigation keeps the component mounted).
+          if ((e.target as HTMLElement).closest("a")) {
+            setOpen(false);
+            setOpenSub(null);
+          }
+        }}
+      >
         {menu.map((item) =>
           item.children.length ? (
             <div className="mobile-menu-item" key={item.id}>

@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { getSettings } from "@/lib/settings";
 import { assetUrl } from "@/lib/links";
 import { toPlainText } from "@/lib/sanitize";
+import { env } from "@/lib/env";
 
 interface SeoInput {
   /** Full <title>; used verbatim when set (legacy titles already include the site name). */
@@ -28,7 +29,8 @@ export async function buildMetadata(input: SeoInput): Promise<Metadata> {
     alternates: { canonical: input.path },
     openGraph: { title: ogTitle, description, url: input.path, type: input.type ?? "website", images: image ? [image] : undefined },
     twitter: { card: "summary_large_image", title: ogTitle, description, images: image ? [image] : undefined },
-    robots: input.noindex ? { index: false, follow: true } : undefined,
+    // Child metadata replaces the layout's robots value, so the environment rule is applied here too.
+    ...(input.noindex || env().SITE_ENV !== "production" ? { robots: { index: false, follow: !input.noindex } } : {}),
   };
 }
 

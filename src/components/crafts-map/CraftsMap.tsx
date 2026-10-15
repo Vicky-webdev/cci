@@ -34,7 +34,7 @@ export function CraftsMap({ states, intro }: { states: Record<string, MapState>;
       <div className="map-layout">
         <div className="map-container">
           <div className="map-svg-wrap">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox={mapData.viewBox} id="india-map" role="img" aria-label="Map of India — select a state to see its crafts">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox={mapData.viewBox} id="india-map" role="group" aria-label="Map of India — select a state to see its crafts">
               {mapData.paths.map((p, i) => (
                 <path
                   key={i}
@@ -46,7 +46,7 @@ export function CraftsMap({ states, intro }: { states: Record<string, MapState>;
                   stroke="#fff"
                   strokeWidth="0.5"
                   tabIndex={p.interactive && p.state && states[p.state] ? 0 : undefined}
-                  aria-label={p.interactive ? p.name : undefined}
+                  aria-label={p.interactive && p.state && states[p.state] ? p.name : undefined}
                   role={p.interactive && p.state && states[p.state] ? "button" : undefined}
                   onMouseEnter={(e) => hover(p.state, e)}
                   onMouseLeave={() => setTooltip(null)}

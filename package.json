@@ -2,7 +2,7 @@
   "name": "cci-website",
   "version": "1.0.0",
   "private": true,
-  "description": "Crafts Council of India website — Next.js + PostgreSQL CMS",
+  "description": "Crafts Council of India website \u2014 Next.js + PostgreSQL CMS",
   "engines": {
     "node": ">=20.9"
   },
@@ -14,7 +14,7 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "test:watch": "vitest",
-    "test:e2e": "playwright test",
+    "test:e2e": "tsx tests/e2e/prepare.ts && playwright test",
     "assets:sync": "node scripts/sync-legacy-assets.mjs",
     "db:migrate": "prisma migrate deploy",
     "db:migrate:dev": "prisma migrate dev",
@@ -22,7 +22,8 @@
     "import:legacy": "tsx scripts/import-legacy-content/index.ts",
     "import:validate": "tsx scripts/import-legacy-content/validate.ts",
     "admin:create": "tsx scripts/create-admin.ts",
-    "audit:assets": "node scripts/audit/build-asset-manifest.mjs"
+    "audit:assets": "node scripts/audit/build-asset-manifest.mjs",
+    "test:all": "npm run lint && npm run typecheck && npm test && npm run test:e2e"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.3.0",
@@ -44,6 +45,7 @@
     "zod": "^4.6.7"
   },
   "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
     "@playwright/test": "^1.64.1",
     "@types/node": "^22.20.5",
     "@types/nodemailer": "^8.0.2",

@@ -1,21 +1,394 @@
 {
-  "startedAt": "2026-10-15T01:40:43.637Z",
-  "finishedAt": "2026-10-15T01:40:44.014Z",
-  "mode": "refresh (overwrite)",
+  "startedAt": "2026-10-15T02:15:32.661Z",
+  "finishedAt": "2026-10-15T02:15:40.576Z",
+  "mode": "create-missing",
   "dryRun": false,
   "only": [
-    "pages"
+    "settings",
+    "pages",
+    "events",
+    "news",
+    "press",
+    "publications",
+    "awards",
+    "people",
+    "crafts",
+    "media"
   ],
   "counts": {
+    "menuItems": {
+      "discovered": 43,
+      "created": 43,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "settings": {
+      "discovered": 32,
+      "created": 32,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
     "pages": {
       "discovered": 20,
+      "created": 20,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "events": {
+      "discovered": 116,
+      "created": 116,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "news": {
+      "discovered": 7,
+      "created": 7,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "press": {
+      "discovered": 12,
+      "created": 12,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "publications": {
+      "discovered": 82,
+      "created": 82,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "awards": {
+      "discovered": 129,
+      "created": 128,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 1,
+      "unresolved": 0
+    },
+    "awardCategories": {
+      "discovered": 6,
+      "created": 6,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "artisans": {
+      "discovered": 11,
+      "created": 7,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 4,
+      "unresolved": 0
+    },
+    "team": {
+      "discovered": 24,
+      "created": 24,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "councils": {
+      "discovered": 11,
+      "created": 11,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "craftStates": {
+      "discovered": 35,
+      "created": 34,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 1,
+      "unresolved": 0
+    },
+    "craftLocations": {
+      "discovered": 1226,
       "created": 0,
-      "updated": 20,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "processes": {
+      "discovered": 16,
+      "created": 16,
+      "updated": 0,
+      "matched": 0,
+      "skipped": 0,
+      "duplicate": 0,
+      "unresolved": 0
+    },
+    "media": {
+      "discovered": 3969,
+      "created": 3969,
+      "updated": 0,
       "matched": 0,
       "skipped": 0,
       "duplicate": 0,
       "unresolved": 0
     }
   },
-  "issues": []
+  "issues": [
+    {
+      "type": "events",
+      "key": "CURRENT:chikankari-popup-june-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): shopTiming"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:jamboree-with-jolly-jeeva-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): pricing"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:tribal-jewellery-contemporary-touch-kamala-september-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:kamalas-festive-edit-sarees-october-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:festive-edit-specially-curated-sarees-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:the-continuing-threadline-sui-dhaga-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:craftepreneur-sep-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map, payments"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:three-brands-pop-up-august-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:gandhigram-kaveri-popup-july-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): specialEvent, map"
+    },
+    {
+      "type": "events",
+      "key": "CURRENT:textiles-exhibition-aug-2026",
+      "severity": "info",
+      "message": "Stored but not displayed (legacy renderer ignored them): invitePDF"
+    },
+    {
+      "type": "publications",
+      "key": "reports.html#card-1",
+      "severity": "warning",
+      "message": "\"Craft Economics and Impact Study\" card links to \"#\" (no file) — links hidden until a file is set"
+    },
+    {
+      "type": "awards",
+      "key": "awards.html#2020-row-10",
+      "severity": "info",
+      "message": "Row has no recipient name (\"Kamala Samman 2020 - Contribution to the Craft Sector\") — imported as displayed"
+    },
+    {
+      "type": "awards",
+      "key": "past-awards.html#2019-row-8",
+      "severity": "info",
+      "message": "Row has no recipient name (\"Kamala Samman 2019 - Contribution to the Craft Sector\") — imported as displayed"
+    },
+    {
+      "type": "awards",
+      "key": "past-awards.html#2018-row-5",
+      "severity": "info",
+      "message": "Continuation row merged into \"Shri, R. Selvanathan Sthapati\" (2018)"
+    },
+    {
+      "type": "artisans",
+      "key": "index.html#a-card-8",
+      "severity": "info",
+      "message": "Loop duplicate of \"Mohan Verma\" (CSS infinite scroll) — rendered automatically now"
+    },
+    {
+      "type": "artisans",
+      "key": "index.html#a-card-9",
+      "severity": "info",
+      "message": "Loop duplicate of \"Akshay Kumar Bairiki\" (CSS infinite scroll) — rendered automatically now"
+    },
+    {
+      "type": "artisans",
+      "key": "index.html#a-card-10",
+      "severity": "info",
+      "message": "Loop duplicate of \"C Thangajothi\" (CSS infinite scroll) — rendered automatically now"
+    },
+    {
+      "type": "artisans",
+      "key": "index.html#a-card-11",
+      "severity": "info",
+      "message": "Loop duplicate of \"Anuradha Kuli Pegu\" (CSS infinite scroll) — rendered automatically now"
+    },
+    {
+      "type": "craftStates",
+      "key": "CHANDIGARH",
+      "severity": "info",
+      "message": "Duplicate state record merged into \"Chandigarh\" (legacy merged it at runtime)"
+    },
+    {
+      "type": "craftStates",
+      "key": "Telangana",
+      "severity": "warning",
+      "message": "No image manifest at images/state_images/telangana/images.json (legacy shows \"No map image\")"
+    },
+    {
+      "type": "processes",
+      "key": "a-typical-turned-wood-furniture",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "knitting--crochet",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "leather-bag",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "iron-craft",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "iron-craft",
+      "severity": "warning",
+      "message": "Materials list contains navigation labels scraped from the old site — imported verbatim"
+    },
+    {
+      "type": "processes",
+      "key": "lac-bangles",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "wood-inlay",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "wood-inlay",
+      "severity": "warning",
+      "message": "Materials list contains navigation labels scraped from the old site — imported verbatim"
+    },
+    {
+      "type": "processes",
+      "key": "music-instruments",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "horn--bone-carving",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "paper-making",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "sheet-metal-craft",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "repousse",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "hand-made-jewellery",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "cane-&-bamboo-furniture",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "stone-carving",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "processes",
+      "key": "mixed-media-crafts",
+      "severity": "warning",
+      "message": "Step text contains scraped site-footer text (\"Copyright … Scroll to top\") — imported verbatim, needs editorial clean-up"
+    },
+    {
+      "type": "media",
+      "key": "duplicates",
+      "severity": "info",
+      "message": "310 groups of byte-identical files (353 redundant copies) — all kept; see ASSET_MANIFEST.csv"
+    }
+  ]
 }

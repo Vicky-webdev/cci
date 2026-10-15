@@ -43,7 +43,7 @@ const now = new Date();
 const published = { status: "PUBLISHED" as const, publishedAt: now };
 const json = (v: unknown) => v as Prisma.InputJsonValue;
 
-async function upsertBy<T>(
+async function upsertBy(
   type: string,
   key: string,
   find: () => Promise<{ id: string } | null>,
