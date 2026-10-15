@@ -26,7 +26,12 @@ let cached: Env | undefined;
 /** Validated server environment. Throws with a readable message on misconfiguration. */
 export function env(): Env {
   if (cached) return cached;
-  const parsed = schema.safeParse(process.env);
+  // On Vercel, fall back to the deployment's own URL when SITE_URL is not configured.
+  const vercelUrl = process.env.VERCEL_BRANCH_URL ?? process.env.VERCEL_URL;
+  const parsed = schema.safeParse({
+    ...process.env,
+    SITE_URL: process.env.SITE_URL || (vercelUrl ? `https://${vercelUrl}` : undefined),
+  });
   if (!parsed.success) {
     const issues = parsed.error.issues.map((i) => `${i.path.join(".")}: ${i.message}`).join("; ");
     throw new Error(`Invalid environment configuration — ${issues}`);

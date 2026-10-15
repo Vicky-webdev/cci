@@ -6,7 +6,7 @@ Never commit real values; never paste them into documentation, tickets or chat.
 | Variable | Required | Default | Purpose |
 |---|---|---|---|
 | `DATABASE_URL` | yes | — | PostgreSQL connection string (Prisma + scripts) |
-| `SITE_URL` | yes in production | `http://localhost:3000` | Public base URL without trailing slash; canonical URLs, sitemap, JSON-LD |
+| `SITE_URL` | yes in production | `http://localhost:3000` (on Vercel: the deployment's branch URL) | Public base URL without trailing slash; canonical URLs, sitemap, JSON-LD |
 | `SITE_ENV` | yes in production | `development` | `production` enables indexing (robots.txt, meta robots) and HSTS, and makes reCAPTCHA mandatory. Anything else = `noindex` everywhere |
 | `SESSION_TTL_HOURS` | no | `12` | Admin session lifetime (sliding) |
 | `SESSION_COOKIE_SECURE` | no | secure when `NODE_ENV=production` | `false` only for local HTTP |
