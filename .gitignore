@@ -6,8 +6,9 @@ _public_html/secrets.php
 Thumbs.db
 desktop.ini
 
-# Local tooling
+# Local tooling (MCP configs can hold credentials; keep them per-machine)
 .claude/
+.mcp.json
 
 # dependencies
 /node_modules
