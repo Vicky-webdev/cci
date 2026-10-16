@@ -6,5 +6,42 @@ _public_html/secrets.php
 Thumbs.db
 desktop.ini
 
-# Local tooling
+# Local tooling (MCP configs can hold credentials; keep them per-machine)
 .claude/
+.mcp.json
+
+# dependencies
+/node_modules
+
+# Next.js
+/.next/
+/out/
+/build
+next-env.d.ts
+*.tsbuildinfo
+
+# Prisma generated client
+/src/generated/
+
+# Legacy assets mirrored from _public_html by `npm run assets:sync`
+/public/images/
+/public/docs/
+
+# CMS uploads (local storage driver)
+/storage/
+
+# env files (only .env.example is committed)
+.env
+.env.*
+!.env.example
+
+# testing
+/coverage
+/test-results/
+/playwright-report/
+/blob-report/
+
+# logs
+npm-debug.log*
+*.log
+/.e2e/

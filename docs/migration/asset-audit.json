@@ -1,0 +1,1347 @@
+{
+  "stats": {
+    "total": 4078,
+    "referenced": 3113,
+    "unreferenced": 965,
+    "duplicates": 354,
+    "bytes": 1110041143
+  },
+  "byKind": {
+    "other": {
+      "count": 1,
+      "bytes": 3042
+    },
+    "vendor": {
+      "count": 6,
+      "bytes": 58976
+    },
+    "data": {
+      "count": 35,
+      "bytes": 160548
+    },
+    "server-code": {
+      "count": 32,
+      "bytes": 334088
+    },
+    "page": {
+      "count": 23,
+      "bytes": 564422
+    },
+    "image": {
+      "count": 3835,
+      "bytes": 504482784
+    },
+    "stylesheet": {
+      "count": 2,
+      "bytes": 72723
+    },
+    "script": {
+      "count": 9,
+      "bytes": 570967
+    },
+    "document": {
+      "count": 127,
+      "bytes": 496742501
+    },
+    "video": {
+      "count": 8,
+      "bytes": 107051092
+    }
+  },
+  "missing": [
+    {
+      "source": "cci.css",
+      "ref": "images/pottery-bg.jpg"
+    },
+    {
+      "source": "crafts-map.html",
+      "ref": "images/state_images/${folder}/images.json"
+    }
+  ],
+  "duplicateGroups": [
+    [
+      "cci-logo.png",
+      "images/cci-logo.png",
+      "images/craft_process/cci-logo.png"
+    ],
+    [
+      "images/cci-past-events/blouse-mela/blouse-mela-1.png",
+      "images/cci-past-events/book-discussion-on-quilts-geeta-khandelwal/book-discussion-on-quilts-geeta-khandelwal-1.png",
+      "images/cci-past-events/celebrating-khadi/celebrating-khadi-1.png",
+      "images/cci-past-events/chendamangalam-handloom/chendamangalam-handloom-1.png",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-1.png",
+      "images/cci-past-events/craftepreneur-2017/craftepreneur-2017-1.png",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-1.png",
+      "images/cci-past-events/craftepreneur/craftepreneur-1.png",
+      "images/cci-past-events/crafts-bazaar-2016/crafts-bazaar-2016-1.png",
+      "images/cci-past-events/etos-dhokra-exhibition/etos-dhokra-exhibition-1.png",
+      "images/cci-past-events/exhibition-creative-entrepreneur/exhibition-creative-entrepreneur-1.png",
+      "images/cci-past-events/khadi-week/khadi-week-1.png",
+      "images/cci-past-events/national-meet-2017/national-meet-2017-1.png",
+      "images/cci-past-events/national-meet-theme/national-meet-theme-1.png",
+      "images/cci-past-events/natural-dye-bazaar/natural-dye-bazaar-1.png",
+      "images/cci-past-events/natural-dye-exhibition-2019/natural-dye-exhibition-2019-1.png",
+      "images/cci-past-events/odisha-textile-crafts/odisha-textile-crafts-1.png",
+      "images/cci-past-events/patram-2018/patram-2018-1.png",
+      "images/cci-past-events/patram-2019/patram-2019-1.png",
+      "images/cci-past-events/patram/patram-1.png",
+      "images/cci-past-events/sarees-accessories-exhibition/sarees-accessories-exhibition-1.png",
+      "images/cci-past-events/sari-sale/sari-sale-1.png",
+      "images/cci-past-events/textile-and-accessories/textile-and-accessories-1.png",
+      "images/cci-past-events/textile-saree-show/textile-saree-show-1.png",
+      "images/cci-past-events/textile-show-2019/textile-show-2019-1.png",
+      "images/cci-past-events/textile-show/textile-show-1.png",
+      "images/cci-past-events/textiles-and-accessories-sale/textiles-and-accessories-sale-1.png",
+      "images/cci-past-events/ugadi-celebrations-with-andhra-food/ugadi-celebrations-with-andhra-food-1.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-12.jpg",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-14.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-14.png",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-16.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-2.jpg",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-4.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-21.jpg",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-23.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-22.jpg",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-24.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-3.png",
+      "images/cci-past-events/national-meet-theme/national-meet-theme-3.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-4.jpeg",
+      "images/cci-past-events/craftepreneur-2015/craftepreneur-2015-6.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-160.png",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-161.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-162.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-163.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-166.png",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-167.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-168.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-169.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-218.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-219.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-230.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-231.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-232.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-233.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-236.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-237.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-304.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-305.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-310.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-311.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-312.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-313.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-314.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-315.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-316.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-317.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-318.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-319.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-320.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-321.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-322.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-323.jpg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-324.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-325.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-340.png",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-341.png"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-342.jpeg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-343.jpeg"
+    ],
+    [
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-352.jpg",
+      "images/cci-past-events/craftepreneur-dec-2019/craftepreneur-dec-2019-353.jpg"
+    ],
+    [
+      "images/cci-past-events/national-meet-theme/national-meet-theme-12.jpg",
+      "images/cci-past-events/national-meet-theme/national-meet-theme-14.jpg"
+    ],
+    [
+      "images/cci-past-events/national-meet-theme/national-meet-theme-13.jpg",
+      "images/cci-past-events/national-meet-theme/national-meet-theme-15.jpg"
+    ],
+    [
+      "images/cci-past-events/patram-2018/patram-2018-2.jpg",
+      "images/cci-past-events/patram-2018/patram-2018-3.jpg"
+    ],
+    [
+      "images/cci-past-events/patram-2018/patram-2018-3.webp",
+      "images/cci-past-events/patram-2018/patram-2018-4.webp"
+    ],
+    [
+      "images/cci-past-events/patram-2018/patram-2018-95.jpg",
+      "images/cci-past-events/patram-2018/patram-2018-96.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-1.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-111.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-10.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-120.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-100.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-210.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-101.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-211.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-102.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-212.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-103.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-213.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-104.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-214.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-105.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-215.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-106.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-216.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-107.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-217.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-108.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-218.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-109.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-219.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-11.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-121.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-110.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-220.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-112.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-2.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-113.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-3.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-114.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-4.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-115.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-5.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-116.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-6.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-117.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-7.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-118.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-8.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-119.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-9.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-12.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-122.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-123.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-13.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-124.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-14.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-125.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-15.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-126.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-16.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-127.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-17.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-128.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-18.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-129.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-19.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-130.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-20.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-131.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-21.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-132.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-22.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-133.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-23.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-134.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-24.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-135.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-25.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-136.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-26.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-137.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-27.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-138.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-28.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-139.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-29.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-140.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-30.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-141.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-31.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-142.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-32.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-143.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-33.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-144.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-34.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-145.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-35.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-146.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-36.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-147.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-37.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-148.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-38.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-149.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-39.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-150.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-40.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-151.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-41.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-152.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-42.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-153.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-43.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-154.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-44.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-155.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-45.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-156.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-46.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-157.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-47.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-158.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-48.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-159.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-49.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-160.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-50.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-161.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-51.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-162.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-52.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-163.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-164.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-53.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-54.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-165.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-55.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-166.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-56.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-167.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-57.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-168.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-58.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-169.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-59.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-170.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-60.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-171.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-61.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-172.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-62.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-173.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-63.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-174.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-64.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-175.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-65.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-176.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-66.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-177.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-67.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-178.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-68.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-179.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-69.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-180.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-70.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-181.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-71.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-182.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-72.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-183.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-73.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-184.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-74.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-185.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-75.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-186.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-76.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-187.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-77.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-188.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-78.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-189.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-79.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-190.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-80.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-191.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-81.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-192.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-82.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-193.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-83.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-194.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-84.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-195.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-85.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-196.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-86.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-197.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-87.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-198.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-88.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-199.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-89.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-200.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-90.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-201.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-91.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-202.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-92.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-203.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-93.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-204.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-94.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-205.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-95.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-206.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-96.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-207.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-97.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-208.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-98.jpg"
+    ],
+    [
+      "images/cci-past-events/textile-show-2/textile-show-2-209.jpg",
+      "images/cci-past-events/textile-show-2/textile-show-2-99.jpg"
+    ],
+    [
+      "images/craft_process/A_Typical_Turned_Wood_Furniture/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Cane_&_Bamboo_Furniture/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Enamel_Jewellery/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Hand_Made_Jewellery/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Horn_Bone_Carving/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Iron_Craft/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Knitting_Crochet/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Lac_Bangles/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Leather_Bag/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Mixed_Media_Crafts/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Music_Instruments/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Paper_Making/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Repousse/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Sheet_Metal_Craft/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Stone_Carving/crafts-council-of-india-logo-1.jpg",
+      "images/craft_process/Wood_Inlay/crafts-council-of-india-logo-1.jpg"
+    ],
+    [
+      "images/craft_process/Leather_Bag/Papermaking-packing1.png",
+      "images/craft_process/Paper_Making/Papermaking-packing1.png"
+    ],
+    [
+      "images/events/2024-events/kamala-awards-2023/kamala-awards-2023-45.webp",
+      "images/events/2024-events/kamala-awards-2023/kamala-awards-2023-46.webp"
+    ],
+    [
+      "images/events/2024-events/kamala-awards-2023/kamala-awards-2023-5.webp",
+      "images/events/2024-events/kamala-awards-2023/kamala-awards-2023-6.webp"
+    ],
+    [
+      "images/events/2025-events/c4c-2025/C4C Pop up June 2025.webp",
+      "images/events/c4c.webp"
+    ],
+    [
+      "images/events/2025-events/paithani-2025/Paithani Pop up Show.webp",
+      "images/events/paithani.webp"
+    ],
+    [
+      "images/events/2025-events/pashmina-2025/Pashminas_Pop_Up_Show_(1) (1).webp",
+      "images/events/pashmina.webp"
+    ],
+    [
+      "images/events/2026-events/bagru-2026/Bagru_x_Kamala_-_Pop_Up_posters.webp",
+      "images/events/bagru.webp"
+    ],
+    [
+      "images/events/2026-events/shrujan/3.webp",
+      "images/events/shrujan.webp"
+    ],
+    [
+      "images/events/2026-events/storytelling-2026/Storytelling-2026-april__1_.webp",
+      "images/events/workshop.webp"
+    ],
+    [
+      "images/events/2026-events/textiles-2026/TEXTILES-2026-Invitation.pdf",
+      "images/events/TEXTILES-2026-Invitation.pdf"
+    ],
+    [
+      "images/events/2026-events/tribal-jewellery-2026/tribal-jewel__1_ (2).webp",
+      "images/events/tribal.webp"
+    ],
+    [
+      "images/press/1980-1990/19800113-things-beautiful-and-cheap.pdf",
+      "images/press/1980-1990/19800113_Things beautiful and cheap.pdf"
+    ],
+    [
+      "images/press/1980-1990/19810213-exquisite-terracottas-at-four-day-workshop.pdf",
+      "images/press/1980-1990/19810213_Exquisite terracottas at four day workshop.pdf"
+    ],
+    [
+      "images/press/1980-1990/19810216-traditional-crafts-need-to-be-revived.pdf",
+      "images/press/1980-1990/19810216_Traditional crafts need to be revived.pdf"
+    ],
+    [
+      "images/press/1980-1990/19820806-fascinating-craft-of-traditional-and-tribal-embroidery.pdf",
+      "images/press/1980-1990/19820806_Fascinating craft of traditional and tribal embroidery.pdf"
+    ],
+    [
+      "images/press/1980-1990/19830211-baskets-and-trays-in-cane-bamboo-and-coir.pdf",
+      "images/press/1980-1990/19830211_Baskets and trays in cane, bamboo and coir.pdf"
+    ],
+    [
+      "images/press/1980-1990/19840120-rescuing-a-lost-craft-of-india.pdf",
+      "images/press/1980-1990/19840120_Rescuing a lost craft of India.pdf"
+    ],
+    [
+      "images/press/1980-1990/19850111-paintings-by-warlis-of-maharashtra.pdf",
+      "images/press/1980-1990/19850111_Paintings by Warlis of Maharashtra.pdf"
+    ],
+    [
+      "images/press/1980-1990/19850201-an-attempt-at-popularising-kalamkari.pdf",
+      "images/press/1980-1990/19850201_An attempt at popularising Kalamkari.pdf"
+    ],
+    [
+      "images/press/1980-1990/19850913-ganesa-in-bronze-wood-metal-and-painting.pdf",
+      "images/press/1980-1990/19850913_Ganesa in bronze, wood, metal and painting.pdf"
+    ],
+    [
+      "images/press/1980-1990/19860207-eye-catching-terracota-artefacts-from-rishi-valley.pdf",
+      "images/press/1980-1990/19860207_Eye catching terracota artefacts from Rishi Valley.pdf"
+    ],
+    [
+      "images/press/1980-1990/19860907-exquisite-craft-works-from-north-south-eastern-india.pdf",
+      "images/press/1980-1990/19860907_Exquisite craft works from north, south eastern India.pdf"
+    ],
+    [
+      "images/press/1980-1990/19870213-a-fascinating-medium-of-expression.pdf",
+      "images/press/1980-1990/19870213_A fascinating medium of expression.pdf"
+    ],
+    [
+      "images/press/1980-1990/19870912-kerala-s-cultural-heritage-on-show.pdf",
+      "images/press/1980-1990/19870912_Kerala_s cultural heritage on show.pdf"
+    ],
+    [
+      "images/press/1980-1990/19870918-the-spirit-of-kerala-comes-alive.pdf",
+      "images/press/1980-1990/19870918_The spirit of Kerala comes alive.pdf"
+    ],
+    [
+      "images/press/1980-1990/19871204-mirrors-that-reflect-creativity.pdf",
+      "images/press/1980-1990/19871204_Mirrors that reflect creativity.pdf"
+    ],
+    [
+      "images/press/1980-1990/19871218-blend-of-colour-and-art.pdf",
+      "images/press/1980-1990/19871218_Blend of colour and art.pdf"
+    ],
+    [
+      "images/press/1980-1990/19881202-rare-handicrafts-on-display.pdf",
+      "images/press/1980-1990/19881202_Rare handicrafts on display.pdf"
+    ],
+    [
+      "images/press/1980-1990/19881212-bronze-icons-on-display.pdf",
+      "images/press/1980-1990/19881212_Bronze icons on display.pdf"
+    ],
+    [
+      "images/press/1980-1990/19890825-practical-adaptation-of-a-ritual-art.pdf",
+      "images/press/1980-1990/19890825_Practical adaptation of a ritual art.pdf"
+    ],
+    [
+      "images/press/1980-1990/19891006-camp-for-young-artisans.pdf",
+      "images/press/1980-1990/19891006_Camp for young artisans.pdf"
+    ],
+    [
+      "images/press/1980-1990/19891208-reviving-the-forgotten-arts.pdf",
+      "images/press/1980-1990/19891208_Reviving the forgotten arts.pdf"
+    ],
+    [
+      "images/press/1980-1990/19891222-crafts-festival-from-today.pdf",
+      "images/press/1980-1990/19891222_Crafts festival from today.pdf"
+    ],
+    [
+      "images/press/1980-1990/19891224-combining-beauty-with-utility.pdf",
+      "images/press/1980-1990/19891224_Combining beauty with utility.pdf"
+    ],
+    [
+      "images/press/1980-1990/19900309-basket-of-skills.pdf",
+      "images/press/1980-1990/19900309_Basket of skills.pdf"
+    ],
+    [
+      "images/press/1980-1990/19901031-where-black-is-the-reigning-colour.pdf",
+      "images/press/1980-1990/19901031_Where black is the reigning colour.pdf"
+    ],
+    [
+      "images/press/2025/c4c-2025/Metro Plus (The Hindu)/26625-metro-plus-the-hindu.jpeg",
+      "images/press/2025/c4c-2025/metro-plus-the-hindu/26625-metro-plus-the-hindu.jpeg"
+    ],
+    [
+      "images/press/2025/c4c-2025/New Indian Express/26625-new-indian-express-on-c4c.jpeg",
+      "images/press/2025/c4c-2025/new-indian-express/26625-new-indian-express-on-c4c.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Chennai Express/1.jpeg",
+      "images/press/2025/cci60th-year/chennai-express/1.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Chennai Express/2.jpeg",
+      "images/press/2025/cci60th-year/chennai-express/2.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/1.jpeg",
+      "images/press/2025/cci60th-year/dt-next/1.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/10.jpeg",
+      "images/press/2025/cci60th-year/dt-next/10.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/11.jpeg",
+      "images/press/2025/cci60th-year/dt-next/11.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/12.jpeg",
+      "images/press/2025/cci60th-year/dt-next/12.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/13.jpeg",
+      "images/press/2025/cci60th-year/dt-next/13.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/14.jpeg",
+      "images/press/2025/cci60th-year/dt-next/14.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/15.jpeg",
+      "images/press/2025/cci60th-year/dt-next/15.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/16.jpeg",
+      "images/press/2025/cci60th-year/dt-next/16.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/17.jpeg",
+      "images/press/2025/cci60th-year/dt-next/17.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/2.jpeg",
+      "images/press/2025/cci60th-year/dt-next/2.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/3.jpeg",
+      "images/press/2025/cci60th-year/dt-next/3.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/4.jpeg",
+      "images/press/2025/cci60th-year/dt-next/4.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/5.jpeg",
+      "images/press/2025/cci60th-year/dt-next/5.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/6.jpeg",
+      "images/press/2025/cci60th-year/dt-next/6.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/7.jpeg",
+      "images/press/2025/cci60th-year/dt-next/7.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/8.jpeg",
+      "images/press/2025/cci60th-year/dt-next/8.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Dt Next/9.jpeg",
+      "images/press/2025/cci60th-year/dt-next/9.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/1.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/1.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/2.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/2.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/3.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/3.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/4.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/4.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/5.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/5.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/6.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/6.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/The Hindu/7.jpeg",
+      "images/press/2025/cci60th-year/the-hindu/7.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Times of India/1.jpeg",
+      "images/press/2025/cci60th-year/times-of-india/1.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Times of India/2.jpeg",
+      "images/press/2025/cci60th-year/times-of-india/2.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Times of India/3.jpeg",
+      "images/press/2025/cci60th-year/times-of-india/3.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Times of India/4.jpeg",
+      "images/press/2025/cci60th-year/times-of-india/4.jpeg"
+    ],
+    [
+      "images/press/2025/cci60th-year/Times of India/5.jpeg",
+      "images/press/2025/cci60th-year/times-of-india/5.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/1.jpeg",
+      "images/press/2025/textile-show-march/dt-next/1.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/2.jpeg",
+      "images/press/2025/textile-show-march/dt-next/2.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/3.jpeg",
+      "images/press/2025/textile-show-march/dt-next/3.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/4.jpeg",
+      "images/press/2025/textile-show-march/dt-next/4.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/5.jpeg",
+      "images/press/2025/textile-show-march/dt-next/5.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Dt Next/6.jpeg",
+      "images/press/2025/textile-show-march/dt-next/6.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/1.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/1.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/2.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/2.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/3.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/3.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/4.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/4.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/5.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/5.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/6.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/6.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/7.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/7.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Indian Express indulge/8.jpeg",
+      "images/press/2025/textile-show-march/indian-express-indulge/8.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/Radhe Jaggi.mp4",
+      "images/press/2025/textile-show-march/radhe-jaggi.mp4"
+    ],
+    [
+      "images/press/2025/textile-show-march/The Hindu/1.jpeg",
+      "images/press/2025/textile-show-march/the-hindu/1.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The Hindu/2.jpeg",
+      "images/press/2025/textile-show-march/the-hindu/2.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The Hindu/3.jpeg",
+      "images/press/2025/textile-show-march/the-hindu/3.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The Hindu/Tamil.jpeg",
+      "images/press/2025/textile-show-march/the-hindu/Tamil.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/1.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/1.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/2.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/2.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/3.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/3.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/4.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/4.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/5.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/5.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/6.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/6.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/7.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/7.jpeg"
+    ],
+    [
+      "images/press/2025/textile-show-march/The New Indian Express/8.jpeg",
+      "images/press/2025/textile-show-march/the-new-indian-express/8.jpeg"
+    ],
+    [
+      "images/press/2025/tribal-jewellery-pop-up-kamala/The Hindu Metro/1.jpeg",
+      "images/press/2025/tribal-jewellery-pop-up-kamala/the-hindu-metro/1.jpeg"
+    ],
+    [
+      "images/press/2025/tribal-jewellery-pop-up-kamala/The Hindu Metro/2.jpeg",
+      "images/press/2025/tribal-jewellery-pop-up-kamala/the-hindu-metro/2.jpeg"
+    ],
+    [
+      "images/press/2025/tribal-jewellery-pop-up-kamala/The Hindu Metro/3.jpeg",
+      "images/press/2025/tribal-jewellery-pop-up-kamala/the-hindu-metro/3.jpeg"
+    ],
+    [
+      "images/press/2025/tribal-jewellery-pop-up-kamala/The Hindu Metro/4.jpeg",
+      "images/press/2025/tribal-jewellery-pop-up-kamala/the-hindu-metro/4.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Chennai Express/chennai-express.jpeg",
+      "images/press/2026/craft-bazaar/chennai-express/chennai-express.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/1.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/1.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/10.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/10.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/11.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/11.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/2.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/2.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/3.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/3.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/4.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/4.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/5.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/5.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/6.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/6.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/7.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/7.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/8.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/8.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/DT Next/9.jpeg",
+      "images/press/2026/craft-bazaar/dt-next/9.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Metro Plus/1.jpeg",
+      "images/press/2026/craft-bazaar/metro-plus/1.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Metro Plus/2.jpeg",
+      "images/press/2026/craft-bazaar/metro-plus/2.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Metro Plus/3.jpeg",
+      "images/press/2026/craft-bazaar/metro-plus/3.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Metro Plus/4.jpeg",
+      "images/press/2026/craft-bazaar/metro-plus/4.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/Online Link to the Articles.docx",
+      "images/press/2026/craft-bazaar/online-link-to-the-articles.docx"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/1.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/1.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/10.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/10.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/11.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/11.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/2.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/2.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/3.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/3.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/4.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/4.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/5.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/5.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/6.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/6.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/7.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/7.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/8.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/8.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/9.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/9.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The Hindu/tamil.jpeg",
+      "images/press/2026/craft-bazaar/the-hindu/tamil.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/1.jpeg",
+      "images/press/2026/craft-bazaar/the-new-indian-express/1.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/18 - Page.pdf",
+      "images/press/2026/craft-bazaar/The New Indian Express/18-page.pdf",
+      "images/press/2026/craft-bazaar/the-new-indian-express/18 - Page.pdf"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/2.jpeg",
+      "images/press/2026/craft-bazaar/the-new-indian-express/2.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/Indulge/1.jpeg",
+      "images/press/2026/craft-bazaar/the-new-indian-express/indulge/1.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/Indulge/2.jpeg",
+      "images/press/2026/craft-bazaar/the-new-indian-express/indulge/2.jpeg"
+    ],
+    [
+      "images/press/2026/craft-bazaar/The New Indian Express/Indulge/3.jpeg",
+      "images/press/2026/craft-bazaar/the-new-indian-express/indulge/3.jpeg"
+    ],
+    [
+      "images/press/2026/kamala-awards/Hindu Tamil/Press.docx",
+      "images/press/2026/kamala-awards/hindu-tamil/Press.docx"
+    ],
+    [
+      "images/press/2026/kamala-awards/Hindu Tamil/tamil-hindu.jpeg",
+      "images/press/2026/kamala-awards/hindu-tamil/tamil-hindu1.jpeg"
+    ],
+    [
+      "images/press/2026/kamala-awards/The New Indian Express/1.jpeg",
+      "images/press/2026/kamala-awards/the-new-indian-express/1.jpeg"
+    ],
+    [
+      "images/press/2026/kamala-awards/The New Indian Express/2.jpeg",
+      "images/press/2026/kamala-awards/the-new-indian-express/2.jpeg"
+    ],
+    [
+      "images/press/2026/saree-show/The Hindu - Metroplus/the-hindu-metroplus.jpeg",
+      "images/press/2026/saree-show/the-hindu-metroplus/the-hindu-metroplus.jpeg"
+    ],
+    [
+      "images/promote-1.webp",
+      "images/promote1.webp"
+    ],
+    [
+      "images/state_images/andhrapradesh/silverfiligree260x185.jpg",
+      "images/state_images/odisha/silverfiligree260x185.jpg"
+    ],
+    [
+      "images/state_images/andhrapradesh/thumbs/silverfiligree260x185.jpg",
+      "images/state_images/odisha/thumbs/silverfiligree260x185.jpg"
+    ],
+    [
+      "images/state_images/chhattisgarh/bamboobasketry260x185.jpg",
+      "images/state_images/mizoram/bamboobasketry260x185.jpg"
+    ],
+    [
+      "images/state_images/chhattisgarh/lostwaxmetalcasting260x185.jpg",
+      "images/state_images/odisha/lostwaxmetalcasting260x185.jpg"
+    ],
+    [
+      "images/state_images/chhattisgarh/thumbs/lostwaxmetalcasting260x185.jpg",
+      "images/state_images/odisha/thumbs/lostwaxmetalcasting260x185.jpg"
+    ],
+    [
+      "images/state_images/goa/terracotta2260x185.jpg",
+      "images/state_images/westbengal/terracotta2260x185.jpg"
+    ],
+    [
+      "images/state_images/goa/thumbs/terracotta2260x185.jpg",
+      "images/state_images/westbengal/thumbs/terracotta2260x185.jpg"
+    ],
+    [
+      "images/state_images/himachalpradesh/basketry260x185.jpg",
+      "images/state_images/uttarakhand/basketry260x185.jpg"
+    ],
+    [
+      "images/state_images/himachalpradesh/dollmaking260x185.jpg",
+      "images/state_images/tamilnadu/dollmaking260x185.jpg"
+    ],
+    [
+      "images/state_images/himachalpradesh/thumbs/basketry260x185.jpg",
+      "images/state_images/uttarakhand/thumbs/basketry260x185.jpg"
+    ],
+    [
+      "images/state_images/himachalpradesh/thumbs/dollmaking260x185.jpg",
+      "images/state_images/tamilnadu/thumbs/dollmaking260x185.jpg"
+    ],
+    [
+      "images/state_images/jammuandkashmir/thumbs/woodcarving260x185.jpg",
+      "images/state_images/karnataka/thumbs/woodcarving260x185.jpg"
+    ],
+    [
+      "images/state_images/jammuandkashmir/woodcarving260x185.jpg",
+      "images/state_images/karnataka/woodcarving260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/embroidery1260x185.jpg",
+      "images/state_images/uttarpradesh/embroidery1260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/stonecarving1260x185.jpg",
+      "images/state_images/karnataka/stonecarving2260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/thumbs/embroidery1260x185.jpg",
+      "images/state_images/uttarpradesh/thumbs/embroidery1260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/thumbs/stonecarving1260x185.jpg",
+      "images/state_images/karnataka/thumbs/stonecarving2260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/thumbs/tibetancarpets260x185.jpg",
+      "images/state_images/uttarakhand/thumbs/tibetancarpets260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/thumbs/woodcarving1260x185.jpg",
+      "images/state_images/madhyapradesh/thumbs/woodcarving1260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/tibetancarpets260x185.jpg",
+      "images/state_images/uttarakhand/tibetancarpets260x185.jpg"
+    ],
+    [
+      "images/state_images/karnataka/woodcarving1260x185.jpg",
+      "images/state_images/madhyapradesh/woodcarving1260x185.jpg"
+    ],
+    [
+      "images/state_images/manipur/thumbs/traditionalbambooproducts260x185.jpg",
+      "images/state_images/tripura/thumbs/traditionalbambooproducts260x185.jpg"
+    ],
+    [
+      "images/state_images/manipur/traditionalbambooproducts260x185.jpg",
+      "images/state_images/tripura/traditionalbambooproducts260x185.jpg"
+    ],
+    [
+      "images/sustain-pattamadai -2.webp",
+      "images/sustain4.webp"
+    ],
+    [
+      "images/sustain-pattamadai.webp",
+      "images/sustain5.webp"
+    ]
+  ]
+}

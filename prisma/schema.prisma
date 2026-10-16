@@ -1,0 +1,586 @@
+// Crafts Council of India — CMS schema.
+// Conventions: cuid ids, timestamps on every content table, legacy identifiers kept in
+// `legacyId` / `sourceLink` / `legacyPath` so imports are idempotent and traceable.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ───────────────────────────── Access control ─────────────────────────────
+
+model User {
+  id                 String    @id @default(cuid())
+  email              String    @unique // stored lower-cased
+  name               String
+  passwordHash       String
+  isActive           Boolean   @default(true)
+  mustChangePassword Boolean   @default(false)
+  lastLoginAt        DateTime?
+  createdAt          DateTime  @default(now())
+  updatedAt          DateTime  @updatedAt
+
+  roles     UserRole[]
+  sessions  Session[]
+  auditLogs AuditLog[]
+}
+
+model Role {
+  id          String     @id @default(cuid())
+  key         String     @unique
+  name        String
+  description String     @default("")
+  permissions String[]
+  isSystem    Boolean    @default(false)
+  createdAt   DateTime   @default(now())
+  updatedAt   DateTime   @updatedAt
+  users       UserRole[]
+}
+
+model UserRole {
+  userId    String
+  roleId    String
+  createdAt DateTime @default(now())
+  user      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
+  role      Role     @relation(fields: [roleId], references: [id], onDelete: Restrict)
+
+  @@id([userId, roleId])
+  @@index([roleId])
+}
+
+/// `id` is the SHA-256 hex digest of the session token; the raw token only lives in the cookie.
+model Session {
+  id         String    @id
+  userId     String
+  expiresAt  DateTime
+  lastSeenAt DateTime  @default(now())
+  revokedAt  DateTime?
+  ip         String?
+  userAgent  String?
+  createdAt  DateTime  @default(now())
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model LoginAttempt {
+  id        String   @id @default(cuid())
+  email     String
+  ip        String
+  success   Boolean
+  createdAt DateTime @default(now())
+
+  @@index([email, createdAt])
+  @@index([ip, createdAt])
+}
+
+/// Generic sliding-window rate limit store (contact form, etc.).
+model RateLimitEvent {
+  id        String   @id @default(cuid())
+  key       String
+  createdAt DateTime @default(now())
+
+  @@index([key, createdAt])
+}
+
+model AuditLog {
+  id         String   @id @default(cuid())
+  actorId    String?
+  action     String
+  entityType String?
+  entityId   String?
+  summary    String   @default("")
+  metadata   Json?
+  ip         String?
+  createdAt  DateTime @default(now())
+  actor      User?    @relation(fields: [actorId], references: [id], onDelete: SetNull)
+
+  @@index([createdAt])
+  @@index([entityType, entityId])
+  @@index([actorId])
+}
+
+// ───────────────────────────── Content workflow ─────────────────────────────
+
+enum ContentStatus {
+  DRAFT
+  IN_REVIEW
+  SCHEDULED
+  PUBLISHED
+  ARCHIVED
+}
+
+/// Snapshot of a record taken on every save; used for history and rollback.
+model Revision {
+  id          String   @id @default(cuid())
+  entityType  String
+  entityId    String
+  data        Json
+  note        String   @default("")
+  createdById String?
+  createdAt   DateTime @default(now())
+
+  @@index([entityType, entityId, createdAt])
+}
+
+// ───────────────────────────── Pages ─────────────────────────────
+
+model Page {
+  id              String        @id @default(cuid())
+  slug            String        @unique // "" never used; home page slug is "home"
+  title           String
+  template        String        @default("standard")
+  /// Ordered array of { id, type, data } blocks validated by src/lib/content/sections.ts
+  sections        Json          @default("[]")
+  status          ContentStatus @default(DRAFT)
+  publishAt       DateTime?
+  publishedAt     DateTime?
+  metaTitle       String?
+  metaDescription String?
+  canonicalUrl    String?
+  ogImage         String?
+  noindex         Boolean       @default(false)
+  legacyPath      String?
+  createdById     String?
+  updatedById     String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([status])
+}
+
+// ───────────────────────────── Events ─────────────────────────────
+
+enum EventCollection {
+  CURRENT // events.js
+  ARCHIVE // events-final.js (scraped from the earlier WordPress site)
+}
+
+model Event {
+  id              String          @id @default(cuid())
+  slug            String          @unique
+  legacyId        String?         @unique
+  sourceLink      String?
+  collection      EventCollection @default(CURRENT)
+  type            String          @default("event")
+  title           String
+  subtitle        String          @default("")
+  dateText        String          @default("")
+  startDate       DateTime?       @db.Date
+  endDate         DateTime?       @db.Date
+  timeText        String          @default("")
+  venue           String          @default("")
+  city            String          @default("")
+  address         String          @default("")
+  mapLink         String          @default("")
+  entryFee        String          @default("")
+  ticketPrice     String          @default("")
+  ageGroup        String          @default("")
+  parking         String          @default("")
+  contact         String[]        @default([])
+  registrationUrl String          @default("")
+  pdfUrl          String          @default("")
+  image           String          @default("")
+  heroGradient    String          @default("")
+  heroEmoji       String          @default("")
+  tagLabel        String          @default("")
+  tagClass        String          @default("")
+  /// Legacy explicit status ("upcoming" | "past") — controls the register/ended sidebar card.
+  legacyStatus    String          @default("")
+  descriptionHtml String          @default("")
+  writeupHtml     String          @default("")
+  highlights      Json            @default("[]")
+  schedule        Json            @default("[]")
+  people          Json            @default("[]")
+  /// Ordered media paths (images and videos).
+  gallery         String[]        @default([])
+  relatedSlugs    String[]        @default([])
+  /// Legacy fields that were stored but never rendered (shopTiming, pricing, map, payments, specialEvent, invitePDF).
+  extra           Json            @default("{}")
+  status          ContentStatus   @default(DRAFT)
+  publishAt       DateTime?
+  publishedAt     DateTime?
+  metaTitle       String?
+  metaDescription String?
+  noindex         Boolean         @default(false)
+  sortOrder       Int             @default(0)
+  createdById     String?
+  updatedById     String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  @@index([collection, status, startDate])
+  @@index([createdById])
+}
+
+// ───────────────────────────── News ─────────────────────────────
+
+model NewsArticle {
+  id              String        @id @default(cuid())
+  slug            String        @unique
+  legacyId        String?       @unique
+  type            String        @default("")
+  title           String
+  subtitle        String        @default("")
+  dateText        String        @default("")
+  venue           String        @default("")
+  city            String        @default("")
+  image           String        @default("")
+  heroGradient    String        @default("")
+  heroEmoji       String        @default("")
+  tagLabel        String        @default("")
+  tagClass        String        @default("")
+  bodyHtml        String        @default("")
+  /// Array of { type: "image", src } | { type: "youtube", url }
+  gallery         Json          @default("[]")
+  sortOrder       Int           @default(0)
+  status          ContentStatus @default(DRAFT)
+  publishAt       DateTime?
+  publishedAt     DateTime?
+  metaTitle       String?
+  metaDescription String?
+  noindex         Boolean       @default(false)
+  createdById     String?
+  updatedById     String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+
+  @@index([status, sortOrder])
+}
+
+// ───────────────────────────── Press ─────────────────────────────
+
+model PressItem {
+  id              String        @id @default(cuid())
+  slug            String        @unique
+  legacyId        String?       @unique
+  year            String
+  title           String
+  subtitle        String        @default("")
+  image           String        @default("")
+  heroGradient    String        @default("")
+  sortOrder       Int           @default(0)
+  status          ContentStatus @default(DRAFT)
+  publishAt       DateTime?
+  publishedAt     DateTime?
+  metaTitle       String?
+  metaDescription String?
+  noindex         Boolean       @default(false)
+  createdById     String?
+  updatedById     String?
+  createdAt       DateTime      @default(now())
+  updatedAt       DateTime      @updatedAt
+  groups          PressGroup[]
+
+  @@index([status, year])
+}
+
+model PressGroup {
+  id            String    @id @default(cuid())
+  pressItemId   String
+  media         String
+  dateText      String    @default("")
+  readOnlineUrl String    @default("")
+  /// Ordered image / PDF paths.
+  items         String[]  @default([])
+  sortOrder     Int       @default(0)
+  pressItem     PressItem @relation(fields: [pressItemId], references: [id], onDelete: Cascade)
+
+  @@index([pressItemId, sortOrder])
+}
+
+// ───────────────────────────── Publications ─────────────────────────────
+
+enum PublicationKind {
+  BOOK
+  NEWSLETTER
+  HAPPENINGS
+  REPORT
+}
+
+model Publication {
+  id              String          @id @default(cuid())
+  kind            PublicationKind
+  /// Plain title used in admin listings and alt text.
+  title           String
+  /// Card title as displayed; may contain <br>.
+  cardTitleHtml   String          @default("")
+  /// Line under the card title (date or author).
+  cardSubtitle    String          @default("")
+  coverLogoHtml   String          @default("")
+  coverHeadline   String          @default("")
+  coverImage      String          @default("")
+  coverAlt        String          @default("")
+  coverBackground String          @default("")
+  dateLabel       String          @default("")
+  descriptionHtml String          @default("")
+  fileUrl         String          @default("")
+  /// Featured "latest issue" block at the top of the listing page.
+  isFeatured      Boolean         @default(false)
+  /// Shown on the "past" archive page instead of the main page.
+  isArchived      Boolean         @default(false)
+  /// Archive page grouping label (legacy year groups are blank).
+  groupLabel      String          @default("")
+  actionLabel     String          @default("")
+  /// Card footer links (legacy cards vary: some have no footer, some no download icon).
+  showRead        Boolean         @default(true)
+  showDownload    Boolean         @default(true)
+  sortOrder       Int             @default(0)
+  legacyKey       String?         @unique
+  status          ContentStatus   @default(DRAFT)
+  publishAt       DateTime?
+  publishedAt     DateTime?
+  createdById     String?
+  updatedById     String?
+  createdAt       DateTime        @default(now())
+  updatedAt       DateTime        @updatedAt
+
+  @@index([kind, isArchived, status, sortOrder])
+}
+
+// ───────────────────────────── Awards & people ─────────────────────────────
+
+model AwardCategory {
+  id          String   @id @default(cuid())
+  name        String
+  description String   @default("")
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model AwardRecipient {
+  id          String   @id @default(cuid())
+  year        String
+  name        String   @default("")
+  award       String   @default("")
+  craft       String   @default("")
+  state       String   @default("")
+  photo       String   @default("")
+  photoAlt    String   @default("")
+  /// Shown as photo cards (awards page) and in the home page scroller.
+  isFeatured  Boolean  @default(false)
+  /// Which listing shows the row: "awards" (recent tables) or "past-awards".
+  listing     String   @default("awards")
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(true)
+  legacyKey   String?  @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  @@index([listing, year, sortOrder])
+}
+
+model Artisan {
+  id          String   @id @default(cuid())
+  name        String
+  craft       String   @default("")
+  photo       String   @default("")
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(true)
+  legacyKey   String?  @unique
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum TeamGroup {
+  EC_MEMBER
+  OFFICE_BEARER
+}
+
+model TeamMember {
+  id          String    @id @default(cuid())
+  name        String
+  group       TeamGroup
+  role        String    @default("")
+  sortOrder   Int       @default(0)
+  isPublished Boolean   @default(true)
+  legacyKey   String?   @unique
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+
+  @@index([group, sortOrder])
+}
+
+model StateCouncil {
+  id           String   @id @default(cuid())
+  name         String
+  abbreviation String
+  logo         String   @default("")
+  established  String   @default("")
+  state        String   @default("")
+  /// Label of the third quick-facts row ("Focus" or "Members").
+  focusLabel   String   @default("Focus")
+  focus        String   @default("")
+  description  String   @default("")
+  address      String   @default("")
+  phone        String   @default("")
+  email        String   @default("")
+  sortOrder    Int      @default(0)
+  isPublished  Boolean  @default(true)
+  legacyKey    String?  @unique
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+// ───────────────────────────── Crafts map & processes ─────────────────────────────
+
+model CraftState {
+  id          String            @id @default(cuid())
+  /// Two-letter map id used by the SVG (`data-state`).
+  code        String            @unique
+  name        String
+  /// Folder name under images/state_images.
+  imageFolder String            @default("")
+  mapImage    String            @default("")
+  /// State names exactly as they appeared in craft-data.json (duplicates merged).
+  sourceNames String[]          @default([])
+  sortOrder   Int               @default(0)
+  isPublished Boolean           @default(true)
+  createdAt   DateTime          @default(now())
+  updatedAt   DateTime          @updatedAt
+  locations   CraftLocation[]
+  images      CraftStateImage[]
+}
+
+model CraftLocation {
+  id        String     @id @default(cuid())
+  stateId   String
+  craft     String
+  district  String     @default("")
+  village   String     @default("")
+  sortOrder Int        @default(0)
+  state     CraftState @relation(fields: [stateId], references: [id], onDelete: Cascade)
+
+  @@index([stateId, sortOrder])
+}
+
+model CraftStateImage {
+  id        String     @id @default(cuid())
+  stateId   String
+  src       String
+  sortOrder Int        @default(0)
+  state     CraftState @relation(fields: [stateId], references: [id], onDelete: Cascade)
+
+  @@index([stateId, sortOrder])
+}
+
+model CraftProcess {
+  id          String   @id @default(cuid())
+  slug        String   @unique
+  category    String   @default("")
+  icon        String   @default("")
+  color       String   @default("")
+  title       String
+  subtitle    String   @default("")
+  intro       String   @default("")
+  materials   String[] @default([])
+  /// Array of { title, text }
+  steps       Json     @default("[]")
+  states      String[] @default([])
+  sortOrder   Int      @default(0)
+  isPublished Boolean  @default(true)
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+// ───────────────────────────── Media ─────────────────────────────
+
+enum MediaStorage {
+  LEGACY // file shipped with the legacy site, served from /images or /docs
+  LOCAL // uploaded through the CMS, stored under UPLOAD_DIR, served from /uploads
+}
+
+model Media {
+  id           String       @id @default(cuid())
+  /// Public path without leading slash, e.g. "images/Hero/slide4.webp" or "uploads/2026/10/ab12-file.jpg"
+  path         String       @unique
+  storage      MediaStorage
+  originalName String
+  mimeType     String
+  size         Int
+  width        Int?
+  height       Int?
+  sha1         String?
+  alt          String       @default("")
+  caption      String       @default("")
+  title        String       @default("")
+  folder       String       @default("")
+  uploadedById String?
+  createdAt    DateTime     @default(now())
+  updatedAt    DateTime     @updatedAt
+
+  @@index([folder])
+  @@index([mimeType])
+  @@index([sha1])
+}
+
+// ───────────────────────────── Site management ─────────────────────────────
+
+model MenuItem {
+  id           String     @id @default(cuid())
+  menu         String
+  label        String
+  href         String     @default("")
+  parentId     String?
+  sortOrder    Int        @default(0)
+  openInNewTab Boolean    @default(false)
+  isVisible    Boolean    @default(true)
+  parent       MenuItem?  @relation("MenuTree", fields: [parentId], references: [id], onDelete: Cascade)
+  children     MenuItem[] @relation("MenuTree")
+  createdAt    DateTime   @default(now())
+  updatedAt    DateTime   @updatedAt
+
+  @@index([menu, parentId, sortOrder])
+}
+
+model SiteSetting {
+  key         String   @id
+  value       Json
+  updatedById String?
+  updatedAt   DateTime @updatedAt
+}
+
+model Redirect {
+  id          String   @id @default(cuid())
+  source      String   @unique
+  destination String
+  permanent   Boolean  @default(true)
+  isActive    Boolean  @default(true)
+  hits        Int      @default(0)
+  note        String   @default("")
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+enum SubmissionStatus {
+  NEW
+  READ
+  ARCHIVED
+  SPAM
+}
+
+model FormSubmission {
+  id          String           @id @default(cuid())
+  form        String           @default("contact")
+  name        String
+  email       String
+  phone       String           @default("")
+  subject     String
+  message     String
+  status      SubmissionStatus @default(NEW)
+  emailStatus String           @default("PENDING") // PENDING | SENT | FAILED | SKIPPED
+  emailError  String           @default("")
+  ip          String?
+  userAgent   String?
+  createdAt   DateTime         @default(now())
+  updatedAt   DateTime         @updatedAt
+
+  @@index([form, status, createdAt])
+}
