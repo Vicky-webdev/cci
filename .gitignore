@@ -8,3 +8,6 @@ desktop.ini
 
 # Local tooling
 .claude/
+
+# Local MCP configs can hold credentials; keep them per-machine
+.mcp.json
